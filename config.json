@@ -1,0 +1,93 @@
+{
+  "matieres": [
+    {
+      "id": "mathematiques",
+      "label": "Mathématiques",
+      "icon": "calculate",
+      "color": "#667eea",
+      "description": "Toutes les formules du programme de Terminale SM",
+      "fiches": [
+        {
+          "id": "formules_complete",
+          "title": "Fiche de Formules Complète",
+          "subtitle": "Terminale SM - Toutes les formules du programme",
+          "level": "Terminale SM",
+          "file": "fiches/mathematiques/ciam_maths_fiche_formules_complete.html",
+          "sections": [
+            "Arithmétique",
+            "Géométrie",
+            "Analyse",
+            "Trigonométrie",
+            "Probabilités",
+            "Résumé"
+          ]
+        }
+      ],
+      "videos": {
+        "formules_complete": "https://www.youtube.com/results?search_query=mathematiques+terminale+sm+formules"
+      }
+    },
+    {
+      "id": "physique",
+      "label": "Physique",
+      "icon": "science",
+      "color": "#11998e",
+      "description": "Physique pour Terminale SM",
+      "fiches": [
+        {
+          "id": "mecanique",
+          "title": "Mécanique",
+          "subtitle": "Loi de Newton, Energie, Travaux",
+          "level": "Terminale SM",
+          "file": "fiches/physique/mecanique.html",
+          "sections": [
+            "Cinématique",
+            "Dynamique",
+            "Energie",
+            "Travail et Puissance"
+          ]
+        },
+        {
+          "id": "electricite",
+          "title": "Electricité",
+          "subtitle": "Circuits, Electrostatique",
+          "level": "Terminale SM",
+          "file": "fiches/physique/electricite.html",
+          "sections": [
+            "Circuits electriques",
+            "Electrostatique",
+            "Condensateurs"
+          ]
+        }
+      ],
+      "videos": {
+        "mecanique": "https://www.youtube.com/results?search_query=physique+mecanique+terminale",
+        "electricite": "https://www.youtube.com/results?search_query=physique+electricite+terminale"
+      }
+    },
+    {
+      "id": "chimie",
+      "label": "Chimie",
+      "icon": "biotech",
+      "color": "#f093fb",
+      "description": "Chimie pour Terminale SM",
+      "fiches": [
+        {
+          "id": "chimie_organique",
+          "title": "Chimie Organique",
+          "subtitle": "Hydrocarbures, Fonctions oxygenées",
+          "level": "Terminale SM",
+          "file": "fiches/chimie/chimie_organique.html",
+          "sections": [
+            "Hydrocarbures",
+            "Fonctions oxygenées",
+            "Acides carboxyliques"
+          ]
+        }
+      ],
+      "videos": {
+        "chimie_organique": "https://www.youtube.com/results?search_query=chimie+organique+terminale"
+      }
+    }
+  ]
+}

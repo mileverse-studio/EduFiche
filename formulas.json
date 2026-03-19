@@ -1,0 +1,137 @@
+{
+  "mathematiques": {
+    "systemPrompt": "Tu es un professeur de mathématiques certifié, expert en analyse, géométrie, algèbre et probabilités. Ta mission est d'expliquer les concepts mathématiques de manière claire et pédagogique. Utilise des exemples concrets et des analogies pour faciliter la compréhension. Sois précis dans tes explications mais accessible.",
+    "formulas": [
+      {
+        "name": "Dérivée de x^n",
+        "latex": "(x^n)' = nx^{n-1}",
+        "explainPrompt": "Explique la formule de dérivation (x^n)' = nx^(n-1) en détaillant : 1) La règle générale de dérivation des puissances, 2) Des exemples concrets pour n=2, n=3, n=-1, 3) L'interprétation géométrique de la dérivée comme tangente, 4) Les cas particuliers à retenir.",
+        "exercisePrompt": "Génère 3 exercices de difficulté progressive sur la dérivation de puissances : 1) Exercice facile avec dérivées de x^2, x^3, 2) Exercice moyen avec puissances négatives et fractions, 3) Exercice difficile combinant plusieurs règles. Inclut les solutions détaillées."
+      },
+      {
+        "name": "Dérivée de ln(x)",
+        "latex": "(\\ln x)' = \\frac{1}{x}",
+        "explainPrompt": "Explique la formule (ln x)' = 1/x en couvrant : 1) La définition de ln x comme primitive de 1/t, 2) Pourquoi cette dérivée est particulière, 3) Des exemples d'application, 4) Le lien avec la fonction exponentielle.",
+        "exercisePrompt": "Crée 3 exercices sur la dérivée de ln(x) : 1) Calcul de dérivées simples, 2) Dérivées de fonctions composées avec ln, 3) Problème appliqué involving ln. Solutions détaillées."
+      },
+      {
+        "name": "Dérivée de e^x",
+        "latex": "(e^x)' = e^x",
+        "explainPrompt": "Explique pourquoi (e^x)' = e^x est une propriété unique : 1) Définition de e comme limite, 2) Démonstration intuitive, 3) Comparaison avec les autres bases, 4) Importance en modélisation.",
+        "exercisePrompt": "Génère 3 exercices sur la dérivée de e^x : 1) Dérivées simples de e^x, 2) Dérivées de e^(kx), 3) Dérivées de produits et composés avec exponentielle. Solutions complètes."
+      },
+      {
+        "name": "Primitives de x^n",
+        "latex": "\\int x^n \\, dx = \\frac{x^{n+1}}{n+1} + C",
+        "explainPrompt": "Explique la formule d'intégration ∫x^n dx = x^(n+1)/(n+1) + C : 1) Relation avec la dérivation, 2) Condition n ≠ -1, 3) Exemples du cas n=2, n=0, n=1/2, 4) Signification de la constante C.",
+        "exercisePrompt": "Crée 3 exercices sur les primitives : 1) Primitives simples de x^2, x^3, 2) Primitives avec n négatif, 3) Calcul d'intégrales définies. Solutions détaillées."
+      },
+      {
+        "name": "Logarithme népérien - Propriétés",
+        "latex": "\\ln(ab) = \\ln a + \\ln b",
+        "explainPrompt": "Explique les propriétés du logarithme népérien : 1) ln(ab) = ln a + ln b, 2) ln(a/b) = ln a - ln b, 3) ln(a^n) = n ln a, 4) Démonstrations et exemples d'application.",
+        "exercisePrompt": "Génère 3 exercices sur les propriétés du ln : 1) Simplification d'expressions logarithmiques, 2) Résolution d'équations logarithmiques, 3) Problème appliqué. Solutions complètes."
+      },
+      {
+        "name": "Formule d'Euler",
+        "latex": "e^{i\\theta} = \\cos\\theta + i\\sin\\theta",
+        "explainPrompt": "Explique la formule d'Euler e^(iθ) = cos θ + i sin θ : 1) Lien entre exponentielle complexe et trigonométrie, 2) Interprétation géométrique sur le cercle trigonométrique, 3) Applications au calcul de puissances de nombres complexes, 4) Formule de Moivre.",
+        "exercisePrompt": "Crée 3 exercices sur la formule d'Euler : 1) Expression de cos θ et sin θ avec exponentielles complexes, 2) Calcul de puissances comme (cos θ + i sin θ)^n, 3) Démonstration des formules d'addition. Solutions détaillées."
+      },
+      {
+        "name": "PGCD et PPCM",
+        "latex": "PGCD(a,b) \\times PPCM(a,b) = |a \\times b|",
+        "explainPrompt": "Explique la relation entre PGCD et PPCM : 1) Définitions de PGCD et PPCM, 2) La formule PGCD × PPCM = |a × b|, 3) Algorithme d'Euclide pour calculer le PGCD, 4) Exemples concrets de calcul.",
+        "exercisePrompt": "Génère 3 exercices sur PGCD et PPCM : 1) Calcul du PGCD par l'algorithme d'Euclide, 2) Utilisation de la formule PGCD × PPCM, 3) Problème appliquée involving PGCD. Solutions complètes."
+      },
+      {
+        "name": "Suite arithmétique",
+        "latex": "u_n = u_0 + nr",
+        "explainPrompt": "Explique les suites arithmétiques : 1) Définition avec la raison r, 2) Formule u_n = u_0 + nr, 3) Somme des termes, 4) Exemples et applications.",
+        "exercisePrompt": "Crée 3 exercices sur les suites arithmétiques : 1) Calcul du n-ième terme, 2) Somme des premiers termes, 3) Problème de la moyenne. Solutions détaillées."
+      },
+      {
+        "name": "Suite géométrique",
+        "latex": "u_n = u_0 \\times q^n",
+        "explainPrompt": "Explique les suites géométriques : 1) Définition avec la raison q, 2) Formule u_n = u_0 × q^n, 3) Somme des termes (cas q ≠ 1), 4) Lien avec les intérêts composés.",
+        "exercisePrompt": "Génère 3 exercices sur les suites géométriques : 1) Calcul du n-ième terme avec q, 2) Somme des termes, 3) Application aux intérêts composés. Solutions complètes."
+      },
+      {
+        "name": "Intégration par parties",
+        "latex": "\\int u \\, dv = uv - \\int v \\, du",
+        "explainPrompt": "Explique l'intégration par parties : 1) Formule et méthode, 2) Comment choisir u et dv, 3) Exemples classiques (∫x e^x dx, ∫ln x dx), 4) Intégration par parties répétée.",
+        "exercisePrompt": "Crée 3 exercices sur l'intégration par parties : 1) ∫x e^x dx, 2) ∫ln x dx, 3) ∫x^2 sin x dx. Solutions détaillées avec le choix de u et dv."
+      },
+      {
+        "name": "Théorème des Valeurs Intermédiaires",
+        "latex": "\\exists c \\in ]a,b[ : f(c) = 0",
+        "explainPrompt": "Explique le TVI (Théorème des Valeurs Intermédiaires) : 1) Conditions d'application (continuité sur [a,b]), 2) Énoncé du théorème, 3) Interprétation graphique, 4) Application pour montrer l'existence de solutions.",
+        "exercisePrompt": "Génère 3 exercices sur le TVI : 1) Démonstration d'existence de solution, 2) Localisation de la solution, 3) Application aux équations. Solutions détaillées."
+      },
+      {
+        "name": "Equations différentielles y' = ay",
+        "latex": "y = Ce^{ax}",
+        "explainPrompt": "Explique la résolution de y' = ay : 1) Forme générale des solutions, 2) Détermination de C avec condition initiale, 3) Exemples concrets (croissance exponentielle, décroissance radioactive), 4) Lien avec la fonction exponentielle.",
+        "exercisePrompt": "Crée 3 exercices sur y' = ay : 1) Résolution de l'équation, 2) Application avec condition initiale, 3) Problème appliquée (population, radioactivité). Solutions complètes."
+      },
+      {
+        "name": "Identités trigonométriques",
+        "latex": "\\sin^2 x + \\cos^2 x = 1",
+        "explainPrompt": "Explique les identités trigonométriques fondamentales : 1) sin²x + cos²x = 1, 2) Formules d'addition (sin(a±b), cos(a±b)), 3) Formules de duplication, 4) Linéarisation.",
+        "exercisePrompt": "Génère 3 exercices de trigonométrie : 1) Démonstration d'identités, 2) Calcul de sin(π/12) avec formules d'addition, 3) Linéarisation de cos²x. Solutions détaillées."
+      },
+      {
+        "name": "Combinaisons et dénombrement",
+        "latex": "\\binom{n}{p} = \\frac{n!}{p!(n-p)!}",
+        "explainPrompt": "Explique les combinaisons et le dénombrement : 1) Formule de C(n,p), 2) Propriétés (symétrie, triangle de Pascal), 3) Différence avec arrangements, 4) Formule du binôme de Newton.",
+        "exercisePrompt": "Crée 3 exercices sur les combinaisons : 1) Calcul de C(5,2), C(10,3), 2) Démonstration de propriétés, 3) Application au binôme de Newton. Solutions complètes."
+      },
+      {
+        "name": "Probabilités conditionnelles",
+        "latex": "P(A \\cap B) = P(A) \\times P(B|A)",
+        "explainPrompt": "Explique les probabilités conditionnelles : 1) Définition de P(B|A), 2) Formule des probabilités composées, 3) Formule des probabilités totales, 4) Indépendance d'événements.",
+        "exercisePrompt": "Génère 3 exercices sur les probabilités conditionnelles : 1) Calcul avec arbre de probabilité, 2) Formule des probabilités totales, 3) Problème avec urne. Solutions détaillées."
+      }
+    ]
+  },
+  "physique": {
+    "systemPrompt": "Tu es un professeur de physique certifié, expert en mécanique, électricité et physique moderne. Ta mission est d'expliquer les lois physiques de manière claire et pédagogique. Utilise des exemples concrets et des analogies pour faciliter la compréhension.",
+    "formulas": [
+      {
+        "name": "Deuxième loi de Newton",
+        "latex": "\\vec{F} = m\\vec{a}",
+        "explainPrompt": "Explique la deuxième loi de Newton F = ma : 1) Relation entre force, masse et accélération, 2) Unités SI, 3) Exemples concrets, 4) Application aux problèmes de dynamique.",
+        "exercisePrompt": "Génère 3 exercices sur F = ma : 1) Calcul d'accélération, 2) Calcul de force, 3) Problème de dynamique avec plan incliné. Solutions détaillées."
+      },
+      {
+        "name": "Energie cinétique",
+        "latex": "E_c = \\frac{1}{2}mv^2",
+        "explainPrompt": "Explique l'énergie cinétique : 1) Formule et unités, 2) Relation avec le travail, 3) Théorème de l'énergie cinétique, 4) Exemples numériques.",
+        "exercisePrompt": "Crée 3 exercices sur l'énergie cinétique : 1) Calcul d'énergie cinétique, 2) Théorème de l'énergie cinétique, 3) Problème appliquée. Solutions complètes."
+      },
+      {
+        "name": "Loi d'Ohm",
+        "latex": "U = RI",
+        "explainPrompt": "Explique la loi d'Ohm : 1) Relation entre tension, résistance et intensité, 2) Unités, 3) Association de résistances, 4) Applications dans les circuits.",
+        "exercisePrompt": "Génère 3 exercices sur la loi d'Ohm : 1) Calcul de U, R ou I, 2) Circuits avec résistances en série, 3) Circuit avec résistances en parallèle. Solutions détaillées."
+      }
+    ]
+  },
+  "chimie": {
+    "systemPrompt": "Tu es un professeur de chimie certifié, expert en chimie organique et réactions chimiques. Ta mission est d'expliquer les concepts chimiques de manière claire et pédagogique.",
+    "formulas": [
+      {
+        "name": "Formule des alcools",
+        "latex": "R-OH",
+        "explainPrompt": "Explique la formule générale des alcools : 1) Structure et groupe fonctionnel OH, 2) Classification (primaire, secondaire, tertiaire), 3) Nomenclature, 4) Propriétés chimiques.",
+        "exercisePrompt": "Génère 3 exercices sur les alcools : 1) Identification du type d'alcool, 2) Nomenclature, 3) Réaction d'oxydation. Solutions détaillées."
+      },
+      {
+        "name": "Acides carboxyliques",
+        "latex": "R-COOH",
+        "explainPrompt": "Explique les acides carboxyliques : 1) Groupe fonctionnel COOH, 2) Nomenclature, 3) Propriétés acido-basiques, 4) Réactions caractéristiques.",
+        "exercisePrompt": "Crée 3 exercices sur les acides carboxyliques : 1) Identification et nomenclature, 2) Propriétés acido-basiques, 3) Esterification. Solutions complètes."
+      }
+    ]
+  }
+}
