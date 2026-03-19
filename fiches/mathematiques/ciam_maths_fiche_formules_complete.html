@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche de Formules Complète - Terminale SM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #11998e 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            padding: 50px 60px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header h2 {
+            font-size: 1.6em;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.8;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            display: inline-block;
+        }
+
+        .toc {
+            background: #f8fafc;
+            padding: 35px 60px;
+            border-bottom: 3px solid #e2e8f0;
+        }
+
+        .toc h3 {
+            color: #1a1a2e;
+            margin-bottom: 25px;
+            font-size: 1.5em;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .toc-section {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .toc-section h4 {
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+            display: flex;
+            align-items: center;
+        }
+
+        .toc-section h4 .icon {
+            margin-right: 10px;
+        }
+
+        .toc-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc-section li {
+            margin: 8px 0;
+        }
+
+        .toc-section a {
+            color: #4a5568;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .toc-section a:hover {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .toc-section a .num {
+            background: #667eea;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-size: 0.85em;
+        }
+
+        .content {
+            padding: 50px 60px;
+        }
+
+        .part {
+            margin-bottom: 60px;
+            scroll-margin-top: 20px;
+        }
+
+        .part-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 25px 35px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .part-header .part-num {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5em;
+        }
+
+        .part-header h2 {
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        .chapter {
+            margin-bottom: 45px;
+            scroll-margin-top: 20px;
+        }
+
+        .chapter h3 {
+            color: #1a1a2e;
+            font-size: 1.5em;
+            padding-bottom: 12px;
+            border-bottom: 4px solid #667eea;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .chapter h3 .chapter-icon {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 0.8em;
+        }
+
+        h4 {
+            color: #2d3748;
+            font-size: 1.15em;
+            margin: 25px 0 15px 0;
+            padding-left: 15px;
+            border-left: 4px solid #11998e;
+        }
+
+        .formula-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .formula-table thead {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+        }
+
+        .formula-table th {
+            padding: 15px 20px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .formula-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .formula-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+        .formula-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .property-box {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8f4f8 100%);
+            border-left: 5px solid #667eea;
+            padding: 20px 25px;
+            margin: 20px 0;
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .property-box h5 {
+            color: #1a1a2e;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .theorem-box {
+            background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+            border-left: 5px solid #e53e3e;
+            padding: 20px 25px;
+            margin: 20px 0;
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .theorem-box h5 {
+            color: #c53030;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .important-box {
+            background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+            border-left: 5px solid #38a169;
+            padding: 20px 25px;
+            margin: 20px 0;
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .important-box h5 {
+            color: #276749;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .katex {
+            font-size: 1.1em;
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 50px;
+        }
+
+        .summary-box h3 {
+            color: white;
+            border-left-color: #38ef7d;
+            margin-top: 0;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+        }
+
+        .summary-box h4 {
+            color: #90cdf4;
+            border-left-color: #38ef7d;
+            font-size: 1.2em;
+            margin-top: 25px;
+        }
+
+        .summary-box ol {
+            color: #e2e8f0;
+            line-height: 2;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 30px 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            .toc, .content {
+                padding: 20px;
+            }
+
+            .formula-table {
+                font-size: 0.9em;
+            }
+
+            .formula-table th, .formula-table td {
+                padding: 10px;
+            }
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            font-size: 1.5em;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📐 Fiche de Formules Complète</h1>
+            <h2>Mathématiques - Terminale SM</h2>
+            <div class="subtitle">Toutes les formules du programme</div>
+        </header>
+
+        <nav class="toc">
+            <h3>📚 Table des Matières</h3>
+            <div class="toc-grid">
+                <div class="toc-section">
+                    <h4><span class="icon">📗</span> PARTIE 1 : ARITHMÉTIQUE</h4>
+                    <ul>
+                        <li><a href="#arithmetique"><span class="num">1</span>Nombres et Arithmétique</a></li>
+                    </ul>
+                </div>
+                <div class="toc-section">
+                    <h4><span class="icon">📘</span> PARTIE 2 : GÉOMÉTRIE</h4>
+                    <ul>
+                        <li><a href="#geo2"><span class="num">2</span>Barycentre et Produit Vectoriel</a></li>
+                        <li><a href="#geo3"><span class="num">3</span>Nombres Complexes</a></li>
+                        <li><a href="#geo4"><span class="num">4</span>Géométrie du Plan</a></li>
+                        <li><a href="#geo5"><span class="num">5</span>Applications de l'Espace</a></li>
+                        <li><a href="#geo6"><span class="num">6</span>Coniques</a></li>
+                    </ul>
+                </div>
+                <div class="toc-section">
+                    <h4><span class="icon">📙</span> PARTIE 3 : ANALYSE</h4>
+                    <ul>
+                        <li><a href="#analyse7"><span class="num">7</span>Limites et Continuité</a></li>
+                        <li><a href="#analyse8"><span class="num">8</span>Dérivation</a></li>
+                        <li><a href="#analyse9"><span class="num">9</span>Logarithme Népérien</a></li>
+                        <li><a href="#analyse10"><span class="num">10</span>Fonctions Exponentielles</a></li>
+                        <li><a href="#analyse11"><span class="num">11</span>Suites Numériques</a></li>
+                        <li><a href="#analyse12"><span class="num">12</span>Intégration</a></li>
+                        <li><a href="#analyse13"><span class="num">13</span>Équations Différentielles</a></li>
+                    </ul>
+                </div>
+                <div class="toc-section">
+                    <h4><span class="icon">⭐</span> RÉSUMÉ</h4>
+                    <ul>
+                        <li><a href="#formules-essentielles"><span class="num">★</span>Formules Essentielles</a></li>
+                        <li><a href="#trigonometrie"><span class="num">△</span>Trigonométrie</a></li>
+                        <li><a href="#probabilites"><span class="num">P</span>Probabilités</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="content">
+            <!-- PARTIE 1 : ARITHMÉTIQUE -->
+            <section id="arithmetique" class="part">
+                <div class="part-header">
+                    <div class="part-num">1</div>
+                    <h2>ARITHMÉTIQUE</h2>
+                </div>
+
+                <div class="chapter">
+                    <h3><span class="chapter-icon">1</span> Nombres et Arithmétique</h3>
+
+                    <h4>Ensembles $\mathbb{N}$ et $\mathbb{Z}$</h4>
+                    <ul>
+                        <li>$\mathbb{N} = \{0, 1, 2, 3, \ldots\}$</li>
+                        <li>$\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$</li>
+                    </ul>
+
+                    <h4>Divisibilité dans $\mathbb{Z}$</h4>
+                    <div class="property-box">
+                        <h5>📖 Définitions</h5>
+                        <p>$a$ divise $b$ (noté $a | b$) si $\exists k \in \mathbb{Z}$ tel que $b = ka$</p>
+                        <p>$d = \text{PGCD}(a, b)$ si $d$ est le plus grand diviseur commun de $a$ et $b$</p>
+                        <p>$m = \text{PPCM}(a, b)$ si $m$ est le plus petit multiple commun de $a$ et $b$</p>
+                    </div>
+
+                    <h4>PGCD et PPCM</h4>
+                    <table class="formula-table">
+                        <thead>
+                            <tr>
+                                <th>Propriété</th>
+                                <th>Formule</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Relation</td>
+                                <td>$\text{PGCD}(a, b) \times \text{PPCM}(a, b) = |a \times b|$</td>
+                            </tr>
+                            <tr>
+                                <td>Algorithme d'Euclide</td>
+                                <td>$\text{PGCD}(a, b) = \text{PGCD}(b, r)$ où $a = bq + r$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Nombres premiers</h4>
+                    <div class="property-box">
+                        <h5>📖 Définition</h5>
+                        <p>Un nombre premier $p$ est un entier naturel supérieur à 1 qui n'a que deux diviseurs : 1 et $p$</p>
+                    </div>
+                    <ul>
+                        <li>Tout entier $n > 1$ se décompose en produit de facteurs premiers</li>
+                        <li>$n = p_1^{\alpha_1} \times p_2^{\alpha_2} \times \cdots \times p_k^{\alpha_k}$</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PARTIE 2 : GÉOMÉTRIE -->
+            <section id="geo" class="part">
+                <div class="part-header" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                    <div class="part-num" style="background: linear-gradient(135deg, #11998e, #38ef7d);">2</div>
+                    <h2>GÉOMÉTRIE</h2>
+                </div>
+
+                <!-- Chapitre 2 : Barycentre -->
+                <div id="geo2" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #11998e, #38ef7d);">2</span> Barycentre et Produit Vectoriel</h3>
+
+                    <h4>Barycentre de n points pondérés</h4>
+                    <div class="property-box">
+                        <h5>📖 Définition</h5>
+                        <p>Le barycentre $G$ de $(A_1, \alpha_1), \ldots, (A_n, \alpha_n)$ avec $\sum \alpha_i \neq 0$ vérifie :</p>
+                        <p>$$\alpha_1 \overrightarrow{GA_1} + \alpha_2 \overrightarrow{GA_2} + \cdots + \alpha_n \overrightarrow{GA_n} = \overrightarrow{0}$$</p>
+                    </div>
+
+                    <h4>Coordonnées du barycentre</h4>
+                    <p>$$x_G = \frac{\sum \alpha_i x_i}{\sum \alpha_i}, \quad y_G = \frac{\sum \alpha_i y_i}{\sum \alpha_i}$$</p>
+
+                    <h4>Produit vectoriel</h4>
+                    <div class="property-box">
+                        <h5>📖 Définition</h5>
+                        <p>$$\overrightarrow{w} = \overrightarrow{u} \wedge \overrightarrow{v}$$</p>
+                        <ul>
+                            <li>$\overrightarrow{w} \perp \overrightarrow{u}$ et $\overrightarrow{w} \perp \overrightarrow{v}$</li>
+                            <li>$(\overrightarrow{u}, \overrightarrow{v}, \overrightarrow{w})$ direct</li>
+                            <li>$\|\overrightarrow{w}\| = \|\overrightarrow{u}\| \cdot \|\overrightarrow{v}\| \cdot |\sin \theta|$</li>
+                        </ul>
+                    </div>
+
+                    <table class="formula-table">
+                        <thead>
+                            <tr><th>Propriété</th><th>Formule</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Antisymétrie</td><td>$\overrightarrow{u} \wedge \overrightarrow{v} = -\overrightarrow{v} \wedge \overrightarrow{u}$</td></tr>
+                            <tr><td>Linéarité</td><td>$(\lambda \overrightarrow{u} + \mu \overrightarrow{v}) \wedge \overrightarrow{w} = \lambda \overrightarrow{u} \wedge \overrightarrow{w} + \mu \overrightarrow{v} \wedge \overrightarrow{w}$</td></tr>
+                            <tr><td>Double produit vectoriel</td><td>$\overrightarrow{u} \wedge (\overrightarrow{v} \wedge \overrightarrow{w}) = \overrightarrow{v}(\overrightarrow{u} \cdot \overrightarrow{w}) - \overrightarrow{w}(\overrightarrow{u} \cdot \overrightarrow{v})$</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Applications</h4>
+                    <ul>
+                        <li><strong>Aire du parallélogramme</strong> : $\mathcal{A} = \|\overrightarrow{AB} \wedge \overrightarrow{AC}\|$</li>
+                        <li><strong>Aire du triangle</strong> : $\mathcal{A} = \frac{1}{2} \|\overrightarrow{AB} \wedge \overrightarrow{AC}\|$</li>
+                        <li><strong>Volume du parallélépipède</strong> : $\mathcal{V} = |(\overrightarrow{AB} \wedge \overrightarrow{AC}) \cdot \overrightarrow{AD}|$</li>
+                        <li><strong>Volume du tétraèdre</strong> : $\mathcal{V} = \frac{1}{6} |(\overrightarrow{AB} \wedge \overrightarrow{AC}) \cdot \overrightarrow{AD}|$</li>
+                    </ul>
+                </div>
+
+                <!-- Chapitre 3 : Nombres Complexes -->
+                <div id="geo3" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #11998e, #38ef7d);">3</span> Nombres Complexes</h3>
+
+                    <h4>Forme algébrique</h4>
+                    <div class="property-box">
+                        <h5>📖 Définition</h5>
+                        <p>$$z = a + bi \quad \text{avec } i^2 = -1$$</p>
+                        <p>$a = \text{Re}(z)$, $b = \text{Im}(z)$</p>
+                    </div>
+
+                    <table class="formula-table">
+                        <thead>
+                            <tr><th>Opération</th><th>Formule</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Conjugué</td><td>$\overline{z} = a - bi$</td></tr>
+                            <tr><td>Module</td><td>$|z| = \sqrt{a^2 + b^2}$</td></tr>
+                            <tr><td>Inverse</td><td>$\dfrac{1}{z} = \dfrac{\overline{z}}{|z|^2}$</td></tr>
+                            <tr><td>Multiplication</td><td>$(a+bi)(c+di) = (ac-bd) + (ad+bc)i$</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Forme trigonométrique</h4>
+                    <div class="property-box">
+                        <h5>📖 Formule</h5>
+                        <p>$$z = r(\cos \theta + i \sin \theta) = re^{i\theta}$$</p>
+                        <p>$r = |z|$, $\theta = \arg(z)$</p>
+                    </div>
+
+                    <h4>Propriétés</h4>
+                    <ul>
+                        <li>$\arg(z_1 z_2) = \arg(z_1) + \arg(z_2)$</li>
+                        <li>$\arg\left(\dfrac{z_1}{z_2}\right) = \arg(z_1) - \arg(z_2)$</li>
+                        <li>$\arg(z^n) = n \arg(z)$</li>
+                    </ul>
+
+                    <div class="important-box">
+                        <h5>💡 Formule de Moivre</h5>
+                        <p>$$(\cos \theta + i \sin \theta)^n = \cos(n\theta) + i \sin(n\theta)$$</p>
+                    </div>
+
+                    <div class="property-box">
+                        <h5>📖 Formules d'Euler</h5>
+                        <p>$$\cos \theta = \frac{e^{i\theta} + e^{-i\theta}}{2} \quad ; \quad \sin \theta = \frac{e^{i\theta} - e^{-i\theta}}{2i}$$</p>
+                    </div>
+
+                    <h4>Racines n-ièmes</h4>
+                    <div class="theorem-box">
+                        <h5>📖 Racines de l'unité</h5>
+                        <p>$$z_k = e^{2ik\pi/n} = \cos\left(\frac{2k\pi}{n}\right) + i\sin\left(\frac{2k\pi}{n}\right), \quad k = 0, 1, \ldots, n-1$$</p>
+                    </div>
+                </div>
+
+                <!-- Chapitre 4 : Géométrie du Plan -->
+                <div id="geo4" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #11998e, #38ef7d);">4</span> Géométrie du Plan</h3>
+
+                    <h4>Isométries</h4>
+                    <table class="formula-table">
+                        <thead>
+                            <tr><th>Type</th><th>Propriété</th><th>Éléments invariants</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Translation</td><td>$M' = T_{\vec{u}}(M)$</td><td>Aucun point</td></tr>
+                            <tr><td>Rotation</td><td>$R_{(O, \theta)}$</td><td>Centre $O$</td></tr>
+                            <tr><td>Symétrie axiale</td><td>$S_{\Delta}$</td><td>Droite $\Delta$</td></tr>
+                            <tr><td>Symétrie centrale</td><td>$S_O$</td><td>Point $O$</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Applications affines</h4>
+                    <div class="property-box">
+                        <h5>📖 Expression analytique</h5>
+                        <p>$$\begin{cases} x' = ax + by + c \\ y' = a'x + b'y + c' \end{cases}$$</p>
+                    </div>
+
+                    <h4>Similitudes directes</h4>
+                    <div class="property-box">
+                        <h5>📖 Écriture complexe</h5>
+                        <p>$$z' = az + b \quad \text{avec } a \in \mathbb{C}^*$$</p>
+                        <ul>
+                            <li>Rapport : $k = |a|$</li>
+                            <li>Angle : $\theta = \arg(a)$</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Chapitre 5 : Applications de l'Espace -->
+                <div id="geo5" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #11998e, #38ef7d);">5</span> Applications de l'Espace</h3>
+
+                    <h4>Projections</h4>
+                    <p>Projection sur un plan $\Pi$ parallèlement à une droite $\Delta$ :</p>
+                    <ul>
+                        <li>$M' \in \Pi$ et $(MM') \parallel \Delta$</li>
+                        <li>Expression analytique selon les cas</li>
+                    </ul>
+
+                    <h4>Translations et Homothéties</h4>
+                    <ul>
+                        <li><strong>Translation</strong> : $\overrightarrow{MM'} = \vec{u}$</li>
+                        <li><strong>Homothétie</strong> : $\overrightarrow{OM'} = k \overrightarrow{OM}$</li>
+                    </ul>
+
+                    <h4>Symétries orthogonales</h4>
+                    <ul>
+                        <li><strong>Symétrie plane</strong> : réflexion par rapport à un plan</li>
+                        <li><strong>Symétrie centrale</strong> : $\overrightarrow{OM'} = -\overrightarrow{OM}$</li>
+                        <li><strong>Demi-tour</strong> : composée de deux symétries planes perpendiculaires</li>
+                    </ul>
+                </div>
+
+                <!-- Chapitre 6 : Coniques -->
+                <div id="geo6" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #11998e, #38ef7d);">6</span> Coniques</h3>
+
+                    <div class="property-box">
+                        <h5>📖 Définition générale</h5>
+                        <p>$$\frac{MF}{d(M, \Delta)} = e \quad \text{(excentricité)}$$</p>
+                        <ul>
+                            <li>$e < 1$ : ellipse</li>
+                            <li>$e = 1$ : parabole</li>
+                            <li>$e > 1$ : hyperbole</li>
+                        </ul>
+                    </div>
+
+                    <h4>Parabole</h4>
+                    <p>$$y^2 = 2px$$</p>
+                    <ul>
+                        <li>Foyer : $F\left(\frac{p}{2}, 0\right)$</li>
+                        <li>Directrice : $x = -\frac{p}{2}$</li>
+                        <li>$e = 1$</li>
+                    </ul>
+
+                    <h4>Ellipse</h4>
+                    <div class="property-box">
+                        <h5>📖 Équation réduite</h5>
+                        <p>$$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \quad (a \geq b > 0)$$</p>
+                    </div>
+                    <ul>
+                        <li>Sommets : $(\pm a, 0)$, $(0, \pm b)$</li>
+                        <li>Foyers : $F(\pm c, 0)$ avec $c^2 = a^2 - b^2$</li>
+                        <li>$e = \frac{c}{a} < 1$</li>
+                        <li>$MF + MF' = 2a$</li>
+                    </ul>
+
+                    <h4>Hyperbole</h4>
+                    <div class="property-box">
+                        <h5>📖 Équation réduite</h5>
+                        <p>$$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$$</p>
+                    </div>
+                    <ul>
+                        <li>Sommets : $(\pm a, 0)$</li>
+                        <li>Foyers : $F(\pm c, 0)$ avec $c^2 = a^2 + b^2$</li>
+                        <li>$e = \frac{c}{a} > 1$</li>
+                        <li>Asymptotes : $y = \pm \frac{b}{a}x$</li>
+                        <li>$|MF - MF'| = 2a$</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PARTIE 3 : ANALYSE -->
+            <section id="analyse" class="part">
+                <div class="part-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="part-num" style="background: linear-gradient(135deg, #667eea, #764ba2);">3</div>
+                    <h2>ANALYSE</h2>
+                </div>
+
+                <!-- Chapitre 7 : Limites et Continuité -->
+                <div id="analyse7" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">7</span> Limites et Continuité</h3>
+
+                    <h4>Limites usuelles</h4>
+                    <table class="formula-table">
+                        <thead>
+                            <tr><th>Fonction</th><th>Limite en $+\infty$</th><th>Limite en $-\infty$</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>$x^n$ (n pair)</td><td>$+\infty$</td><td>$+\infty$</td></tr>
+                            <tr><td>$x^n$ (n impair)</td><td>$+\infty$</td><td>$-\infty$</td></tr>
+                            <tr><td>$\dfrac{1}{x^n}$</td><td>$0$</td><td>$0$</td></tr>
+                            <tr><td>$\sqrt{x}$</td><td>$+\infty$</td><td>N'existe pas</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Opérations sur les limites</h4>
+                    <ul>
+                        <li><strong>Somme</strong> : $\lim [f + g] = \lim f + \lim g$</li>
+                        <li><strong>Produit</strong> : $\lim [f \cdot g] = \lim f \cdot \lim g$</li>
+                        <li><strong>Quotient</strong> : $\lim \frac{f}{g} = \frac{\lim f}{\lim g}$ (si $\lim g \neq 0$)</li>
+                    </ul>
+
+                    <div class="property-box">
+                        <h5>⚠️ Formes indéterminées</h5>
+                        <p>$$\infty - \infty \quad ; \quad 0 \times \infty \quad ; \quad \frac{\infty}{\infty} \quad ; \quad \frac{0}{0} \quad ; \quad 1^\infty \quad ; \quad 0^0 \quad ; \quad \infty^0$$</p>
+                    </div>
+
+                    <h4>Continuité</h4>
+                    <div class="theorem-box">
+                        <h5>📖 Théorème des Valeurs Intermédiaires (TVI)</h5>
+                        <p>Si $f$ est continue sur $[a,b]$ et si $f(a) \cdot f(b) < 0$, alors $\exists c \in ]a,b[$ tel que $f(c) = 0$</p>
+                    </div>
+
+                    <h4>Asymptotes</h4>
+                    <ul>
+                        <li><strong>Verticale</strong> : $x = a$ si $\lim_{x \to a} f(x) = \pm\infty$</li>
+                        <li><strong>Horizontale</strong> : $y = b$ si $\lim_{x \to \pm\infty} f(x) = b$</li>
+                        <li><strong>Oblique</strong> : $y = mx + p$ si $\lim [f(x) - (mx + p)] = 0$</li>
+                    </ul>
+                </div>
+
+                <!-- Chapitre 8 : Dérivation -->
+                <div id="analyse8" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">8</span> Dérivation</h3>
+
+                    <h4>Dérivées usuelles</h4>
+                    <table class="formula-table">
+                        <thead>
+                            <tr><th>$f(x)$</th><th>$f'(x)$</th><th>Condition</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>$c$</td><td>$0$</td><td>-</td></tr>
+                            <tr><td>$x^n$</td><td>$nx^{n-1}$</td><td>$n \in \mathbb{N}^*$</td></tr>
+                            <tr><td>$\dfrac{1}{x^n}$</td><td>$-\dfrac{n}{x^{n+1}}$</td><td>$x \neq 0$</td></tr>
+                            <tr><td>$\sqrt{x}$</td><td>$\dfrac{1}{2\sqrt{x}}$</td><td>$x > 0$</td></tr>
+                            <tr><td>$\sin x$</td><td>$\cos x$</td><td>-</td></tr>
+                            <tr><td>$\cos x$</td><td>$-\sin x$</td><td>-</td></tr>
+                            <tr><td>$\tan x$</td><td>$1 + \tan^2 x$</td><td>$x \neq \frac{\pi}{2} + k\pi$</td></tr>
+                            <tr><td>$e^x$</td><td>$e^x$</td><td>-</td></tr>
+                            <tr><td>$\ln x$</td><td>$\dfrac{1}{x}$</td><td>$x > 0$</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Règles de dérivation</h4>
+                    <table class="formula-table">
+                        <thead>
+                            <tr><th>Opération</th><th>Formule</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Somme</td><td>$(u + v)' = u' + v'$</td></tr>
+                            <tr><td>Produit</td><td>$(u \cdot v)' = u'v + uv'$</td></tr>
+                            <tr><td>Quotient</td><td>$\left(\dfrac{u}{v}\right)' = \dfrac{u'v - uv'}{v^2}$</td></tr>
+                            <tr><td>Composée</td><td>$(f \circ g)' = f'(g) \cdot g'$</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="property-box">
+                        <h5>📖 Dérivées composées</h5>
+                        <ul>
+                            <li>$(\ln u)' = \dfrac{u'}{u}$</li>
+                            <li>$(e^u)' = e^u \cdot u'$</li>
+                            <li>$(u^n)' = n u^{n-1} \cdot u'$</li>
+                            <li>$(\sin u)' = \cos u \cdot u'$</li>
+                        </ul>
+                    </div>
+
+                    <h4>Théorèmes</h4>
+                    <div class="theorem-box">
+                        <h5>📖 Théorème des Accroissements Finis (TAF)</h5>
+                        <p>Si $f$ est continue sur $[a,b]$ et dérivable sur $]a,b[$, alors $\exists c \in ]a,b[$ tel que :</p>
+                        <p>$$f(b) - f(a) = f'(c)(b - a)$$</p>
+                    </div>
+                </div>
+
+                <!-- Chapitre 9 : Logarithme Népérien -->
+                <div id="analyse9" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">9</span> Fonction Logarithme Népérien</h3>
+
+                    <div class="property-box">
+                        <h5>📖 Définition</h5>
+                        <p>$$\ln x = \int_1^x \frac{1}{t} \, dt \quad \text{pour } x > 0$$</p>
+                    </div>
+
+                    <h4>Propriétés</h4>
+                    <table class="formula-table">
+                        <thead>
+                            <tr><th>Propriété</th><th>Formule</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>$\ln(1)$</td><td>$0$</td></tr>
+                            <tr><td>$\ln(e)$</td><td>$1$</td></tr>
+                            <tr><td>$\ln(ab)$</td><td>$\ln a + \ln b$</td></tr>
+                            <tr><td>$\ln\left(\dfrac{a}{b}\right)$</td><td>$\ln a - \ln b$</td></tr>
+                            <tr><td>$\ln(a^n)$</td><td>$n \ln a$</td></tr>
+                            <tr><td>$\ln(\sqrt[n]{a})$</td><td>$\dfrac{1}{n} \ln a$</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="important-box">
+                        <h5>💡 Limites</h5>
+                        <p>$$\lim_{x \to 0^+} \ln x = -\infty \quad ; \quad \lim_{x \to +\infty} \ln x = +\infty$$</p>
+                        <p>$$\lim_{x \to 0^+} x \ln x = 0 \quad ; \quad \lim_{x \to +\infty} \frac{\ln x}{x} = 0$$</p>
+                    </div>
+
+                    <h4>Changement de base</h4>
+                    <p>$$\log_a x = \frac{\ln x}{\ln a} \quad \text{et} \quad \log x = \frac{\ln x}{\ln 10}$$</p>
+                </div>
+
+                <!-- Chapitre 10 : Fonctions Exponentielles -->
+                <div id="analyse10" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">10</span> Fonctions Exponentielles</h3>
+
+                    <div class="property-box">
+                        <h5>📖 Définition</h5>
+                        <p>$$e^x = \exp(x) \quad \text{avec } e \approx 2{,}71828$$</p>
+                        <p>$(e^x)' = e^x$ (égale à sa propre dérivée)</p>
+                    </div>
+
+                    <h4>Propriétés</h4>
+                    <table class="formula-table">
+                        <thead>
+                            <tr><th>Propriété</th><th>Formule</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>$e^0$</td><td>$1$</td></tr>
+                            <tr><td>$e^a \cdot e^b$</td><td>$e^{a+b}$</td></tr>
+                            <tr><td>$\dfrac{e^a}{e^b}$</td><td>$e^{a-b}$</td></tr>
+                            <tr><td>$(e^a)^n$</td><td>$e^{na}$</td></tr>
+                            <tr><td>$e^{-x}$</td><td>$\dfrac{1}{e^x}$</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="important-box">
+                        <h5>💡 Limites</h5>
+                        <p>$$\lim_{x \to -\infty} e^x = 0 \quad ; \quad \lim_{x \to +\infty} e^x = +\infty$$</p>
+                        <p>$$\lim_{x \to +\infty} \frac{e^x}{x} = +\infty \quad ; \quad \lim_{x \to 0} \frac{e^x - 1}{x} = 1$$</p>
+                    </div>
+
+                    <h4>Fonctions puissances</h4>
+                    <p>$$x^\alpha = e^{\alpha \ln x} \quad \text{pour } x > 0$$</p>
+                    <p>$$\frac{d}{dx}(x^\alpha) = \alpha x^{\alpha-1}$$</p>
+                </div>
+
+                <!-- Chapitre 11 : Suites Numériques -->
+                <div id="analyse11" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">11</span> Suites Numériques</h3>
+
+                    <h4>Suite arithmétique</h4>
+                    <div class="property-box">
+                        <h5>📖 Définition et formules</h5>
+                        <p>$u_{n+1} = u_n + r$ (raison $r$)</p>
+                        <p>$u_n = u_0 + nr$</p>
+                        <p>$S_n = (n+1) \cdot \dfrac{u_0 + u_n}{2}$</p>
+                    </div>
+
+                    <h4>Suite géométrique</h4>
+                    <div class="property-box">
+                        <h5>📖 Définition et formules</h5>
+                        <p>$u_{n+1} = q \cdot u_n$ (raison $q$)</p>
+                        <p>$u_n = u_0 \cdot q^n$</p>
+                        <p>$S_n = u_0 \cdot \dfrac{1 - q^{n+1}}{1 - q}$ (si $q \neq 1$)</p>
+                    </div>
+
+                    <h4>Limites de suites</h4>
+                    <table class="formula-table">
+                        <thead>
+                            <tr><th>Suite</th><th>Limite</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>$q^n$ avec $|q| < 1$</td><td>$0$</td></tr>
+                            <tr><td>$q^n$ avec $q > 1$</td><td>$+\infty$</td></tr>
+                            <tr><td>$q^n$ avec $q = 1$</td><td>$1$</td></tr>
+                            <tr><td>$\dfrac{1}{n^\alpha}$ ($\alpha > 0$)</td><td>$0$</td></tr>
+                            <tr><td>$\dfrac{n}{n+1}$</td><td>$1$</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Chapitre 12 : Intégration -->
+                <div id="analyse12" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">12</span> Intégration</h3>
+
+                    <h4>Primitives usuelles</h4>
+                    <table class="formula-table">
+                        <thead>
+                            <tr><th>$f(x)$</th><th>$F(x)$ (primitive)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>$x^n$ ($n \neq -1$)</td><td>$\dfrac{x^{n+1}}{n+1} + C$</td></tr>
+                            <tr><td>$\dfrac{1}{x}$</td><td>$\ln|x| + C$</td></tr>
+                            <tr><td>$e^x$</td><td>$e^x + C$</td></tr>
+                            <tr><td>$\sin x$</td><td>$-\cos x + C$</td></tr>
+                            <tr><td>$\cos x$</td><td>$\sin x + C$</td></tr>
+                            <tr><td>$\dfrac{1}{\cos^2 x}$</td><td>$\tan x + C$</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="property-box">
+                        <h5>📖 Intégrale définie (Théorème fondamental)</h5>
+                        <p>$$\int_a^b f(x) \, dx = F(b) - F(a)$$</p>
+                    </div>
+
+                    <h4>Propriétés</h4>
+                    <ul>
+                        <li><strong>Linéarité</strong> : $\int (af + bg) = a\int f + b\int g$</li>
+                        <li><strong>Chasles</strong> : $\int_a^c f = \int_a^b f + \int_b^c f$</li>
+                        <li><strong>Positivité</strong> : Si $f \geq 0$ alors $\int_a^b f \geq 0$</li>
+                    </ul>
+
+                    <div class="property-box">
+                        <h5>📖 Intégration par parties</h5>
+                        <p>$$\int u \, dv = uv - \int v \, du$$</p>
+                    </div>
+
+                    <h4>Applications</h4>
+                    <ul>
+                        <li><strong>Aire</strong> : $A = \int_a^b |f(x)| \, dx$</li>
+                        <li><strong>Valeur moyenne</strong> : $\mu = \dfrac{1}{b-a} \int_a^b f(x) \, dx$</li>
+                    </ul>
+                </div>
+
+                <!-- Chapitre 13 : Équations Différentielles -->
+                <div id="analyse13" class="chapter">
+                    <h3><span class="chapter-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">13</span> Équations Différentielles</h3>
+
+                    <h4>Équation $y' = ay$</h4>
+                    <div class="property-box">
+                        <h5>📖 Solution générale</h5>
+                        <p>$$y = Ce^{ax} \quad (C \in \mathbb{R})$$</p>
+                        <p>Avec $y(x_0) = y_0$ : $y = y_0 e^{a(x-x_0)}$</p>
+                    </div>
+
+                    <h4>Équation $y'' + ay' + by = 0$</h4>
+                    <div class="property-box">
+                        <h5>📖 Équation caractéristique</h5>
+                        <p>$$r^2 + ar + b = 0 \quad ; \quad \Delta = a^2 - 4b$$</p>
+                    </div>
+
+                    <table class="formula-table">
+                        <thead>
+                            <tr><th>Cas</th><th>Solutions</th><th>Solution générale</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>$\Delta > 0$</td><td>$r_1, r_2 \in \mathbb{R}$</td><td>$y = Ae^{r_1 x} + Be^{r_2 x}$</td></tr>
+                            <tr><td>$\Delta = 0$</td><td>$r$ double</td><td>$y = (Ax + B)e^{rx}$</td></tr>
+                            <tr><td>$\Delta < 0$</td><td>$\alpha \pm i\beta$</td><td>$y = e^{\alpha x}(A\cos\beta x + B\sin\beta x)$</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="important-box">
+                        <h5>💡 Cas $\Delta < 0$</h5>
+                        <p>$$\alpha = -\frac{a}{2} \quad ; \quad \beta = \frac{\sqrt{4b-a^2}}{2}$$</p>
+                    </div>
+
+                    <h4>Exemple : Oscillateur harmonique</h4>
+                    <p>$$y'' + \omega^2 y = 0 \Rightarrow y = A\cos(\omega x) + B\sin(\omega x)$$</p>
+                </div>
+            </section>
+
+            <!-- Trigonométrie -->
+            <section id="trigonometrie" class="part">
+                <div class="part-header">
+                    <div class="part-num">△</div>
+                    <h2>TRIGONOMÉTRIE</h2>
+                </div>
+
+                <div class="property-box">
+                    <h5>📖 Identités fondamentales</h5>
+                    <ul>
+                        <li>$\sin^2 x + \cos^2 x = 1$</li>
+                        <li>$1 + \tan^2 x = \dfrac{1}{\cos^2 x}$</li>
+                    </ul>
+                </div>
+
+                <h4>Formules d'addition</h4>
+                <ul>
+                    <li>$\sin(a \pm b) = \sin a \cos b \pm \cos a \sin b$</li>
+                    <li>$\cos(a \pm b) = \cos a \cos b \mp \sin a \sin b$</li>
+                    <li>$\tan(a \pm b) = \dfrac{\tan a \pm \tan b}{1 \mp \tan a \tan b}$</li>
+                </ul>
+
+                <h4>Formules de duplication</h4>
+                <ul>
+                    <li>$\sin(2a) = 2\sin a \cos a$</li>
+                    <li>$\cos(2a) = \cos^2 a - \sin^2 a = 2\cos^2 a - 1 = 1 - 2\sin^2 a$</li>
+                </ul>
+
+                <h4>Linéarisation</h4>
+                <ul>
+                    <li>$\cos^2 x = \dfrac{1 + \cos 2x}{2}$</li>
+                    <li>$\sin^2 x = \dfrac{1 - \cos 2x}{2}$</li>
+                    <li>$\sin x \cos x = \dfrac{\sin 2x}{2}$</li>
+                </ul>
+
+                <div class="important-box">
+                    <h5>💡 Limites trigonométriques</h5>
+                    <p>$$\lim_{x \to 0} \frac{\sin x}{x} = 1 \quad ; \quad \lim_{x \to 0} \frac{\tan x}{x} = 1$$</p>
+                </div>
+            </section>
+
+            <!-- Probabilités -->
+            <section id="probabilites" class="part">
+                <div class="part-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="part-num" style="background: linear-gradient(135deg, #f093fb, #f5576c);">P</div>
+                    <h2>PROBABILITÉS</h2>
+                </div>
+
+                <h4>Dénombrement</h4>
+                <ul>
+                    <li><strong>Arrangements</strong> : $A_n^p = \dfrac{n!}{(n-p)!}$</li>
+                    <li><strong>Combinaisons</strong> : $\binom{n}{p} = \dfrac{n!}{p!(n-p)!}$</li>
+                </ul>
+
+                <div class="property-box">
+                    <h5>📖 Propriétés des combinaisons</h5>
+                    <ul>
+                        <li>$\binom{n}{p} = \binom{n}{n-p}$</li>
+                        <li>$\binom{n}{0} = \binom{n}{n} = 1$</li>
+                        <li>$\binom{n}{p} + \binom{n}{p+1} = \binom{n+1}{p+1}$ (Triangle de Pascal)</li>
+                        <li>$(a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^k b^{n-k}$</li>
+                    </ul>
+                </div>
+
+                <h4>Probabilités</h4>
+                <ul>
+                    <li>$P(A \cup B) = P(A) + P(B) - P(A \cap B)$</li>
+                    <li>$P(\bar{A}) = 1 - P(A)$</li>
+                    <li>$P(A \cap B) = P(A) \times P(B)$ si $A$ et $B$ indépendants</li>
+                </ul>
+
+                <h4>Variable aléatoire</h4>
+                <ul>
+                    <li><strong>Espérance</strong> : $E(X) = \sum x_i p_i$</li>
+                    <li><strong>Variance</strong> : $V(X) = E(X^2) - [E(X)]^2$</li>
+                    <li><strong>Écart-type</strong> : $\sigma(X) = \sqrt{V(X)}$</li>
+                </ul>
+            </section>
+
+            <!-- Résumé Final -->
+            <section id="formules-essentielles" class="part">
+                <div class="summary-box">
+                    <h3>⭐ FORMULES ESSENTIELLES</h3>
+
+                    <h4>Dérivées fondamentales</h4>
+                    <ol>
+                        <li>$(x^n)' = nx^{n-1}$</li>
+                        <li>$(\sin x)' = \cos x$</li>
+                        <li>$(\cos x)' = -\sin x$</li>
+                        <li>$(e^x)' = e^x$</li>
+                        <li>$(\ln x)' = \dfrac{1}{x}$</li>
+                    </ol>
+
+                    <h4>Primitives fondamentales</h4>
+                    <ol>
+                        <li>$\int x^n \, dx = \dfrac{x^{n+1}}{n+1} + C$ ($n \neq -1$)</li>
+                        <li>$\int \dfrac{1}{x} \, dx = \ln|x| + C$</li>
+                        <li>$\int e^x \, dx = e^x + C$</li>
+                        <li>$\int \sin x \, dx = -\cos x + C$</li>
+                        <li>$\int \cos x \, dx = \sin x + C$</li>
+                    </ol>
+
+                    <h4>Limites fondamentales</h4>
+                    <ol>
+                        <li>$\lim_{x \to 0} \dfrac{\sin x}{x} = 1$</li>
+                        <li>$\lim_{x \to 0} \dfrac{e^x - 1}{x} = 1$</li>
+                        <li>$\lim_{x \to 0} \dfrac{\ln(1+x)}{x} = 1$</li>
+                        <li>$\lim_{n \to \infty} \left(1 + \dfrac{1}{n}\right)^n = e$</li>
+                    </ol>
+
+                    <h4>Nombres Complexes</h4>
+                    <ol>
+                        <li>$z = a + bi = r(\cos \theta + i \sin \theta)$</li>
+                        <li>$(\cos \theta + i \sin \theta)^n = \cos(n\theta) + i \sin(n\theta)$</li>
+                        <li>$\cos \theta = \dfrac{e^{i\theta} + e^{-i\theta}}{2}$, $\sin \theta = \dfrac{e^{i\theta} - e^{-i\theta}}{2i}$</li>
+                    </ol>
+
+                    <h4>Coniques</h4>
+                    <ol>
+                        <li><strong>Parabole</strong> : $y^2 = 2px$, $e = 1$</li>
+                        <li><strong>Ellipse</strong> : $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$, $e < 1$, $MF + MF' = 2a$</li>
+                        <li><strong>Hyperbole</strong> : $\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$, $e > 1$, $|MF - MF'| = 2a$</li>
+                    </ol>
+
+                    <h4>Identités trigonométriques</h4>
+                    <ol>
+                        <li>$\sin^2 x + \cos^2 x = 1$</li>
+                        <li>$\sin(a + b) = \sin a \cos b + \cos a \sin b$</li>
+                        <li>$\cos(a + b) = \cos a \cos b - \sin a \sin b$</li>
+                        <li>$\cos(2a) = 2\cos^2 a - 1$</li>
+                    </ol>
+
+                    <h4>Équations différentielles</h4>
+                    <ol>
+                        <li>$y' = ay \Rightarrow y = Ce^{ax}$</li>
+                        <li>$y'' + ay' + by = 0 \Rightarrow$ selon $\Delta = a^2 - 4b$</li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>Fiche de Formules Complète - Terminale SM</strong></p>
+            <p style="margin-top: 10px; opacity: 0.8;">Mathématiques - Toutes parties du programme CIAM</p>
+            <p style="margin-top: 5px; opacity: 0.6;">Arithmétique • Géométrie • Analyse</p>
+        </footer>
+    </div>
+
+    <a href="#" class="back-to-top" title="Retour en haut">↑</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
