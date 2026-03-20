@@ -20,28 +20,127 @@
         {
           "id": "video_suites",
           "title": "Les Suites Numériques",
-          "subtitle": "Arithmétiques et géométriques",
-          "thumbnail": "https://img.youtube.com/vi/bQ-eS1zZCdw/hqdefault.jpg",
-          "url": "https://youtu.be/bQ-eS1zZCdw",
-          "duration": "18:32",
+          "subtitle": "Arithmétiques et géométriques - Terminus",
+          "thumbnail": "https://img.youtube.com/vi/MJv7_pkFcdA/hqdefault.jpg",
+          "url": "https://youtu.be/MJv7_pkFcdA",
+          "duration": "15:42",
           "chapter": "Analyse"
         },
         {
           "id": "video_derivees",
           "title": "La Dérivation",
-          "subtitle": "Règles et applications",
-          "thumbnail": "https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg",
-          "url": "https://youtu.be/YOUTUBE_ID",
-          "duration": "22:10",
+          "subtitle": "Règles et applications - Cours complet",
+          "thumbnail": "https://img.youtube.com/vi/sXImbSSeRiE/hqdefault.jpg",
+          "url": "https://youtu.be/sXImbSSeRiE",
+          "duration": "28:15",
           "chapter": "Analyse"
         },
         {
           "id": "video_integrales",
-          "title": "L'Intégration",
-          "subtitle": "Primitives et intégrales définies",
-          "thumbnail": "https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg",
-          "url": "https://youtu.be/YOUTUBE_ID",
-          "duration": "25:44",
+          "title": "Primitives et Intégrales",
+          "subtitle": "Cours complet en 37 minutes",
+          "thumbnail": "https://img.youtube.com/vi/ENjGUb-ZGtg/hqdefault.jpg",
+          "url": "https://youtu.be/ENjGUb-ZGtg",
+          "duration": "37:24",
+          "chapter": "Analyse"
+        },
+        {
+          "id": "video_complexes",
+          "title": "Nombres Complexes",
+          "subtitle": "Formes algébrique et trigonométrique",
+          "thumbnail": "https://img.youtube.com/vi/ABo2m52oEYw/hqdefault.jpg",
+          "url": "https://youtu.be/ABo2m52oEYw",
+          "duration": "22:33",
+          "chapter": "Géométrie"
+        },
+        {
+          "id": "video_proba",
+          "title": "Dénombrement et Probabilités",
+          "subtitle": "Combinaisons et arrangements",
+          "thumbnail": "https://img.youtube.com/vi/9M28OHsVMao/hqdefault.jpg",
+          "url": "https://youtu.be/9M28OHsVMao",
+          "duration": "18:45",
+          "chapter": "Probabilités"
+        },
+        {
+          "id": "video_barrycentre",
+          "title": "Barycentre et Produit Vectoriel",
+          "subtitle": "Géométrie dans l'espace",
+          "thumbnail": "https://img.youtube.com/vi/zJlbhuITH-I/hqdefault.jpg",
+          "url": "https://youtu.be/zJlbhuITH-I",
+          "duration": "20:18",
+          "chapter": "Géométrie"
+        },
+        {
+          "id": "video_logarithme",
+          "title": "Fonction Logarithme Népérien",
+          "subtitle": "Propriétés et équations",
+          "thumbnail": "https://img.youtube.com/vi/5vZqyLS9-cA/hqdefault.jpg",
+          "url": "https://youtu.be/5vZqyLS9-cA",
+          "duration": "25:30",
+          "chapter": "Analyse"
+        },
+        {
+          "id": "video_exponentielle",
+          "title": "Fonction Exponentielle",
+          "subtitle": "Propriétés et études de fonctions",
+          "thumbnail": "https://img.youtube.com/vi/_tHyW2r3zr4/hqdefault.jpg",
+          "url": "https://youtu.be/_tHyW2r3zr4",
+          "duration": "23:12",
+          "chapter": "Analyse"
+        },
+        {
+          "id": "video_coniques",
+          "title": "Les Coniques",
+          "subtitle": "Ellipse, hyperbole, parabole",
+          "thumbnail": "https://img.youtube.com/vi/0JChohwl0FA/hqdefault.jpg",
+          "url": "https://youtu.be/0JChohwl0FA",
+          "duration": "19:55",
+          "chapter": "Géométrie"
+        },
+        {
+          "id": "video_equations_diff",
+          "title": "Équations Différentielles",
+          "subtitle": "Résolution de y' = ay et y'' + ay' + by = 0",
+          "thumbnail": "https://img.youtube.com/vi/bQ-eS1zZCdw/hqdefault.jpg",
+          "url": "https://youtu.be/bQ-eS1zZCdw",
+          "duration": "21:40",
+          "chapter": "Analyse"
+        },
+        {
+          "id": "video_limites",
+          "title": "Limites et Continuité",
+          "subtitle": "Théorème des valeurs intermédiaires",
+          "thumbnail": "https://img.youtube.com/vi/zclZEPmFB64/hqdefault.jpg",
+          "url": "https://youtu.be/zclZEPmFB64",
+          "duration": "17:28",
+          "chapter": "Analyse"
+        },
+        {
+          "id": "video_denombrement",
+          "title": "Dénombrement",
+          "subtitle": "Arrangements, permutations, combinaisons",
+          "thumbnail": "https://img.youtube.com/vi/9aeTIhYMDnk/hqdefault.jpg",
+          "url": "https://youtu.be/9aeTIhYMDnk",
+          "duration": "16:33",
+          "chapter": "Probabilités"
+        },
+        {
+          "id": "video_arithmetique",
+          "title": "Arithmétique",
+          "subtitle": "PGCD, PPCM, nombres premiers",
+          "thumbnail": "https://img.youtube.com/vi/bU602m6oGfk/hqdefault.jpg",
+          "url": "https://youtu.be/bU602m6oGfk",
+          "duration": "14:22",
+          "chapter": "Arithmétique"
+        },
+        {
+          "id": "video_trigonometrie",
+          "title": "Trigonométrie",
+          "subtitle": "Formules d'addition et de duplication",
+          "thumbnail": "https://img.youtube.com/vi/hf2iC0aSVeQ/hqdefault.jpg",
+          "url": "https://youtu.be/hf2iC0aSVeQ",
+          "duration": "20:15",
           "chapter": "Analyse"
         }
       ]
