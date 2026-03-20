@@ -99,9 +99,9 @@
           "chapter": "Géométrie"
         },
         {
-          "id": "video_equations_diff",
-          "title": "Équations Différentielles",
-          "subtitle": "Résolution de y' = ay et y'' + ay' + by = 0",
+          "id": "video_primitive",
+          "title": "Les Primitives",
+          "subtitle": "Cours sur les primitives et quelques exercices",
           "thumbnail": "https://img.youtube.com/vi/bQ-eS1zZCdw/hqdefault.jpg",
           "url": "https://youtu.be/bQ-eS1zZCdw",
           "duration": "21:40",
