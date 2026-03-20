@@ -1,318 +1,322 @@
 {
   "mathematiques": {
-    "systemPrompt": "Tu es un professeur de mathématiques certifié, expert en analyse, géométrie, algèbre et probabilités pour le programme de Terminale SM. Ta mission est d'expliquer les concepts mathématiques de manière claire et pédagogique. Utilise des exemples concrets et des analogies pour faciliter la compréhension. Sois précis dans tes explications mais accessible. Réponds toujours en français.",
+    "systemPrompt": "Tu es un professeur de mathematiques certifie, expert en analyse, geometrie, algebre et probabilites pour le programme de Terminale SM. Ta mission est d'expliquer les concepts mathematiques de maniere claire et pedagogique. Utilise des exemples concrets et des analogies pour faciliter la comprehension. Sois precis dans tes explications mais accessible. Reponds toujours en francais.",
     "formulas": [
       {
         "name": "PGCD et PPCM",
         "latex": "\\text{PGCD}(a,b) \\times \\text{PPCM}(a,b) = |a \\times b|",
-        "explainPrompt": "Explique la relation entre PGCD et PPCM : 1) Définitions du PGCD (plus grand diviseur commun) et du PPCM (plus petit multiple commun), 2) La formule fondamentale PGCD × PPCM = |a × b|, 3) Comment calculer le PGCD avec l'algorithme d'Euclide, 4) Exemples pratiques avec des nombres comme 12 et 18, 5) Quand utiliser le PGCD versus le PPCM dans les problèmes.",
-        "exercisePrompt": "Crée 3 exercices.progressifs sur PGCD et PPCM : 1) Exercice facile : calculer le PGCD de 24 et 36 par Euclide, 2) Exercice moyen : utiliser la formule PGCD × PPCM pour trouver le PPCM sachant le PGCD, 3) Exercice difficile : problème appliqué impliquant la synchronisation d'événements périodiques. Inclut les solutions détaillées étape par étape."
+        "explainPrompt": "Explique la relation entre PGCD et PPCM : 1) Definitions du PGCD (plus grand diviseur commun) et du PPCM (plus petit multiple commun), 2) La formule fondamentale PGCD x PPCM = |a x b|, 3) Comment calculer le PGCD avec l'algorithme d'Euclide, 4) Exemples pratiques avec des nombres comme 12 et 18, 5) Quand utiliser le PGCD versus le PPCM dans les problemes.",
+        "exercisePrompt": "Cree 3 exercices progressifs sur PGCD et PPCM : 1) Exercice facile : calculer le PGCD de 24 et 36 par Euclide, 2) Exercice moyen : utiliser la formule PGCD x PPCM pour trouver le PPCM sachant le PGCD, 3) Exercice difficile : probleme applique impliquant la synchronisation d'evenements periodiques. Inclut les solutions detaillees etape par etape."
       },
       {
-        "name": "Divisibilité dans Z",
+        "name": "Divisibilite dans Z",
         "latex": "a | b \\Leftrightarrow \\exists k \\in \\mathbb{Z} : b = ka",
-        "explainPrompt": "Explique la divisibilité dans l'ensemble des entiers relatifs : 1) Définition formelle de a divise b, 2) Notation et lecture mathématique, 3) Propriétés fundamentales : réflexivité, transitivité, compatibilité avec les opérations, 4) Exemples concrets de divisibilité, 5) Lien avec les notions de multiple et de diviseur.",
-        "exercisePrompt": "Génère 3 exercices sur la divisibilité : 1) Démontrer que si a|b et a|c alors a|(b+c), 2) Trouver tous les diviseurs de 60, 3) Démontrer que le carré d'un entier impair est impair. Solutions avec démonstrations détaillées."
+        "explainPrompt": "Explique la divisibilite dans l'ensemble des entiers relatifs : 1) Definition formelle de a divise b, 2) Notation et lecture mathematique, 3) Proprietes fondamentales : reflexivite, transitivite, compatibilite avec les operations, 4) Exemples concrets de divisibilite, 5) Lien avec les notions de multiple et de diviseur.",
+        "exercisePrompt": "Genere 3 exercices sur la divisibilite : 1) Demontrer que si a|b et a|c alors a|(b+c), 2) Trouver tous les diviseurs de 60, 3) Demontrer que le carre d'un entier impair est impair. Solutions avec demonstrations detaillees."
       },
       {
         "name": "Nombres premiers",
         "latex": "n = p_1^{\\alpha_1} \\times p_2^{\\alpha_2} \\times \\cdots \\times p_k^{\\alpha_k}",
-        "explainPrompt": "Explique la décomposition en facteurs premiers : 1) Définition d'un nombre premier, 2) Théorème fondamental de l'arithmétique (tout entier > 1 se décompose de manière unique), 3) Comment effectuer la décomposition en facteurs premiers, 4) Applications : simplification de fractions, calcul de PGCD/PPCM, 5) Exemples détaillés de décomposition.",
-        "exercisePrompt": "Crée 3 exercices sur les nombres premiers : 1) Décomposer 126 en facteurs premiers, 2) Utiliser la décomposition pour simplifier la fraction 156/84, 3) Montrer que deux nombres sont premiers entre eux grâce à leurs décompositions. Solutions complètes."
+        "explainPrompt": "Explique la decomposition en facteurs premiers : 1) Definition d'un nombre premier, 2) Theoreme fondamental de l'arithmetique (tout entier > 1 se decompose de maniere unique), 3) Comment effectuer la decomposition en facteurs premiers, 4) Applications : simplification de fractions, calcul de PGCD/PPCM, 5) Exemples detaillees de decomposition.",
+        "exercisePrompt": "Cree 3 exercices sur les nombres premiers : 1) Decomposer 126 en facteurs premiers, 2) Utiliser la decomposition pour simplifier la fraction 156/84, 3) Montrer que deux nombres sont premiers entre eux grace a leurs decompositions. Solutions completes."
       },
       {
-        "name": "Suite arithmétique",
+        "name": "Suite arithmetique",
         "latex": "u_n = u_0 + nr \\quad \\text{ou} \\quad u_n = u_p + (n-p)r",
-        "explainPrompt": "Explique les suites arithmétiques en détail : 1) Définition avec la raison r, 2) Relation de récurrence u_{n+1} = u_n + r, 3) Formule du terme général u_n = u_0 + nr, 4) Formule de la somme des n+1 premiers termes, 5) Exemples concrets :想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到想到了解 suite géométrique",
+        "explainPrompt": "Explique les suites arithmetiques en detail : 1) Definition avec la raison r, 2) Relation de recurrence u_{n+1} = u_n + r, 3) Formule du terme general u_n = u_0 + nr, 4) Formule de la somme des n+1 premiers termes, 5) Exemples concrets de la vie courante.",
+        "exercisePrompt": "Cree 3 exercices sur les suites arithmetiques : 1) Calculer le 10eme terme d'une suite de premier terme 3 et de raison 5, 2) Calculer la somme des 20 premiers termes, 3) Un athlete s'entraine en courant 1km le premier jour et augmente de 200m chaque jour. Quelle distance aura-t-il courue apres 30 jours? Solutions detaillees."
+      },
+      {
+        "name": "Suite geometrique",
         "latex": "u_n = u_0 \\times q^n \\quad \\text{et} \\quad S_n = u_0 \\frac{1-q^{n+1}}{1-q} \\ (q \\neq 1)",
-        "explainPrompt": "Explique les suites géométriques en détail : 1) Définition avec la raison q, 2) Relation de récurrence u_{n+1} = q × u_n, 3) Formule du terme général u_n = u_0 × q^n, 4) Formule de la somme des n+1 premiers termes (cas q ≠ 1), 5) Lien avec les intérêts composés et la croissance exponentielle, 6) Exemples concrets : placement financier, décroissance radioactive.",
-        "exercisePrompt": "Crée 3 exercices sur les suites géométriques : 1) Calculer le 10ème terme d'une suite de premier terme 2 et de raison 3, 2) Calculer la somme des 20 premiers termes d'une suite géométrique, 3) Problème appliqué : un capital de 1000€ placé à 5% par an, trouver le montant après 10 ans. Solutions détaillées."
+        "explainPrompt": "Explique les suites geometriques en detail : 1) Definition avec la raison q, 2) Relation de recurrence u_{n+1} = q x u_n, 3) Formule du terme general u_n = u_0 x q^n, 4) Formule de la somme des n+1 premiers termes (cas q different de 1), 5) Lien avec les interets composes et la croissance exponentielle, 6) Exemples concrets : placement financier, decroissance radioactive.",
+        "exercisePrompt": "Cree 3 exercices sur les suites geometriques : 1) Calculer le 10eme terme d'une suite de premier terme 2 et de raison 3, 2) Calculer la somme des 20 premiers termes d'une suite geometrique, 3) Un capital de 1000 euros place a 5% par an, trouver le montant apres 10 ans. Solutions detaillees."
       },
       {
         "name": "Limites de suites",
         "latex": "\\lim_{n \\to \\infty} q^n = \\begin{cases} 0 & \\text{si } |q| < 1 \\\\ +\infty & \\text{si } q > 1 \\\\ 1 & \\text{si } q = 1 \\end{cases}",
-        "explainPrompt": "Explique les limites de suites géométriques et autres suites importantes : 1) Limite de q^n selon les valeurs de q, 2) Cas où q = -1 et q < -1 (pas de limite), 3) Limite de 1/n^α quand n → ∞, 4) Théorème d'encadrement (gendarmes), 5) Suite monotone bornée converge, 6) Exemples concrets de convergence.",
-        "exercisePrompt": "Génère 3 exercices sur les limites : 1) Déterminer la limite de (0.5)^n quand n → ∞, 2) Montrer que la suite u_n = n/(n+1) converge et trouver sa limite, 3) Utiliser le théorème des gendarmes pour lim sin(n)/√n. Solutions complètes."
+        "explainPrompt": "Explique les limites de suites geometriques et autres suites importantes : 1) Limite de q^n selon les valeurs de q, 2) Cas ou q = -1 et q < -1 (pas de limite), 3) Limite de 1/n^alpha quand n tend vers l'infini, 4) Theoreme d'encadrement (gendarmes), 5) Suite monotone bornee converge, 6) Exemples concrets de convergence.",
+        "exercisePrompt": "Genere 3 exercices sur les limites : 1) Determiner la limite de (0.5)^n quand n tend vers l'infini, 2) Montrer que la suite u_n = n/(n+1) converge et trouver sa limite, 3) Utiliser le theoreme des gendarmes pour limiter sin(n)/racine(n). Solutions completes."
       },
       {
-        "name": "Dérivée de x^n",
+        "name": "Derivee de x^n",
         "latex": "(x^n)' = nx^{n-1} \\quad \\text{pour } n \\in \\mathbb{N}^*",
-        "explainPrompt": "Explique la formule de dérivation des puissances : 1) Règle générale de dérivation des puisses entières positives, 2) Démonstration pour n = 2, n = 3, 3) Cas des puissances négatives : (x^{-n})' = -nx^{-n-1}, 4) Interprétation géométrique : coefficient directeur de la tangente, 5) Exemples : dérivée de x^5, x^{-2}, x^{1/2}.",
-        "exercisePrompt": "Crée 3 exercices de difficulté progressive : 1) Calculer la dérivée de x^3, x^4, x^10, 2) Dériver x^{-3} et x^{-1}, 3) Dériver des fonctions composées comme (x^2 + 1)^5. Solutions avec étapes détaillées."
+        "explainPrompt": "Explique la formule de derivation des puissances : 1) Regle generale de derivation des puissances entieres positives, 2) Demonstration pour n = 2, n = 3, 3) Cas des puissances negatives : (x^{-n})' = -nx^{-n-1}, 4) Interpretation geometrique : coefficient directeur de la tangente, 5) Exemples : derivee de x^5, x^{-2}, x^{1/2}.",
+        "exercisePrompt": "Cree 3 exercices de difficulte progressive : 1) Calculer la derivee de x^3, x^4, x^10, 2) Deriver x^{-3} et x^{-1}, 3) Deriver des fonctions composees comme (x^2 + 1)^5. Solutions avec etapes detaillees."
       },
       {
-        "name": "Dérivée de ln(x)",
+        "name": "Derivee de ln(x)",
         "latex": "(\\ln x)' = \\frac{1}{x} \\quad \\text{pour } x > 0",
-        "explainPrompt": "Explique la dérivée du logarithme népérien : 1) Définition de ln x comme primitive de 1/t, 2) Démonstration que (ln x)' = 1/x, 3) Domaine de définition et dérivabilité, 4) Dérivée de ln|u| : (ln|u|)' = u'/u, 5) Applications : dérivation de ln(x^2 + 1), 6) Lien avec la fonction exponentielle.",
-        "exercisePrompt": "Génère 3 exercices sur la dérivée de ln : 1) Dériver ln(x) et ln(2x), 2) Dériver ln(x^2 + 3x + 1), 3) Dériver x·ln(x) et (ln x)^2. Solutions détaillées avec utilisation de la règle de composition."
+        "explainPrompt": "Explique la derivee du logarithme neperien : 1) Definition de ln x comme primitive de 1/t, 2) Demonstration que (ln x)' = 1/x, 3) Domaine de definition et derivabilite, 4) Derivee de ln|u| : (ln|u|)' = u'/u, 5) Applications : derivation de ln(x^2 + 1), 6) Lien avec la fonction exponentielle.",
+        "exercisePrompt": "Genere 3 exercices sur la derivee de ln : 1) Deriver ln(x) et ln(2x), 2) Deriver ln(x^2 + 3x + 1), 3) Deriver x·ln(x) et (ln x)^2. Solutions detaillees avec utilisation de la regle de composition."
       },
       {
-        "name": "Dérivée de e^x",
+        "name": "Derivee de e^x",
         "latex": "(e^x)' = e^x",
-        "explainPrompt": "Explique l'extraordinaire propriété de l'exponentielle : 1) Définition de e comme limite de (1 + 1/n)^n, 2) Pourquoi (e^x)' = e^x (égale à sa propre dérivée), 3) Démonstration intuitive du comportement, 4) Comparaison avec les autres bases : (a^x)' = a^x ln(a), 5) Importance en modélisation (croissance exponentielle), 6) Tangente en x=0 : y = x + 1.",
-        "exercisePrompt": "Crée 3 exercices sur la dérivée de e^x : 1) Dériver e^x, e^{2x}, e^{-x}, 2) Dériver e^{x^2} et e^{\sin x}, 3) Trouver l'équation de la tangente à y = e^x en x = 0. Solutions complètes."
+        "explainPrompt": "Explique l'extraordinaire propriete de l'exponentielle : 1) Definition de e comme limite de (1 + 1/n)^n, 2) Pourquoi (e^x)' = e^x (egale a sa propre derivee), 3) Demonstration intuitive du comportement, 4) Comparaison avec les autres bases : (a^x)' = a^x ln(a), 5) Importance en modelisation (croissance exponentielle), 6) Tangente en x=0 : y = x + 1.",
+        "exercisePrompt": "Cree 3 exercices sur la derivee de e^x : 1) Deriver e^x, e^{2x}, e^{-x}, 2) Deriver e^{x^2} et e^{\\sin x}, 3) Trouver l'equation de la tangente a y = e^x en x = 0. Solutions completes."
       },
       {
-        "name": "Règles de dérivation",
+        "name": "Regles de derivation",
         "latex": "(u+v)' = u'+v' \\quad ; \\quad (u \\cdot v)' = u'v + uv' \\quad ; \\quad \\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}",
-        "explainPrompt": "Explique les règles opérationnelles de dérivation : 1) Dérivée d'une somme (linéarité), 2) Dérivée d'un produit (formule de Leibniz), 3) Dérivée d'un quotient avec démonstration, 4) Quand utiliser chaque formule, 5) Exemples : dériver x^2·sin x, (x+1)/(x-1), 6) Cas particulier : dérivée de 1/u = -u'/u^2.",
-        "exercisePrompt": "Génère 3 exercices sur les règles de dérivation : 1) Dériver (x^2 + 1)(x^3 - 2), 2) Dériver (2x+1)/(x^2+1), 3) Dériver x^2·e^x et e^x/x. Solutions détaillées avec application des formules."
+        "explainPrompt": "Explique les regles operationnelles de derivation : 1) Derivee d'une somme (linearite), 2) Derivee d'un produit (formule de Leibniz), 3) Derivee d'un quotient avec demonstration, 4) Quand utiliser chaque formule, 5) Exemples : deriver x^2·sin x, (x+1)/(x-1), 6) Cas particulier : derivee de 1/u = -u'/u^2.",
+        "exercisePrompt": "Genere 3 exercices sur les regles de derivation : 1) Deriver (x^2 + 1)(x^3 - 2), 2) Deriver (2x+1)/(x^2+1), 3) Deriver x^2·e^x et e^x/x. Solutions detaillees avec application des formules."
       },
       {
-        "name": "Théorème des Accroissements Finis (TAF)",
+        "name": "Theoreme des Accroissements Finis",
         "latex": "\\exists c \\in ]a,b[ : f(b) - f(a) = f'(c)(b - a)",
-        "explainPrompt": "Explique le Théorème des Accroissements Finis : 1) Conditions : f continue sur [a,b], dérivable sur ]a,b[, 2) Interprétation géométrique : il existe au moins une tangente parallèle à la corde AB, 3) Conséquences importantes : si f' = 0 alors f est constante, 4) Inégalité des accroissements finis, 5) Application : démonstration d'inégalités.",
-        "exercisePrompt": "Crée 3 exercices sur le TAF : 1) Appliquer le TAF à f(x) = x^2 sur [1,3], 2) Montrer que pour tout x > 0 : ln(1+x) < x, 3) Démontrer que si f'(x) > 0 alors f est strictement croissante. Solutions avec rigueur mathématique."
+        "explainPrompt": "Explique le Theoreme des Accroissements Finis : 1) Conditions : f continue sur [a,b], derivable sur ]a,b[, 2) Interpretation geometrique : il existe au moins une tangente parallele a la corde AB, 3) Consequences importantes : si f' = 0 alors f est constante, 4) Inegalite des accroissements finis, 5) Application : demonstration d'inegalites.",
+        "exercisePrompt": "Cree 3 exercices sur le TAF : 1) Appliquer le TAF a f(x) = x^2 sur [1,3], 2) Montrer que pour tout x > 0 : ln(1+x) < x, 3) Demontrer que si f'(x) > 0 alors f est strictement croissante. Solutions avec rigueur mathematique."
       },
       {
         "name": "Primitives de x^n",
         "latex": "\\int x^n \\, dx = \\frac{x^{n+1}}{n+1} + C \\quad (n \\neq -1)",
-        "explainPrompt": "Explique les primitives des fonctions puissances : 1) Relation primitive-dérivée, 2) Formule pour n ≠ -1 avec démonstration, 3) Cas particulier n = -1 : ∫1/x dx = ln|x| + C, 4) Exemples : primitives de x^2, x^3, √x, 5) Signification de la constante C, 6) Primitive passant par un point donné.",
-        "exercisePrompt": "Génère 3 exercices sur les primitives : 1) Trouver les primitives de x^3 et x^{1/2}, 2) Calculer ∫(x^2 + 2x + 1) dx, 3) Trouver la primitive F de f(x) = 1/x sachant F(1) = 0. Solutions détaillées."
+        "explainPrompt": "Explique les primitives des fonctions puissances : 1) Relation primitive-derivee, 2) Formule pour n different de -1 avec demonstration, 3) Cas particulier n = -1 : integrale de 1/x dx = ln|x| + C, 4) Exemples : primitives de x^2, x^3, racine(x), 5) Signification de la constante C, 6) Primitive passant par un point donne.",
+        "exercisePrompt": "Genere 3 exercices sur les primitives : 1) Trouver les primitives de x^3 et x^{1/2}, 2) Calculer integrale de (x^2 + 2x + 1) dx, 3) Trouver la primitive F de f(x) = 1/x sachant F(1) = 0. Solutions detaillees."
       },
       {
-        "name": "Intégration par parties",
+        "name": "Integration par parties",
         "latex": "\\int u \\, dv = uv - \\int v \\, du",
-        "explainPrompt": "Explique l'intégration par parties en détail : 1) Formule et méthode de choix de u et dv, 2) Règles mnémotechniques : 'LIATE' pour choisir u, 3) Exemples classiques : ∫x e^x dx, ∫ln x dx, 4) Intégration par parties répétée pour ∫x^2 e^x dx, 5) Cas des polynômes de degré élevé.",
-        "exercisePrompt": "Crée 3 exercices d'intégration par parties : 1) Calculer ∫x e^x dx, 2) Calculer ∫ln x dx, 3) Calculer ∫x^2 sin x dx. Solutions détaillées avec choix de u et dv justifiés."
+        "explainPrompt": "Explique l'integration par parties en detail : 1) Formule et methode de choix de u et dv, 2) Regles mnemotechniques : 'LIATE' pour choisir u, 3) Exemples classiques : integrale de x e^x dx, integrale de ln x dx, 4) Integration par parties repetee pour integrale de x^2 e^x dx, 5) Cas des polynomes de degre eleve.",
+        "exercisePrompt": "Cree 3 exercices d'integration par parties : 1) Calculer integrale de x e^x dx, 2) Calculer integrale de ln x dx, 3) Calculer integrale de x^2 sin x dx. Solutions detaillees avec choix de u et dv justifies."
       },
       {
-        "name": "Théorème Fondamental de l'Analyse",
-        "latex": "\\int_a^b f(x) \\, dx = F(b) - F(a) \\quad \\text{où } F' = f",
-        "explainPrompt": "Explique le lien entre primitive et intégrale : 1) Toute fonction continue admet des primitives, 2) Théorème fondamental : l'intégrale de a à b vaut F(b) - F(a), 3) Notation : [F(x)]_a^b = F(b) - F(a), 4) Propriétés : linéarité, relation de Chasles, positivité, 5) Application au calcul d'aires.",
-        "exercisePrompt": "Génère 3 exercices sur le théorème fondamental : 1) Calculer ∫_0^1 x^2 dx, 2) Calculer ∫_1^2 (1/x) dx, 3) Calculer l'aire entre la courbe y = x^2 et l'axe Ox de 0 à 2. Solutions avec interprétation géométrique."
+        "name": "Theoreme Fondamental de l'Analyse",
+        "latex": "\\int_a^b f(x) \\, dx = F(b) - F(a) \\quad \\text{ou } F' = f",
+        "explainPrompt": "Explique le lien entre primitive et integrale : 1) Toute fonction continue admet des primitives, 2) Theoreme fondamental : l'integrale de a a b vaut F(b) - F(a), 3) Notation : [F(x)]_a^b = F(b) - F(a), 4) Proprietes : linearite, relation de Chasles, positivite, 5) Application au calcul d'aires.",
+        "exercisePrompt": "Genere 3 exercices sur le theoreme fondamental : 1) Calculer integrale de 0 a 1 de x^2 dx, 2) Calculer integrale de 1 a 2 de (1/x) dx, 3) Calculer l'aire entre la courbe y = x^2 et l'axe Ox de 0 a 2. Solutions avec interpretation geometrique."
       },
       {
-        "name": "Logarithme népérien - Propriétés",
+        "name": "Logarithme neperien - Proprietes",
         "latex": "\\ln(ab) = \\ln a + \\ln b \\quad ; \\quad \\ln\\left(\\frac{a}{b}\\right) = \\ln a - \\ln b \\quad ; \\quad \\ln(a^n) = n\\ln a",
-        "explainPrompt": "Explique les propriétés du logarithme népérien : 1) Démonstration de ln(ab) = ln a + ln b, 2) Propriété du quotient et de la puissance, 3) ln(1) = 0, ln(e) = 1, 4) Changement de base : log_a x = ln x / ln a, 5) Limites importantes : lim ln x / x = 0, lim x ln x = 0 quand x → 0^+.",
-        "exercisePrompt": "Crée 3 exercices sur les propriétés du ln : 1) Simplifier ln(2) + ln(3) - ln(6), 2) Résoudre ln(x+1) - ln(x-1) = 1, 3) Calculer la limite de ln(1+x)/x quand x → 0. Solutions complètes."
+        "explainPrompt": "Explique les proprietes du logarithme neperien : 1) Demonstration de ln(ab) = ln a + ln b, 2) Propriete du quotient et de la puissance, 3) ln(1) = 0, ln(e) = 1, 4) Changement de base : log_a x = ln x / ln a, 5) Limites importantes : limite de ln x / x = 0, limite de x ln x = 0 quand x tend vers 0^+.",
+        "exercisePrompt": "Cree 3 exercices sur les proprietes du ln : 1) Simplifier ln(2) + ln(3) - ln(6), 2) Resoudre ln(x+1) - ln(x-1) = 1, 3) Calculer la limite de ln(1+x)/x quand x tend vers 0. Solutions completes."
       },
       {
-        "name": "Exponentielle - Propriétés",
+        "name": "Exponentielle - Proprietes",
         "latex": "e^{a+b} = e^a \\cdot e^b \\quad ; \\quad e^{a-b} = \\frac{e^a}{e^b} \\quad ; \\quad (e^a)^n = e^{na}",
-        "explainPrompt": "Explique les propriétés de la fonction exponentielle : 1) Propriété fondamentale : e^{a+b} = e^a e^b, 2) Démonstration à partir de la définition, 3) Limites remarquables : lim e^x/x = +∞, lim x e^x = 0 quand x → -∞, 4) Dérivée de e^{u(x)} = e^{u} u', 5) Forme générale : a^x = e^{x ln a}.",
-        "exercisePrompt": "Génère 3 exercices sur l'exponentielle : 1) Simplifier e^2 · e^3 / e^4, 2) Dériver e^{x^2} et e^{\\sqrt{x}}, 3) Résoudre e^{2x} - 3e^x + 2 = 0. Solutions détaillées."
+        "explainPrompt": "Explique les proprietes de la fonction exponentielle : 1) Propriete fondamentale : e^{a+b} = e^a e^b, 2) Demonstration a partir de la definition, 3) Limites remarquables : limite de e^x/x = +infini, limite de x e^x = 0 quand x tend vers -infini, 4) Derivee de e^{u(x)} = e^{u} u', 5) Forme generale : a^x = e^{x ln a}.",
+        "exercisePrompt": "Genere 3 exercices sur l'exponentielle : 1) Simplifier e^2 x e^3 / e^4, 2) Deriver e^{x^2} et e^{racine(x)}, 3) Resoudre e^{2x} - 3e^x + 2 = 0. Solutions detaillees."
       },
       {
         "name": "Formule d'Euler",
         "latex": "e^{i\\theta} = \\cos\\theta + i\\sin\\theta \\quad ; \\quad \\cos\\theta = \\frac{e^{i\\theta}+e^{-i\\theta}}{2} \\quad ; \\quad \\sin\\theta = \\frac{e^{i\\theta}-e^{-i\\theta}}{2i}",
-        "explainPrompt": "Explique les formules d'Euler et leur importance : 1) Définition de e^{iθ} via la série entière, 2) Démonstration que e^{iθ} = cos θ + i sin θ, 3) Formules pour cos θ et sin θ en fonction de e^{iθ}, 4) Applications : linéarisation de cos^2 x, 5) Lien avec la formule de Moivre, 6) Notation trigonométrique des nombres complexes.",
-        "exercisePrompt": "Crée 3 exercices sur les formules d'Euler : 1) Exprimer cos^3 x en fonction de cos 3x, 2) Démontrer que cos x = (e^{ix}+e^{-ix})/2, 3) Utiliser Euler pour calculer (1+i)^4. Solutions détaillées."
+        "explainPrompt": "Explique les formules d'Euler et leur importance : 1) Definition de e^{i theta} via la serie entiere, 2) Demonstration que e^{i theta} = cos theta + i sin theta, 3) Formules pour cos theta et sin theta en fonction de e^{i theta}, 4) Applications : linearisation de cos^2 x, 5) Lien avec la formule de Moivre, 6) Notation trigonometrique des nombres complexes.",
+        "exercisePrompt": "Cree 3 exercices sur les formules d'Euler : 1) Exprimer cos^3 x en fonction de cos 3x, 2) Demontrer que cos x = (e^{ix}+e^{-ix})/2, 3) Utiliser Euler pour calculer (1+i)^4. Solutions detaillees."
       },
       {
-        "name": "Nombres complexes - Forme algébrique",
+        "name": "Nombres complexes - Forme algebrique",
         "latex": "z = a + bi \\quad \\text{avec } a,b \\in \\mathbb{R} \\text{ et } i^2 = -1",
-        "explainPrompt": "Explique la structure des nombres complexes : 1) Définition de i par i^2 = -1, 2) Forme algébrique z = a + bi, 3) Partie réelle Re(z) = a, partie imaginaire Im(z) = b, 4) Opérations : addition, multiplication, conjugué, 5) Module : |z| = √(a^2 + b^2), 6) Inverse : 1/z = z̄/|z|^2.",
-        "exercisePrompt": "Génère 3 exercices sur les nombres complexes : 1) Calculer (1+2i)(3-i), 2) Trouver le conjugué et le module de z = 3+4i, 3) Résoudre z^2 + 1 = 0 dans ℂ. Solutions complètes."
+        "explainPrompt": "Explique la structure des nombres complexes : 1) Definition de i par i^2 = -1, 2) Forme algebrique z = a + bi, 3) Partie reelle Re(z) = a, partie imaginaire Im(z) = b, 4) Operations : addition, multiplication, conjugue, 5) Module : |z| = racine(a^2 + b^2), 6) Inverse : 1/z = zbar/|z|^2.",
+        "exercisePrompt": "Genere 3 exercices sur les nombres complexes : 1) Calculer (1+2i)(3-i), 2) Trouver le conjugue et le module de z = 3+4i, 3) Resoudre z^2 + 1 = 0 dans C. Solutions completes."
       },
       {
-        "name": "Nombres complexes - Forme trigonométrique",
+        "name": "Nombres complexes - Forme trigonometrique",
         "latex": "z = r(\\cos\\theta + i\\sin\\theta) = re^{i\\theta} \\quad \\text{avec } r = |z| \\text{ et } \\theta = \\arg(z)",
-        "explainPrompt": "Explique la forme trigonométrique des complexes : 1) Module r et argument θ, 2) Passage de la forme algébrique à trigonométrique, 3) Notation exponentielle re^{iθ}, 4) Propriétés des arguments : arg(z1z2) = arg(z1) + arg(z2), 5) Applications aux puissances : z^n = r^n e^{inθ}.",
-        "exercisePrompt": "Crée 3 exercices sur la forme trigonométrique : 1) Mettre z = 1+i sous forme trigonométrique, 2) Calculer (1+i)^10 en utilisant la forme trigonométrique, 3) Déterminer arg(z) pour z = √3 + i. Solutions détaillées."
+        "explainPrompt": "Explique la forme trigonometrique des complexes : 1) Module r et argument theta, 2) Passage de la forme algebrique a trigonometrique, 3) Notation exponentielle re^{i theta}, 4) Proprietes des arguments : arg(z1z2) = arg(z1) + arg(z2), 5) Applications aux puissances : z^n = r^n e^{in theta}.",
+        "exercisePrompt": "Cree 3 exercices sur la forme trigonometrique : 1) Mettre z = 1+i sous forme trigonometrique, 2) Calculer (1+i)^10 en utilisant la forme trigonometrique, 3) Determiner arg(z) pour z = racine(3) + i. Solutions detaillees."
       },
       {
         "name": "Formule de Moivre",
         "latex": "(\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta)",
-        "explainPrompt": "Explique la formule de Moivre et ses applications : 1) Énoncé et démonstration par récurrence, 2) Lien direct avec les formules d'Euler, 3) Applications : exprimer cos(nθ) et sin(nθ) en fonction de cos θ et sin θ, 4) Exemples : cos(3θ), sin(3θ), 5) Utilisation pour calculer des puissances comme (1+i)^20.",
-        "exercisePrompt": "Génère 3 exercices sur la formule de Moivre : 1) Exprimer cos(3θ) et sin(3θ) en fonction de cos θ et sin θ, 2) Calculer (cos(π/6) + i sin(π/6))^6, 3) Démontrer que cos(π/3) = 1/2 en utilisant Moivre. Solutions complètes."
+        "explainPrompt": "Explique la formule de Moivre et ses applications : 1) Enonce et demonstration par recurrence, 2) Lien direct avec les formules d'Euler, 3) Applications : exprimer cos(n theta) et sin(n theta) en fonction de cos theta et sin theta, 4) Exemples : cos(3 theta), sin(3 theta), 5) Utilisation pour calculer des puissances comme (1+i)^20.",
+        "exercisePrompt": "Genere 3 exercices sur la formule de Moivre : 1) Exprimer cos(3 theta) et sin(3 theta) en fonction de cos theta et sin theta, 2) Calculer (cos(pi/6) + i sin(pi/6))^6, 3) Demontrer que cos(pi/3) = 1/2 en utilisant Moivre. Solutions completes."
       },
       {
-        "name": "Racines n-ièmes",
+        "name": "Racines n-iemes",
         "latex": "z_k = r^{1/n} e^{i(\\theta+2k\\pi)/n} \\quad \\text{pour } k = 0, 1, \\ldots, n-1",
-        "explainPrompt": "Explique les racines n-ièmes d'un nombre complexe : 1) Définition : trouver z tel que z^n = w, 2) Nombre de racines : exactement n racines distinctes, 3) Formule générale pour les racines, 4) Cas particulier des racines n-ièmes de l'unité, 5) Représentation géométrique sur le cercle trigonométrique, 6) Exemples : racines cubiques de 1, racines carrées de i.",
-        "exercisePrompt": "Crée 3 exercices sur les racines n-ièmes : 1) Trouver les racines cubiques de 8, 2) Trouver les racines carrées de 1+i, 3) Représenter les racines 4-ièmes de l'unité sur un graphique. Solutions détaillées avec interprétation géométrique."
+        "explainPrompt": "Explique les racines n-iemes d'un nombre complexe : 1) Definition : trouver z tel que z^n = w, 2) Nombre de racines : exactement n racines distinctes, 3) Formule generale pour les racines, 4) Cas particulier des racines n-iemes de l'unite, 5) Representation geometrique sur le cercle trigonometrique, 6) Exemples : racines cubiques de 1, racines carrees de i.",
+        "exercisePrompt": "Cree 3 exercices sur les racines n-iemes : 1) Trouver les racines cubiques de 8, 2) Trouver les racines carrees de 1+i, 3) Representer les racines 4-iemes de l'unite sur un graphique. Solutions detaillees avec interpretation geometrique."
       },
       {
-        "name": "Identités trigonométriques",
+        "name": "Identites trigonometriques",
         "latex": "\\sin^2 x + \\cos^2 x = 1 \\quad ; \\quad \\sin(a+b) = \\sin a \\cos b + \\cos a \\sin b",
-        "explainPrompt": "Explique les identités trigonométriques fondamentales : 1) Relation pythagoricienne sin²x + cos²x = 1, 2) Formules d'addition pour sin(a+b) et cos(a+b), 3) Formules de duplication : cos(2a) = 2cos²a - 1, 4) Formules de linéarisation, 5) Exemples d'utilisation pour calculer sin(π/12), cos(π/8).",
-        "exercisePrompt": "Génère 3 exercices de trigonométrie : 1) Démontrer que sin(π/12) = (√6 - √2)/4, 2) Linéariser cos²x, 3) Simplifier sin(x)cos(x). Solutions détaillées avec formules utilisées."
+        "explainPrompt": "Explique les identites trigonometriques fondamentales : 1) Relation pythagoricienne sin^2 x + cos^2 x = 1, 2) Formules d'addition pour sin(a+b) et cos(a+b), 3) Formules de duplication : cos(2a) = 2cos^2 a - 1, 4) Formules de linearisation, 5) Exemples d'utilisation pour calculer sin(pi/12), cos(pi/8).",
+        "exercisePrompt": "Genere 3 exercices de trigonometrie : 1) Demontrer que sin(pi/12) = (racine(6) - racine(2))/4, 2) Lineariser cos^2 x, 3) Simplifier sin(x)cos(x). Solutions detaillees avec formules utilisees."
       },
       {
-        "name": "Équation différentielle y' = ay",
+        "name": "Equation differentielle y' = ay",
         "latex": "y = Ce^{ax} \\quad (C \\in \\mathbb{R}) \\quad \\text{et si } y(x_0) = y_0 \\Rightarrow y = y_0 e^{a(x-x_0)}",
-        "explainPrompt": "Explique la résolution des équations différentielles du premier ordre : 1) Forme générale y' = ay, 2) Solution générale y = Ce^{ax}, 3) Détermination de C avec condition initiale, 4) Interprétation : croissance (a>0) ou décroissance (a<0) exponentielle, 5) Applications : radioactivité, biologiques, électriques.",
-        "exercisePrompt": "Crée 3 exercices sur y' = ay : 1) Résoudre y' = 2y avec y(0) = 1, 2) Un échantillon radioactif décroît à 3% par an. Trouver la demi-vie, 3) Population de bacteria double chaque heure. Trouver la formule. Solutions complètes."
+        "explainPrompt": "Explique la resolution des equations differentielles du premier ordre : 1) Forme generale y' = ay, 2) Solution generale y = Ce^{ax}, 3) Determination de C avec condition initiale, 4) Interpretation : croissance (a>0) ou decroissance (a<0) exponentielle, 5) Applications : radioactivite, modeles biologiques, circuits electriques.",
+        "exercisePrompt": "Cree 3 exercices sur y' = ay : 1) Resoudre y' = 2y avec y(0) = 1, 2) Un echantillon radioactif decroit a 3% par an. Trouver la demi-vie, 3) Population de bacteries double chaque heure. Trouver la formule. Solutions completes."
       },
       {
-        "name": "Équation différentielle y'' + ay' + by = 0",
-        "latex": "r^2 + ar + b = 0 \\quad \\Delta = a^2 - 4b \\Rightarrow \\begin{cases} \\Delta > 0 : y = Ae^{r_1 x} + Be^{r_2 x} \\\\ \\Delta = 0 : y = (Ax+B)e^{rx} \\\\ \\Delta < 0 : y = e^{\\alpha x}(A\\cos\\beta x + B\\sin\\beta x) \\end{cases}",
-        "explainPrompt": "Explique la résolution des équations différentielles du second ordre : 1) Équation caractéristique r² + ar + b = 0, 2) Calcul du discriminant Δ, 3) Trois cas selon le signe de Δ, 4) Solutions pour Δ > 0 (racines réelles), Δ = 0 (racine double), Δ < 0 (racines complexes), 5) Cas de l'oscillateur harmonique : y'' + ω²y = 0.",
-        "exercisePrompt": "Génère 3 exercices sur les équations différentielles du second ordre : 1) Résoudre y'' - 3y' + 2y = 0, 2) Résoudre y'' + 4y = 0 avec y(0) = 1, y'(0) = 0, 3) Résoudre y'' + 2y' + 5y = 0. Solutions détaillées par cas."
+        "name": "Equation differentielle y'' + ay' + by = 0",
+        "latex": "r^2 + ar + b = 0 \\quad \\Delta = a^2 - 4b",
+        "explainPrompt": "Explique la resolution des equations differentielles du second ordre : 1) Equation caracteristique r^2 + ar + b = 0, 2) Calcul du discriminant delta, 3) Trois cas selon le signe de delta, 4) Solutions pour delta > 0 (racines reelles), delta = 0 (racine double), delta < 0 (racines complexes), 5) Cas de l'oscillateur harmonique : y'' + omega^2 y = 0.",
+        "exercisePrompt": "Genere 3 exercices sur les equations differentielles du second ordre : 1) Resoudre y'' - 3y' + 2y = 0, 2) Resoudre y'' + 4y = 0 avec y(0) = 1, y'(0) = 0, 3) Resoudre y'' + 2y' + 5y = 0. Solutions detaillees par cas."
       },
       {
         "name": "Barycentre",
-        "latex": "\\alpha_1 \\overrightarrow{GA_1} + \\alpha_2 \\overrightarrow{GA_2} + \\cdots + \\alpha_n \\overrightarrow{GA_n} = \\vec{0} \\quad \\text{avec } \\sum \\alpha_i \\neq 0",
-        "explainPrompt": "Explique le barycentre de points pondérés : 1) Définition avec les coefficients α_i, 2) Condition ∑α_i ≠ 0, 3) Coordonnées du barycentre dans un repère, 4) Propriétés : associativité, isobarycentre, 5) Application aux systèmes masses-points, 6) Exemples : barycentre de deux points, centre de gravité d'un triangle.",
-        "exercisePrompt": "Crée 3 exercices sur le barycentre : 1) Trouver le barycentre de A(1,2) et B(4,6) avec coefficients 2 et 3, 2) Montrer que le centre de gravité d'un triangle est le barycentre des sommets avec coefficients 1, 3) Barycentre de trois points A, B, C. Solutions détaillées."
+        "latex": "\\alpha_1 \\overrightarrow{GA_1} + \\alpha_2 \\overrightarrow{GA_2} + \\cdots + \\alpha_n \\overrightarrow{GA_n} = \\vec{0}",
+        "explainPrompt": "Explique le barycentre de points ponderes : 1) Definition avec les coefficients alpha_i, 2) Condition somme alpha_i different de 0, 3) Coordonnees du barycentre dans un repere, 4) Proprietes : associativite, isobarycentre, 5) Application aux systemes masses-points, 6) Exemples : barycentre de deux points, centre de gravite d'un triangle.",
+        "exercisePrompt": "Cree 3 exercices sur le barycentre : 1) Trouver le barycentre de A(1,2) et B(4,6) avec coefficients 2 et 3, 2) Montrer que le centre de gravite d'un triangle est le barycentre des sommets avec coefficients 1, 3) Barycentre de trois points A, B, C. Solutions detaillees."
       },
       {
         "name": "Produit vectoriel",
         "latex": "\\|\\overrightarrow{u \\wedge v}\\| = \\|\\overrightarrow{u}\\| \\cdot \\|\\overrightarrow{v}\\| \\cdot |\\sin(\\overrightarrow{u}, \\overrightarrow{v})|",
-        "explainPrompt": "Explique le produit vectoriel dans l'espace : 1) Définition et propriétés : orthogonal à u et v, 2) Règle du trièdre direct, 3) Norme = aire du parallélogramme, 4) Formules : antisymétrie, linéarité, 5) Double produit vectoriel, 6) Applications : calcul d'aires et de volumes.",
-        "exercisePrompt": "Génère 3 exercices sur le produit vectoriel : 1) Calculer l'aire du parallélogramme défini par AB et AC, 2) Montrer que le produit vectoriel est anticommutatif, 3) Calculer le volume du parallélépipède défini par trois vecteurs. Solutions détaillées."
+        "explainPrompt": "Explique le produit vectoriel dans l'espace : 1) Definition et proprietes : orthogonal a u et v, 2) Regle du triedre direct, 3) Norme = aire du parallelogramme, 4) Formules : antisymetrie, linearite, 5) Double produit vectoriel, 6) Applications : calcul d'aires et de volumes.",
+        "exercisePrompt": "Genere 3 exercices sur le produit vectoriel : 1) Calculer l'aire du parallelogramme defini par AB et AC, 2) Montrer que le produit vectoriel est anticommutatif, 3) Calculer le volume du parallelepipede defini par trois vecteurs. Solutions detaillees."
       },
       {
         "name": "Aire et Volume avec produit vectoriel",
-        "latex": "\\mathcal{A}_{\\parallelogramme} = \\|\\overrightarrow{AB} \\wedge \\overrightarrow{AC}\\| \\quad ; \\quad \\mathcal{V}_{\\parallel\\pi p\\pi p\\pi d} = |(\\overrightarrow{AB} \\wedge \\overrightarrow{AC}) \\cdot \\overrightarrow{AD}|",
-        "explainPrompt": "Explique les applications du produit vectoriel : 1) Aire du parallélogramme = norme du produit vectoriel, 2) Aire du triangle = demi de cette aire, 3) Volume du parallélépipède = valeur absolue du produit mixte, 4) Volume du tétraèdre = 1/6 de ce volume, 5) Exemples concrets de calcul dans l'espace.",
-        "exercisePrompt": "Crée 3 exercices sur les applications : 1) Calculer l'aire du triangle ABC avec A(1,0,0), B(0,1,0), C(0,0,1), 2) Calculer le volume du tétraèdre défini par ces mêmes points, 3) Trouver la distance du point D au plan (ABC). Solutions complètes."
+        "latex": "\\mathcal{A}_{\\parallelogramme} = \\|\\overrightarrow{AB} \\wedge \\overrightarrow{AC}\\|",
+        "explainPrompt": "Explique les applications du produit vectoriel : 1) Aire du parallelogramme = norme du produit vectoriel, 2) Aire du triangle = demi de cette aire, 3) Volume du parallelepipede = valeur absolue du produit mixte, 4) Volume du tetraedre = 1/6 de ce volume, 5) Exemples concrets de calcul dans l'espace.",
+        "exercisePrompt": "Cree 3 exercices sur les applications : 1) Calculer l'aire du triangle ABC avec A(1,0,0), B(0,1,0), C(0,0,1), 2) Calculer le volume du tetraedre defini par ces memes points, 3) Trouver la distance du point D au plan (ABC). Solutions completes."
       },
       {
-        "name": "Coniques - Définition",
-        "latex": "\\frac{MF}{d(M,\\Delta)} = e \\begin{cases} e < 1 : \\text{ellipse} \\\\ e = 1 : \\text{parabole} \\\\ e > 1 : \\text{hyperbole} \\end{cases}",
-        "explainPrompt": "Explique la définition unifiée des coniques : 1) Définition par foyer et directrice avec excentricité e, 2) Ellipse : e < 1, somme des distances aux foyers constante, 3) Parabole : e = 1, équidistance foyer-directrice, 4) Hyperbole : e > 1, différence des distances constante, 5) Équations réduites de chaque conique.",
-        "exercisePrompt": "Génère 3 exercices sur les coniques : 1) Identifier le type de conique pour e = 0.5, e = 1, e = 2, 2) Trouver l'équation de la parabole de foyer (1,0) et directrice x = -1, 3) Montrer que l'ellipse x²/9 + y²/4 = 1 a pour excentricité √5/3. Solutions détaillées."
+        "name": "Coniques - Definition",
+        "latex": "\\frac{MF}{d(M,\\Delta)} = e",
+        "explainPrompt": "Explique la definition unifiee des coniques : 1) Definition par foyer et directrice avec excentricite e, 2) Ellipse : e < 1, somme des distances aux foyers constante, 3) Parabole : e = 1, equidistance foyer-directrice, 4) Hyperbole : e > 1, difference des distances constante, 5) Equations reduites de chaque conique.",
+        "exercisePrompt": "Genere 3 exercices sur les coniques : 1) Identifier le type de conique pour e = 0.5, e = 1, e = 2, 2) Trouver l'equation de la parabole de foyer (1,0) et directrice x = -1, 3) Montrer que l'ellipse x^2/9 + y^2/4 = 1 a pour excentricite racine(5)/3. Solutions detaillees."
       },
       {
         "name": "Ellipse",
-        "latex": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad \\text{avec } a \\geq b > 0 \\quad ; \\quad c^2 = a^2 - b^2 \\quad ; \\quad e = \\frac{c}{a}",
-        "explainPrompt": "Explique l'ellipse en détail : 1) Équation réduite x²/a² + y²/b² = 1, 2) Grand axe = 2a, petit axe = 2b, 3) Foyers F(c,0) et F'(-c,0) avec c² = a² - b², 4) Excentricité e = c/a < 1, 5) Propriété focale : MF + MF' = 2a, 6) Représentation graphique et sommets.",
-        "exercisePrompt": "Crée 3 exercices sur l'ellipse : 1) Identifier a, b, c pour x²/16 + y²/9 = 1, 2) Trouver l'équation de l'ellipse de foyers (3,0) et (-3,0) et de grand axe 10, 3) Calculer l'excentricité. Solutions avec interprétation géométrique."
+        "latex": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad \\text{avec } a \\geq b > 0",
+        "explainPrompt": "Explique l'ellipse en detail : 1) Equation reduite x^2/a^2 + y^2/b^2 = 1, 2) Grand axe = 2a, petit axe = 2b, 3) Foyers F(c,0) et F'(-c,0) avec c^2 = a^2 - b^2, 4) Excentricite e = c/a < 1, 5) Propriete focale : MF + MF' = 2a, 6) Representation graphique et sommets.",
+        "exercisePrompt": "Cree 3 exercices sur l'ellipse : 1) Identifier a, b, c pour x^2/16 + y^2/9 = 1, 2) Trouver l'equation de l'ellipse de foyers (3,0) et (-3,0) et de grand axe 10, 3) Calculer l'excentricite. Solutions avec interpretation geometrique."
       },
       {
         "name": "Hyperbole",
-        "latex": "\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 \\quad ; \\quad c^2 = a^2 + b^2 \\quad ; \\quad e = \\frac{c}{a} > 1 \\quad ; \\quad y = \\pm\\frac{b}{a}x \\text{ (asymptotes)}",
-        "explainPrompt": "Explique l'hyperbole en détail : 1) Équation réduite x²/a² - y²/b² = 1, 2) Sommet en (±a, 0), 3) Foyers F(c,0) et F'(-c,0) avec c² = a² + b², 4) Excentricité e = c/a > 1, 5) Asymptotes : y = ±(b/a)x, 6) Propriété focale : |MF - MF'| = 2a.",
-        "exercisePrompt": "Génère 3 exercices sur l'hyperbole : 1) Identifier a, b, c pour x²/9 - y²/16 = 1, 2) Trouver les équations des asymptotes, 3) Calculer l'excentricité. Solutions complètes."
+        "latex": "\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1",
+        "explainPrompt": "Explique l'hyperbole en detail : 1) Equation reduite x^2/a^2 - y^2/b^2 = 1, 2) Sommets en (+a, 0), 3) Foyers F(c,0) et F'(-c,0) avec c^2 = a^2 + b^2, 4) Excentricite e = c/a > 1, 5) Asymptotes : y = +-(b/a)x, 6) Propriete focale : |MF - MF'| = 2a.",
+        "exercisePrompt": "Genere 3 exercices sur l'hyperbole : 1) Identifier a, b, c pour x^2/9 - y^2/16 = 1, 2) Trouver les equations des asymptotes, 3) Calculer l'excentricite. Solutions completes."
       },
       {
         "name": "Parabole",
-        "latex": "y^2 = 2px \\quad (p > 0) \\quad ; \\quad F\\left(\\frac{p}{2}, 0\\right) \\quad ; \\quad \\text{directrice } x = -\\frac{p}{2}",
-        "explainPrompt": "Explique la parabole en détail : 1) Équation réduite y² = 2px, 2) Paramètre p distance foyer-directrice, 3) Foyer F(p/2, 0), directrice x = -p/2, 4) Excentricité e = 1, 5) Propriété : tout point équidistant du foyer et de la directrice, 6) Applications : miroirs paraboliques, trajectoires.",
-        "exercisePrompt": "Crée 3 exercices sur la parabole : 1) Trouver foyer et directrice de y² = 8x, 2) Écrire l'équation de la parabole de foyer (2,0) et directrice x = -2, 3) Vérifier que M(2,4) appartient à cette parabole. Solutions détaillées."
+        "latex": "y^2 = 2px \\quad (p > 0)",
+        "explainPrompt": "Explique la parabole en detail : 1) Equation reduite y^2 = 2px, 2) Parametre p distance foyer-directrice, 3) Foyer F(p/2, 0), directrice x = -p/2, 4) Excentricite e = 1, 5) Propriete : tout point equidistant du foyer et de la directrice, 6) Applications : miroirs paraboliques, trajectoires.",
+        "exercisePrompt": "Cree 3 exercices sur la parabole : 1) Trouver foyer et directrice de y^2 = 8x, 2) Ecrire l'equation de la parabole de foyer (2,0) et directrice x = -2, 3) Verifier que M(2,4) appartient a cette parabole. Solutions detaillees."
       },
       {
         "name": "Arrangements",
-        "latex": "A_n^p = \\frac{n!}{(n-p)!} = n \\times (n-1) \\times \\cdots \\times (n-p+1)",
-        "explainPrompt": "Explique les arrangements (permutations ordonnées) : 1) Définition : nombre de façons d'ordonner p éléments parmi n, 2) Formule avec factorielles, 3) Différence avec les combinaisons (ordre important vs indifférent), 4) Notation A_n^p ou ^nP_p, 5) Exemples :排列文字,码字, 6) Cas particulier : A_n^n = n! (permutations).",
-        "exercisePrompt": "Génère 3 exercices sur les arrangements : 1) Calculer A_5^2 et A_6^3, 2) Combien de mots de 3 lettres peut-on former avec les lettres A, B, C, D, E (sans répétition)?, 3) Exercice type bac : code PIN à 4 chiffres tous différents. Solutions détaillées."
+        "latex": "A_n^p = \\frac{n!}{(n-p)!}",
+        "explainPrompt": "Explique les arrangements (permutations ordonnees) : 1) Definition : nombre de facons d'ordonner p elements parmi n, 2) Formule avec factorielles, 3) Difference avec les combinaisons (ordre important vs indifferent), 4) Notation A_n^p ou ^nP_p, 5) Exemples : arrangements de mots, codes, 6) Cas particulier : A_n^n = n! (permutations).",
+        "exercisePrompt": "Genere 3 exercices sur les arrangements : 1) Calculer A_5^2 et A_6^3, 2) Combien de mots de 3 lettres peut-on former avec les lettres A, B, C, D, E (sans repetition)?, 3) Exercice type bac : code PIN a 4 chiffres tous differents. Solutions detaillees."
       },
       {
         "name": "Combinaisons",
-        "latex": "\\binom{n}{p} = \\frac{n!}{p!(n-p)!} \\quad ; \\quad \\binom{n}{p} = \\binom{n}{n-p} \\quad ; \\quad \\binom{n}{p} + \\binom{n}{p+1} = \\binom{n+1}{p+1}",
-        "explainPrompt": "Explique les combinaisons (choix sans ordre) : 1) Définition : nombre de parties de p éléments dans un ensemble de n, 2) Formule et démonstration, 3) Symétrie : C(n,p) = C(n,n-p), 4) Relation de Pascal : C(n,p) + C(n,p+1) = C(n+1,p+1), 5) Triangle de Pascal, 6) Lien avec le binôme de Newton.",
-        "exercisePrompt": "Crée 3 exercices sur les combinaisons : 1) Calculer C(5,2), C(10,3), C(6,0), 2) Démontrer que C(5,2) = C(5,3), 3) Combien de mains de 5 cartes contiennent 2 piques dans un jeu de 52 cartes? Solutions détaillées."
+        "latex": "\\binom{n}{p} = \\frac{n!}{p!(n-p)!}",
+        "explainPrompt": "Explique les combinaisons (choix sans ordre) : 1) Definition : nombre de parties de p elements dans un ensemble de n, 2) Formule et demonstration, 3) Symetrie : C(n,p) = C(n,n-p), 4) Relation de Pascal : C(n,p) + C(n,p+1) = C(n+1,p+1), 5) Triangle de Pascal, 6) Lien avec le binome de Newton.",
+        "exercisePrompt": "Cree 3 exercices sur les combinaisons : 1) Calculer C(5,2), C(10,3), C(6,0), 2) Demontrer que C(5,2) = C(5,3), 3) Combien de mains de 5 cartes contiennent 2 piques dans un jeu de 52 cartes? Solutions detaillees."
       },
       {
-        "name": "Formule du binôme de Newton",
-        "latex": "(a+b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^k b^{n-k} = \\binom{n}{0}a^0b^n + \\binom{n}{1}a^1b^{n-1} + \\cdots + \\binom{n}{n}a^nb^0",
-        "explainPrompt": "Explique le binôme de Newton : 1) Formule générale et démonstration par récurrence, 2) Coefficients binomiaux et triangle de Pascal, 3) Exemples : (a+b)² = a² + 2ab + b², (a+b)³, 4) Utilisation pour développer (2x+1)^5, 5) Coefficient de x^k dans le développement, 6) Applications en probabilités.",
-        "exercisePrompt": "Génère 3 exercices sur le binôme : 1) Développer (x+2)^4, 2) Trouver le coefficient de x³ dans le développement de (2x+1)^6, 3) Démontrer que la somme des coefficients binomiaux vaut 2^n. Solutions détaillées."
+        "name": "Formule du binome de Newton",
+        "latex": "(a+b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^k b^{n-k}",
+        "explainPrompt": "Explique le binome de Newton : 1) Formule generale et demonstration par recurrence, 2) Coefficients binomiaux et triangle de Pascal, 3) Exemples : (a+b)^2 = a^2 + 2ab + b^2, (a+b)^3, 4) Utilisation pour developper (2x+1)^5, 5) Coefficient de x^k dans le developpement, 6) Applications en probabilites.",
+        "exercisePrompt": "Genere 3 exercices sur le binome : 1) Developper (x+2)^4, 2) Trouver le coefficient de x^3 dans le developpement de (2x+1)^6, 3) Demontrer que la somme des coefficients binomiaux vaut 2^n. Solutions detaillees."
       },
       {
-        "name": "Probabilités conditionnelles",
-        "latex": "P_A(B) = \\frac{P(A \\cap B)}{P(A)} \\quad ; \\quad P(A \\cap B) = P(A) \\times P_A(B)",
-        "explainPrompt": "Explique les probabilités conditionnelles : 1) Définition de P_A(B) : probabilité de B sachant A, 2) Formule des probabilités composées, 3) Arbres de probabilités, 4) Formule des probabilités totales : P(B) = P(A∩B) + P(Ā∩B), 5) Indépendance : P(A∩B) = P(A)×P(B), 6) Exemples concrets.",
-        "exercisePrompt": "Crée 3 exercices sur les probabilités conditionnelles : 1) Une urne contient 3 boules rouges et 2 boules noires. Probabilité de tirer 2 rouges?, 2) Utiliser un arbre pour calculer P(B) avec P(A) = 0.3, P_B(A) = 0.5, 3) Démontrer que si A et B sont indépendants, alors Ā et B aussi. Solutions détaillées."
+        "name": "Probabilites conditionnelles",
+        "latex": "P_A(B) = \\frac{P(A \\cap B)}{P(A)}",
+        "explainPrompt": "Explique les probabilites conditionnelles : 1) Definition de P_A(B) : probabilite de B sachant A, 2) Formule des probabilites composees, 3) Arbres de probabilites, 4) Formule des probabilites totales : P(B) = P(A coupe B) + P(Abarre coupe B), 5) Independence : P(A coupe B) = P(A)xP(B), 6) Exemples concrets.",
+        "exercisePrompt": "Cree 3 exercices sur les probabilites conditionnelles : 1) Une urne contient 3 boules rouges et 2 boules noires. Probabilite de tirer 2 rouges?, 2) Utiliser un arbre pour calculer P(B) avec P(A) = 0.3, P_B(A) = 0.5, 3) Demontrer que si A et B sont independants, alors Abarre et B aussi. Solutions detaillees."
       },
       {
-        "name": "Variable aléatoire - Espérance et Variance",
-        "latex": "E(X) = \\sum_{i} x_i p_i \\quad ; \\quad V(X) = E(X^2) - [E(X)]^2 \\quad ; \\quad \\sigma(X) = \\sqrt{V(X)}",
-        "explainPrompt": "Explique les caractéristiques d'une variable aléatoire : 1) Définition d'une variable aléatoire X, 2) Espérance E(X) : moyenne pondérée par les probabilités, 3) Variance V(X) : mesure de la dispersion, 4) Écart-type σ(X), 5) Linéarité de l'espérance : E(aX+b) = aE(X)+b, 6) Exemples : lancer de dés, roulette.",
-        "exercisePrompt": "Génère 3 exercices sur les variables aléatoires : 1) Calculer E(X) et V(X) pour X = résultat du lancer d'un dé, 2) Un jeu coûte 5€ pour jouer. X = gain. Calculer l'espérance, 3) Démontrer que V(aX+b) = a²V(X). Solutions complètes."
+        "name": "Variable aleatoire - Esperance et Variance",
+        "latex": "E(X) = \\sum_{i} x_i p_i \\quad ; \\quad V(X) = E(X^2) - [E(X)]^2",
+        "explainPrompt": "Explique les caracteristiques d'une variable aleatoire : 1) Definition d'une variable aleatoire X, 2) Esperance E(X) : moyenne ponderee par les probabilites, 3) Variance V(X) : mesure de la dispersion, 4) Ecart-type sigma(X), 5) Linearite de l'esperance : E(aX+b) = aE(X)+b, 6) Exemples : lancer de des, roulette.",
+        "exercisePrompt": "Genere 3 exercices sur les variables aleatoires : 1) Calculer E(X) et V(X) pour X = resultat du lancer d'un de, 2) Un jeu cote 5 euros pour jouer. X = gain. Calculer l'esperance, 3) Demontrer que V(aX+b) = a^2 V(X). Solutions completes."
       },
       {
         "name": "Loi binomiale",
-        "latex": "X \\sim \\mathcal{B}(n,p) \\quad ; \\quad P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k} \\quad ; \\quad E(X) = np \\quad ; \\quad V(X) = np(1-p)",
-        "explainPrompt": "Explique la loi binomiale : 1) Conditions : n répétitions indépendantes, succès avec probabilité p, 2) Variable X = nombre de succès, 3) Formule et démonstration, 4) Espérance et variance, 5) Exemples : lancers de pièces, contrôles qualité, 6) Approximation par loi normale pour n grand.",
-        "exercisePrompt": "Crée 3 exercices sur la loi binomiale : 1) On lance 10 fois une pièce. Probabilité d'obtenir exactement 6 piles?, 2) Une machine produit 5% de défauts. Dans un lot de 100 pièces, espérance et variance du nombre de défauts, 3) Calculer P(X ≤ 3) avec X ~ B(10, 0.3). Solutions détaillées."
+        "latex": "X \\sim \\mathcal{B}(n,p) \\quad ; \\quad P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}",
+        "explainPrompt": "Explique la loi binomiale : 1) Conditions : n repetitions independantes, succes avec probabilite p, 2) Variable X = nombre de succes, 3) Formule et demonstration, 4) Esperance et variance, 5) Exemples : lancers de pieces, controles qualite, 6) Approximation par loi normale pour n grand.",
+        "exercisePrompt": "Cree 3 exercices sur la loi binomiale : 1) On lance 10 fois une piece. Probabilite d'obtenir exactement 6 piles?, 2) Une machine produit 5% de defauts. Dans un lot de 100 pieces, esperance et variance du nombre de defauts, 3) Calculer P(X <= 3) avec X suit B(10, 0.3). Solutions detaillees."
       },
       {
-        "name": "Théorème des Valeurs Intermédiaires (TVI)",
-        "latex": "\\text{Si } f \\text{ est continue sur } [a,b] \\text{ et } f(a) \\cdot f(b) < 0 \\Rightarrow \\exists c \\in ]a,b[ : f(c) = 0",
-        "explainPrompt": "Explique le TVI et ses applications : 1) Conditions : continuité sur [a,b], 2) Conclusion : existence d'au moins une solution à f(x) = 0, 3) Interprétation graphique : la courbe traverse l'axe des abscisses, 4) Utilisation pour montrer l'existence de solutions d'équations, 5) Extension : image d'un intervalle par une fonction continue est un intervalle.",
-        "exercisePrompt": "Génère 3 exercices sur le TVI : 1) Montrer que x^3 + x - 1 = 0 a une solution dans [0,1], 2) Démontrer que l'équation ln(x) + x = 0 a une solution, 3) Localiser cette solution par dichotomie. Solutions détaillées avec rigueur."
+        "name": "Theoreme des Valeurs Intermediaires",
+        "latex": "\\text{Si } f \\text{ est continue sur } [a,b] \\text{ et } f(a) \\cdot f(b) < 0 \\Rightarrow \\exists c : f(c) = 0",
+        "explainPrompt": "Explique le TVI et ses applications : 1) Conditions : continuite sur [a,b], 2) Conclusion : existence d'au moins une solution a f(x) = 0, 3) Interpretation geometrique : la courbe traverse l'axe des abscisses, 4) Utilisation pour montrer l'existence de solutions d'equations, 5) Extension : image d'un intervalle par une fonction continue est un intervalle.",
+        "exercisePrompt": "Genere 3 exercices sur le TVI : 1) Montrer que x^3 + x - 1 = 0 a une solution dans [0,1], 2) Demontrer que l'equation ln(x) + x = 0 a une solution, 3) Localiser cette solution par dichotomie. Solutions detaillees avec rigueur."
       },
       {
         "name": "Asymptotes",
-        "latex": "\\text{Verticale : } x = a \\text{ si } \\lim_{x \\to a} f(x) = \\pm\\infty \\quad ; \\quad \\text{Horizontale : } y = b \\text{ si } \\lim_{x \\to \\pm\\infty} f(x) = b",
-        "explainPrompt": "Explique les asymptotes d'une fonction : 1) Asymptote verticale : x = a quand f(x) → ±∞, 2) Asymptote horizontale : y = b quand x → ±∞, 3) Asymptote oblique : y = mx + p quand f(x) - (mx+p) → 0, 4) Calcul de m et p par les limites, 5) Exemples : asymptotes de 1/x, (x+1)/(x-1), 6) Utilité pour l'étude de fonction.",
-        "exercisePrompt": "Crée 3 exercices sur les asymptotes : 1) Trouver les asymptotes de f(x) = (2x+1)/(x-3), 2) Déterminer l'asymptote oblique de g(x) = (x²+1)/x, 3) Étudier la position de la courbe par rapport à ses asymptotes. Solutions détaillées."
+        "latex": "\\text{Verticale : } x = a \\quad ; \\quad \\text{Horizontale : } y = b \\quad ; \\quad \\text{Oblique : } y = mx + p",
+        "explainPrompt": "Explique les asymptotes d'une fonction : 1) Asymptote verticale : x = a quand f(x) tend vers plus ou moins l'infini, 2) Asymptote horizontale : y = b quand x tend vers plus ou moins l'infini, 3) Asymptote oblique : y = mx + p quand f(x) - (mx+p) tend vers 0, 4) Calcul de m et p par les limites, 5) Exemples : asymptotes de 1/x, (x+1)/(x-1), 6) Utilite pour l'etude de fonction.",
+        "exercisePrompt": "Cree 3 exercices sur les asymptotes : 1) Trouver les asymptotes de f(x) = (2x+1)/(x-3), 2) Determiner l'asymptote oblique de g(x) = (x^2+1)/x, 3) Etudier la position de la courbe par rapport a ses asymptotes. Solutions detaillees."
       },
       {
         "name": "Similitudes directes",
-        "latex": "z' = az + b \\quad \\text{avec } a \\in \\mathbb{C}^* \\quad ; \\quad k = |a| \\text{ (rapport)} \\quad ; \\quad \\theta = \\arg(a) \\text{ (angle)}",
-        "explainPrompt": "Explique les similitudes directes dans le plan complexe : 1) Écriture complexe z' = az + b, 2) Rapport k = |a|, angle θ = arg(a), 3) Centre ω vérifie ω = aω + b, 4) Classification : rotation (k=1), homothétie (θ=0), similitude (k≠1, θ≠0), 5) Composition de transformations, 6) Exemples concrets.",
-        "exercisePrompt": "Génère 3 exercices sur les similitudes : 1) Identifier le rapport et l'angle de z' = 2e^{iπ/3}z + 1, 2) Trouver le centre de la similitude z' = iz + (1-i), 3) Déterminer l'image du point (2,3) par la similitude z' = 3z + i. Solutions détaillées."
+        "latex": "z' = az + b \\quad \\text{avec } a \\in \\mathbb{C}^*",
+        "explainPrompt": "Explique les similitudes directes dans le plan complexe : 1) Ecriture complexe z' = az + b, 2) Rapport k = |a|, angle theta = arg(a), 3) Centre omega verifie omega = a omega + b, 4) Classification : rotation (k=1), homothetie (theta=0), similitude (k different de 1, theta different de 0), 5) Composition de transformations, 6) Exemples concrets.",
+        "exercisePrompt": "Genere 3 exercices sur les similitudes : 1) Identifier le rapport et l'angle de z' = 2e^{ipi/3}z + 1, 2) Trouver le centre de la similitude z' = iz + (1-i), 3) Determiner l'image du point (2,3) par la similitude z' = 3z + i. Solutions detaillees."
       },
       {
-        "name": "Isométries du plan",
-        "latex": "\\text{Translation : } M' = T_{\\vec{u}}(M) \\quad ; \\quad \\text{Rotation : } R_{(O,\\theta)} \\quad ; \\quad \\text{Symétrie : } S_{\\Delta} \\text{ (axiale), } S_O \\text{ (centrale)}",
-        "explainPrompt": "Explique les isométries du plan : 1) Définition : conservation des distances, 2) Translation : pas de point fixe, 3) Rotation : un point fixe (centre), 4) Symétrie axiale : droite de points fixes, 5) Symétrie centrale : point fixe, 6) Classification des isométries, 7) Composition : commutativité des translations.",
-        "exercisePrompt": "Crée 3 exercices sur les isométries : 1) Identifier le type d'isométrie : M'(x,y) = (-x,y), 2) Composer une translation de vecteur (1,2) avec une rotation de centre O et angle π/2, 3) Montrer que la composée de deux symétries centrales est une translation. Solutions détaillées."
+        "name": "Isometries du plan",
+        "latex": "\\text{Translation } T_{\\vec{u}} \\quad ; \\quad \\text{Rotation } R_{(O,\\theta)} \\quad ; \\quad \\text{Symetrie } S_{\\Delta}",
+        "explainPrompt": "Explique les isometries du plan : 1) Definition : conservation des distances, 2) Translation : pas de point fixe, 3) Rotation : un point fixe (centre), 4) Symetrie axiale : droite de points fixes, 5) Symetrie centrale : point fixe, 6) Classification des isometries, 7) Composition : commutativite des translations.",
+        "exercisePrompt": "Cree 3 exercices sur les isometries : 1) Identifier le type d'isometrie : M'(x,y) = (-x,y), 2) Composer une translation de vecteur (1,2) avec une rotation de centre O et angle pi/2, 3) Montrer que la composee de deux symetries centrales est une translation. Solutions detaillees."
       },
       {
-        "name": "Formules d'addition trigonométriques",
-        "latex": "\\sin(a \\pm b) = \\sin a \\cos b \\pm \\cos a \\sin b \\quad ; \\quad \\cos(a \\pm b) = \\cos a \\cos b \\mp \\sin a \\sin b",
-        "explainPrompt": "Explique les formules d'addition en détail : 1) Démonstration de sin(a+b) et cos(a+b), 2) Formules pour a-b (signe différent), 3) Utilisation pour calculer sin(π/12), cos(75°), 4) Tangente de a+b : tan(a+b) = (tan a + tan b)/(1 - tan a tan b), 5) Applications aux équations trigonométriques.",
-        "exercisePrompt": "Génère 3 exercices sur les formules d'addition : 1) Calculer sin(75°) = sin(45°+30°), 2) Démontrer que cos(π/2 - x) = sin x, 3) Résoudre l'équation sin x cos 30° + cos x sin 30° = √3/2. Solutions complètes."
+        "name": "Formules d'addition trigonometriques",
+        "latex": "\\sin(a \\pm b) = \\sin a \\cos b \\pm \\cos a \\sin b",
+        "explainPrompt": "Explique les formules d'addition en detail : 1) Demonstration de sin(a+b) et cos(a+b), 2) Formules pour a-b (signe different), 3) Utilisation pour calculer sin(pi/12), cos(75 deg), 4) Tangente de a+b : tan(a+b) = (tan a + tan b)/(1 - tan a tan b), 5) Applications aux equations trigonometriques.",
+        "exercisePrompt": "Genere 3 exercices sur les formules d'addition : 1) Calculer sin(75 deg) = sin(45 deg+30 deg), 2) Demontrer que cos(pi/2 - x) = sin x, 3) Resoudre l'equation sin x cos 30 deg + cos x sin 30 deg = racine(3)/2. Solutions completes."
       },
       {
         "name": "Formules de duplication",
-        "latex": "\\sin(2a) = 2\\sin a \\cos a \\quad ; \\quad \\cos(2a) = 2\\cos^2 a - 1 = 1 - 2\\sin^2 a \\quad ; \\quad \\tan(2a) = \\frac{2\\tan a}{1-\\tan^2 a}",
-        "explainPrompt": "Explique les formules de duplication : 1) sin(2a) à partir de sin(a+b), 2) cos(2a) sous ses trois formes, 3) tan(2a) et condition tan a ≠ ±1, 4) Utilisation pour linéariser cos²a, sin²a, 5) Application au calcul de sin(π/6), cos(π/8), 6) Formules de bisection (angle moitié).",
-        "exercisePrompt": "Crée 3 exercices sur les formules de duplication : 1) Exprimer cos²x en fonction de cos(2x), 2) Calculer sin(π/12) en utilisant la duplication, 3) Démontrer que sin(3a) = 3sin a - 4sin³a. Solutions détaillées."
+        "latex": "\\sin(2a) = 2\\sin a \\cos a \\quad ; \\quad \\cos(2a) = 2\\cos^2 a - 1",
+        "explainPrompt": "Explique les formules de duplication : 1) sin(2a) a partir de sin(a+b), 2) cos(2a) sous ses trois formes, 3) tan(2a) et condition tan a different de plus ou moins 1, 4) Utilisation pour lineariser cos^2 a, sin^2 a, 5) Application au calcul de sin(pi/6), cos(pi/8), 6) Formules de bissection (angle moitié).",
+        "exercisePrompt": "Cree 3 exercices sur les formules de duplication : 1) Exprimer cos^2 x en fonction de cos(2x), 2) Calculer sin(pi/12) en utilisant la duplication, 3) Demontrer que sin(3a) = 3sin a - 4sin^3 a. Solutions detaillees."
       },
       {
         "name": "Limites remarquables",
-        "latex": "\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1 \\quad ; \\quad \\lim_{x \\to 0} \\frac{e^x - 1}{x} = 1 \\quad ; \\quad \\lim_{x \\to 0} \\frac{\\ln(1+x)}{x} = 1",
-        "explainPrompt": "Explique les limites fondamentales : 1) Limite de sin x / x quand x → 0 (démonstration géométrique), 2) Limite de (e^x - 1) / x = 1, 3) Limite de ln(1+x) / x = 1, 4) Formes indéterminées et théorème de l'Hospital, 5) Applications : calcul de limites complexes, 6) Développement limités d'ordre 1.",
-        "exercisePrompt": "Génère 3 exercices sur les limites : 1) Calculer lim_{x→0} sin(3x)/x, 2) Calculer lim_{x→0} (e^{2x}-1)/x, 3) Calculer lim_{x→0} ln(1+x²)/x². Solutions détaillées avec application des limites remarquables."
+        "latex": "\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1 \\quad ; \\quad \\lim_{x \\to 0} \\frac{e^x - 1}{x} = 1",
+        "explainPrompt": "Explique les limites fondamentales : 1) Limite de sin x / x quand x tend vers 0 (demonstration geometrique), 2) Limite de (e^x - 1) / x = 1, 3) Limite de ln(1+x) / x = 1, 4) Formes determinees et theoreme de l'Hospital, 5) Applications : calcul de limites complexes, 6) Developpements limites d'ordre 1.",
+        "exercisePrompt": "Genere 3 exercices sur les limites : 1) Calculer limite de sin(3x)/x quand x tend vers 0, 2) Calculer limite de (e^{2x}-1)/x quand x tend vers 0, 3) Calculer limite de ln(1+x^2)/x^2 quand x tend vers 0. Solutions detaillees avec application des limites remarquables."
       },
       {
         "name": "Valeur moyenne d'une fonction",
         "latex": "\\mu = \\frac{1}{b-a} \\int_a^b f(x) \\, dx",
-        "explainPrompt": "Explique la valeur moyenne d'une fonction : 1) Définition et formule, 2) Interprétation géométrique : hauteur du rectangle de même aire, 3) Théorème de la moyenne : il existe c ∈ [a,b] tel que f(c) = μ, 4) Applications : température moyenne, vitesse moyenne, 5) Calcul sur des exemples concrets.",
-        "exercisePrompt": "Crée 3 exercices sur la valeur moyenne : 1) Calculer la valeur moyenne de f(x) = x² sur [0,2], 2) Un objet se déplace à la vitesse v(t) = t². Quelle est sa vitesse moyenne sur [0,3]?, 3) Température moyenne sur 24h si T(t) = 20 + 5sin(tπ/12). Solutions détaillées."
+        "explainPrompt": "Explique la valeur moyenne d'une fonction : 1) Definition et formule, 2) Interpretation geometrique : hauteur du rectangle de meme aire, 3) Theoreme de la moyenne : il existe c dans [a,b] tel que f(c) = mu, 4) Applications : temperature moyenne, vitesse moyenne, 5) Calcul sur des exemples concrets.",
+        "exercisePrompt": "Cree 3 exercices sur la valeur moyenne : 1) Calculer la valeur moyenne de f(x) = x^2 sur [0,2], 2) Un objet se deplace a la vitesse v(t) = t^2. Quelle est sa vitesse moyenne sur [0,3]?, 3) Temperature moyenne sur 24h si T(t) = 20 + 5sin(tpi/12). Solutions detaillees."
       }
     ]
   },
   "physique": {
-    "systemPrompt": "Tu es un professeur de physique certifié, expert en mécanique, électricité et physique moderne pour le programme de Terminale SM. Ta mission est d'expliquer les lois physiques de manière claire et pédagogique. Utilise des exemples concrets et des analogies pour faciliter la compréhension. Réponds toujours en français.",
+    "systemPrompt": "Tu es un professeur de physique certifie, expert en mecanique, electricite et physique moderne pour le programme de Terminale SM. Ta mission est d'expliquer les lois physiques de maniere claire et pedagogique. Utilise des exemples concrets et des analogies pour faciliter la comprehension. Reponds toujours en francais.",
     "formulas": [
       {
-        "name": "Deuxième loi de Newton",
-        "latex": "\\vec{F} = m\\vec{a} \\quad \\text{ou} \\quad \\sum \\vec{F} = m\\vec{a}",
-        "explainPrompt": "Explique la deuxième loi de Newton en détail : 1) Relation entre force résultante, masse et accélération, 2) Unités SI : force en newtons (N), 3) Caractère vectoriel de la loi, 4) Applications : chute libre, plan incliné, 5) Cas particulier : équilibre quand ∑F = 0.",
-        "exercisePrompt": "Génère 3 exercices sur F = ma : 1) Une force de 10N agit sur une masse de 2kg. Calculer l'accélération, 2) Un objet de 5kg soumis à deux forces de 3N et 4N perpendiculaires. Trouver l'accélération, 3) Ascenseur descendant avec a = 2m/s². Trouver la tension du câble. Solutions détaillées."
+        "name": "Deuxieme loi de Newton",
+        "latex": "\\vec{F} = m\\vec{a}",
+        "explainPrompt": "Explique la deuxieme loi de Newton en detail : 1) Relation entre force resultante, masse et acceleration, 2) Unites SI : force en newtons (N), 3) Caractere vectoriel de la loi, 4) Applications : chute libre, plan incline, 5) Cas particulier : equilibre quand somme des forces = 0.",
+        "exercisePrompt": "Genere 3 exercices sur F = ma : 1) Une force de 10N agit sur une masse de 2kg. Calculer l'acceleration, 2) Un objet de 5kg soumis a deux forces de 3N et 4N perpendiculaires. Trouver l'acceleration, 3) Ascenseur descendant avec a = 2m/s^2. Trouver la tension du cable. Solutions detaillees."
       },
       {
-        "name": "Énergie cinétique",
-        "latex": "E_c = \\frac{1}{2}mv^2 \\quad ; \\quad E_c(f) - E_c(i) = W(\\vec{F})",
-        "explainPrompt": "Explique l'énergie cinétique : 1) Définition et formule, 2) Unité : le joule (J), 3) Théorème de l'énergie cinétique : variation = travail des forces, 4) Applications aux problèmes de碰撞, 5) Relation avec le travail et la puissance.",
-        "exercisePrompt": "Crée 3 exercices sur l'énergie cinétique : 1) Calculer l'énergie cinétique d'une voiture de 1000kg à 72km/h, 2) Un projectile de 0.5kg frappe un mur à 20m/s et s'arrête. Calculer le travail des forces de résistance, 3) Un pendule. Calculer sa vitesse au point le plus bas. Solutions complètes."
+        "name": "Energie cinetique",
+        "latex": "E_c = \\frac{1}{2}mv^2",
+        "explainPrompt": "Explique l'energie cinetique : 1) Definition et formule, 2) Unite : le joule (J), 3) Theoreme de l'energie cinetique : variation = travail des forces, 4) Applications aux problemes de collisions, 5) Relation avec le travail et la puissance.",
+        "exercisePrompt": "Cree 3 exercices sur l'energie cinetique : 1) Calculer l'energie cinetique d'une voiture de 1000kg a 72km/h, 2) Un projectile de 0.5kg frappe un mur a 20m/s et s'arrete. Calculer le travail des forces de resistance, 3) Un pendule. Calculer sa vitesse au point le plus bas. Solutions completes."
       },
       {
         "name": "Loi d'Ohm",
-        "latex": "U = RI \\quad ; \\quad R = \\rho \\frac{l}{S} \\quad ; \\quad P = RI^2 = \\frac{U^2}{R}",
-        "explainPrompt": "Explique la loi d'Ohm et ses applications : 1) Relation tension-résistance-courant U = RI, 2) Unités : volt, ampère, ohm, 3) Résistance d'un fil conducteur, 4) Puissance dissipée P = RI², 5) Association de résistances en série et parallèle, 6) Applications dans les circuits.",
-        "exercisePrompt": "Génère 3 exercices sur la loi d'Ohm : 1) Un résisteur de 100Ω est traversé par 0.2A. Trouver la tension, 2) Un fil de cuivre de longueur 10m et section 1mm². Calculer sa résistance (ρ = 1.7×10⁻⁸ Ω·m), 3) Circuit avec deux résistances en série : 50Ω et 100Ω. Trouver la résistance équivalente. Solutions détaillées."
+        "latex": "U = RI",
+        "explainPrompt": "Explique la loi d'Ohm et ses applications : 1) Relation tension-resistance-courant U = RI, 2) Unites : volt, ampere, ohm, 3) Resistance d'un fil conducteur, 4) Puissance dissipee P = RI^2, 5) Association de resistances en serie et parallele, 6) Applications dans les circuits.",
+        "exercisePrompt": "Genere 3 exercices sur la loi d'Ohm : 1) Un resistor de 100 ohms est traverse par 0.2A. Trouver la tension, 2) Un fil de cuivre de longueur 10m et section 1mm^2. Calculer sa resistance (rho = 1.7x10^-8 ohm.m), 3) Circuit avec deux resistances en serie : 50 ohms et 100 ohms. Trouver la resistance equivalente. Solutions detaillees."
       }
     ]
   },
   "chimie": {
-    "systemPrompt": "Tu es un professeur de chimie certifié, expert en chimie organique et réactions chimiques pour le programme de Terminale SM. Ta mission est d'expliquer les concepts chimiques de manière claire et pédagogique. Réponds toujours en français.",
+    "systemPrompt": "Tu es un professeur de chimie certifie, expert en chimie organique et reactions chimiques pour le programme de Terminale SM. Ta mission est d'expliquer les concepts chimiques de maniere claire et pedagogique. Reponds toujours en francais.",
     "formulas": [
       {
-        "name": "Formule générale des alcools",
-        "latex": "R-OH \\quad \\text{où R est un groupe alkyle}",
-        "explainPrompt": "Explique la formule des alcools : 1) Groupe caractéristique hydroxyle -OH, 2) Classification : alcool primaire (R-CH₂OH), secondaire (R₂CHOH), tertiaire (R₃C-OH), 3) Nomenclature : nom de l'alcane + ol, 4) Propriétés : pont hydrogène, solubilité, 5) Réactions : oxydation, esterification.",
-        "exercisePrompt": "Génère 3 exercices sur les alcools : 1) Identifier le type (1°, 2°, 3°) de l'alcool CH₃-CHOH-CH₃, 2) Nommer le propane-1-ol et propane-2-ol, 3) Écrire l'équation d'oxydation du propane-2-ol. Solutions détaillées."
+        "name": "Formule generale des alcools",
+        "latex": "R-OH",
+        "explainPrompt": "Explique la formule des alcools : 1) Groupe caracteristique hydroxyle -OH, 2) Classification : alcool primaire (R-CH2-OH), secondaire (R2CH-OH), tertiaire (R3C-OH), 3) Nomenclature : nom de l'alcane + ol, 4) Propietes : pont hydrogene, solubilite, 5) Reactions : oxidation, esterification.",
+        "exercisePrompt": "Genere 3 exercices sur les alcools : 1) Identifier le type (1 degre, 2 degre, 3 degre) de l'alcool CH3-CHOH-CH3, 2) Nommer le propane-1-ol et propane-2-ol, 3) Ecrire l'equation d'oxydation du propane-2-ol. Solutions detaillees."
       },
       {
         "name": "Acides carboxyliques",
-        "latex": "R-COOH \\quad \\text{où R est un groupe alkyle}",
-        "explainPrompt": "Explique les acides carboxyliques : 1) Groupe caractéristique carboxyle -COOH, 2) Nomenclature : acide + nom alcane + oïque, 3) Propriétés acido-basiques : donation de H⁺, 4) Réactions : esterification avec alcools, 5) Exemples : acide formique (fourmi), acide acétique (vinaigre).",
-        "exercisePrompt": "Crée 3 exercices sur les acides carboxyliques : 1) Nommer l'acide CH₃-CH₂-COOH, 2) Écrire la réaction d'estérification entre acide éthanoïque et éthanol, 3) Calculer le pH d'une solution d'acide formique 0.1M (Ka = 1.8×10⁻⁴). Solutions complètes."
+        "latex": "R-COOH",
+        "explainPrompt": "Explique les acides carboxyliques : 1) Groupe caracteristique carboxyle -COOH, 2) Nomenclature : acide + nom alcane + oique, 3) Propietes acido-basiques : donation de H+, 4) Reactions : esterification avec alcools, 5) Exemples : acide formique (fourmi), acide acetique (vinaigre).",
+        "exercisePrompt": "Cree 3 exercices sur les acides carboxyliques : 1) Nommer l'acide CH3-CH2-COOH, 2) Ecrire la reaction d'esterification entre acide ethanoique et ethanol, 3) Calculer le pH d'une solution d'acide formique 0.1M (Ka = 1.8x10^-4). Solutions completes."
       },
       {
         "name": "Esters",
-        "latex": "R-COO-R' \\quad \\text{obtenu par esterification : } R-COOH + R'-OH \\rightleftharpoons R-COOR' + H_2O",
-        "explainPrompt": "Explique les esters : 1) Formule générale et structure, 2) Formation par réaction entre acide et alcool (esterification réversible), 3) Nomenclature : alkyle + anoate de éthyle, 4) Propriétés : odeurs fruitées, hydrolyse, 5) Applications : arômes naturels, polymères.",
-        "exercisePrompt": "Génère 3 exercices sur les esters : 1) Écrire la formule de l'éthanoate de éthyle, 2) Écrire l'équation de l'hydrolyse basique (saponification) de l'éthanoate de éthyle, 3) Pourquoi les esters ont-ils des odeurs agréables? Expliquer la relation structure-propriété. Solutions détaillées."
+        "latex": "R-COO-R'",
+        "explainPrompt": "Explique les esters : 1) Formule generale et structure, 2) Formation par reaction entre acide et alcool (esterification reversible), 3) Nomenclature : alkyle + anoate de ethyle, 4) Propietes : odeurs fruitees, hydrolyse, 5) Applications : aromas naturels, polymeres.",
+        "exercisePrompt": "Genere 3 exercices sur les esters : 1) Ecrire la formule de l'ethanoate de ethyle, 2) Ecrire l'equation de l'hydrolyse basique (saponification) de l'ethanoate de ethyle, 3) Pourquoi les esters ont-ils des odeurs agreables? Expliquer la relation structure-propiete. Solutions detaillees."
       }
     ]
   }
