@@ -13,19 +13,38 @@
           "subtitle": "Terminale SM - Toutes les formules du programme",
           "level": "Terminale SM",
           "file": "fiches/mathematiques/ciam_maths_fiche_formules_complete.html",
-          "sections": [
-            "Arithmétique",
-            "Géométrie",
-            "Analyse",
-            "Trigonométrie",
-            "Probabilités",
-            "Résumé"
-          ]
+          "sections": ["Arithmétique", "Géométrie", "Analyse", "Trigonométrie", "Probabilités"]
         }
       ],
-      "videos": {
-        "formules_complete": "https://youtu.be/bQ-eS1zZCdw?si=PdPKGemvHgq8NXFl"
-      }
+      "videos": [
+        {
+          "id": "video_suites",
+          "title": "Les Suites Numériques",
+          "subtitle": "Arithmétiques et géométriques",
+          "thumbnail": "https://img.youtube.com/vi/bQ-eS1zZCdw/hqdefault.jpg",
+          "url": "https://youtu.be/bQ-eS1zZCdw",
+          "duration": "18:32",
+          "chapter": "Analyse"
+        },
+        {
+          "id": "video_derivees",
+          "title": "La Dérivation",
+          "subtitle": "Règles et applications",
+          "thumbnail": "https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg",
+          "url": "https://youtu.be/YOUTUBE_ID",
+          "duration": "22:10",
+          "chapter": "Analyse"
+        },
+        {
+          "id": "video_integrales",
+          "title": "L'Intégration",
+          "subtitle": "Primitives et intégrales définies",
+          "thumbnail": "https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg",
+          "url": "https://youtu.be/YOUTUBE_ID",
+          "duration": "25:44",
+          "chapter": "Analyse"
+        }
+      ]
     },
     {
       "id": "physique",
@@ -37,33 +56,40 @@
         {
           "id": "mecanique",
           "title": "Mécanique",
-          "subtitle": "Loi de Newton, Energie, Travaux",
+          "subtitle": "Loi de Newton, Énergie, Travaux",
           "level": "Terminale SM",
           "file": "fiches/physique/mecanique.html",
-          "sections": [
-            "Cinématique",
-            "Dynamique",
-            "Energie",
-            "Travail et Puissance"
-          ]
+          "sections": ["Cinématique", "Dynamique", "Énergie"]
         },
         {
           "id": "electricite",
-          "title": "Electricité",
-          "subtitle": "Circuits, Electrostatique",
+          "title": "Électricité",
+          "subtitle": "Circuits, Électrostatique",
           "level": "Terminale SM",
           "file": "fiches/physique/electricite.html",
-          "sections": [
-            "Circuits electriques",
-            "Electrostatique",
-            "Condensateurs"
-          ]
+          "sections": ["Circuits électriques", "Condensateurs"]
         }
       ],
-      "videos": {
-        "mecanique": "https://www.youtube.com/results?search_query=physique+mecanique+terminale",
-        "electricite": "https://www.youtube.com/results?search_query=physique+electricite+terminale"
-      }
+      "videos": [
+        {
+          "id": "video_newton",
+          "title": "Les Lois de Newton",
+          "subtitle": "Dynamique du point matériel",
+          "thumbnail": "https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg",
+          "url": "https://youtu.be/YOUTUBE_ID",
+          "duration": "20:15",
+          "chapter": "Dynamique"
+        },
+        {
+          "id": "video_circuits",
+          "title": "Circuits RC et RL",
+          "subtitle": "Régime transitoire et permanent",
+          "thumbnail": "https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg",
+          "url": "https://youtu.be/YOUTUBE_ID",
+          "duration": "17:08",
+          "chapter": "Électricité"
+        }
+      ]
     },
     {
       "id": "chimie",
@@ -75,19 +101,23 @@
         {
           "id": "chimie_organique",
           "title": "Chimie Organique",
-          "subtitle": "Hydrocarbures, Fonctions oxygenées",
+          "subtitle": "Hydrocarbures, Fonctions oxygénées",
           "level": "Terminale SM",
           "file": "fiches/chimie/chimie_organique.html",
-          "sections": [
-            "Hydrocarbures",
-            "Fonctions oxygenées",
-            "Acides carboxyliques"
-          ]
+          "sections": ["Hydrocarbures", "Fonctions oxygénées"]
         }
       ],
-      "videos": {
-        "chimie_organique": "https://www.youtube.com/results?search_query=chimie+organique+terminale"
-      }
+      "videos": [
+        {
+          "id": "video_hydrocarbures",
+          "title": "Les Hydrocarbures",
+          "subtitle": "Alcanes, alcènes, alcynes",
+          "thumbnail": "https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg",
+          "url": "https://youtu.be/YOUTUBE_ID",
+          "duration": "19:22",
+          "chapter": "Hydrocarbures"
+        }
+      ]
     }
   ]
 }
