@@ -12,7 +12,7 @@
           "title": "Fiche de Formules Complète",
           "subtitle": "Terminale SM - Toutes les formules du programme",
           "level": "Terminale SM",
-          "file": "fiches/mathematiques/ciam_maths_fiche_formules_complete.html",
+          "file": "fiches/mathematiques/ciam_maths_fiche_formules.html",
           "sections": ["Arithmétique", "Géométrie", "Analyse", "Trigonométrie", "Probabilités"]
         }
       ],
