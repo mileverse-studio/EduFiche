@@ -18,63 +18,108 @@
       ],
       "videos": [
         {
+          "id": "video_pgcd_ppcm",
+          "title": "PGCD et PPCM - Algorithme d'Euclide",
+          "subtitle": "Comment calculer le PGCD et PPCM avec l'algorithme d'Euclide",
+          "thumbnail": "https://img.youtube.com/vi/Y_ySYUKSRys/hqdefault.jpg",
+          "url": "https://youtu.be/Y_ySYUKSRys",
+          "duration": "12:30",
+          "chapter": "Arithmétique"
+        },
+        {
+          "id": "video_divisibilite",
+          "title": "Divisibilité dans Z - Cours complet",
+          "subtitle": "Propriétés et démonstrations de la divisibilité dans les entiers",
+          "thumbnail": "https://img.youtube.com/vi/SYw8gEVVq7U/hqdefault.jpg",
+          "url": "https://youtu.be/SYw8gEVVq7U",
+          "duration": "18:45",
+          "chapter": "Arithmétique"
+        },
+        {
+          "id": "video_nombres_premiers",
+          "title": "Nombres premiers et décomposition en facteurs premiers",
+          "subtitle": "Théorème fondamental de l'arithmétique et applications",
+          "thumbnail": "https://img.youtube.com/vi/BhH8zE9e4Tw/hqdefault.jpg",
+          "url": "https://youtu.be/BhH8zE9e4Tw",
+          "duration": "15:20",
+          "chapter": "Arithmétique"
+        },
+        {
           "id": "video_suites",
-          "title": "Les Suites Numériques",
-          "subtitle": "Arithmétiques et géométriques - Terminus",
+          "title": "THE COURSE: Sequences - Terminale",
+          "subtitle": "Cours complet sur les suites numériques",
           "thumbnail": "https://img.youtube.com/vi/MJv7_pkFcdA/hqdefault.jpg",
           "url": "https://youtu.be/MJv7_pkFcdA",
           "duration": "15:42",
           "chapter": "Analyse"
         },
         {
+          "id": "video_suites_geom",
+          "title": "Les suites ARITHMÉTIQUES et GÉOMÉTRIQUES",
+          "subtitle": "Principe et formules des suites avec méthodes",
+          "thumbnail": "https://img.youtube.com/vi/zclZEPmFB64/hqdefault.jpg",
+          "url": "https://youtu.be/zclZEPmFB64",
+          "duration": "17:28",
+          "chapter": "Analyse"
+        },
+        {
+          "id": "video_limites_suites",
+          "title": "Replay Cours Terminale - Limites de suites",
+          "subtitle": "Théorème des Gendarme et convergence",
+          "thumbnail": "https://img.youtube.com/vi/46p9pYamH7w/hqdefault.jpg",
+          "url": "https://youtu.be/46p9pYamH7w",
+          "duration": "22:15",
+          "chapter": "Analyse"
+        },
+        {
           "id": "video_derivees",
-          "title": "La Dérivation",
-          "subtitle": "Règles et applications - Cours complet",
+          "title": "Terminale. Dérivation. Cours, démonstration et exercice.",
+          "subtitle": "Règles de dérivation complètes pour Terminale",
           "thumbnail": "https://img.youtube.com/vi/sXImbSSeRiE/hqdefault.jpg",
           "url": "https://youtu.be/sXImbSSeRiE",
           "duration": "28:15",
           "chapter": "Analyse"
         },
         {
-          "id": "video_integrales",
-          "title": "Primitives et Intégrales",
-          "subtitle": "Cours complet en 37 minutes",
-          "thumbnail": "https://img.youtube.com/vi/ENjGUb-ZGtg/hqdefault.jpg",
-          "url": "https://youtu.be/ENjGUb-ZGtg",
-          "duration": "37:24",
+          "id": "video_limites_fonctions",
+          "title": "LE COURS : Notion de limite d'une fonction",
+          "subtitle": "Limites et continuité des fonctions",
+          "thumbnail": "https://img.youtube.com/vi/WarWykj_W84/hqdefault.jpg",
+          "url": "https://youtu.be/WarWykj_W84",
+          "duration": "20:30",
           "chapter": "Analyse"
         },
         {
-          "id": "video_complexes",
-          "title": "Nombres Complexes",
-          "subtitle": "Formes algébrique et trigonométrique",
-          "thumbnail": "https://img.youtube.com/vi/ABo2m52oEYw/hqdefault.jpg",
-          "url": "https://youtu.be/ABo2m52oEYw",
-          "duration": "22:33",
-          "chapter": "Géométrie"
+          "id": "video_taf",
+          "title": "Théorème des accroissements finis - Exercices",
+          "subtitle": "Applications du théorème des accroissements finis",
+          "thumbnail": "https://img.youtube.com/vi/amiyrXVWuFU/hqdefault.jpg",
+          "url": "https://youtu.be/amiyrXVWuFU",
+          "duration": "16:40",
+          "chapter": "Analyse"
         },
         {
-          "id": "video_proba",
-          "title": "Dénombrement et Probabilités",
-          "subtitle": "Combinaisons et arrangements",
-          "thumbnail": "https://img.youtube.com/vi/9M28OHsVMao/hqdefault.jpg",
-          "url": "https://youtu.be/9M28OHsVMao",
-          "duration": "18:45",
-          "chapter": "Probabilités"
+          "id": "video_tvi",
+          "title": "Théorème des Valeurs Intermédiaires",
+          "subtitle": "TVI et théorème de la bijection",
+          "thumbnail": "https://img.youtube.com/vi/gO-MQUlBAfo/hqdefault.jpg",
+          "url": "https://youtu.be/gO-MQUlBAfo",
+          "duration": "14:25",
+          "chapter": "Analyse"
         },
         {
-          "id": "video_barrycentre",
-          "title": "Barycentre et Produit Vectoriel",
-          "subtitle": "Géométrie dans l'espace",
-          "thumbnail": "https://img.youtube.com/vi/zJlbhuITH-I/hqdefault.jpg",
-          "url": "https://youtu.be/zJlbhuITH-I",
-          "duration": "20:18",
-          "chapter": "Géométrie"
+          "id": "video_asymptotes",
+          "title": "Asymptotes à la courbe - Cours Terminale",
+          "subtitle": "Asymptotes verticales, horizontales et obliques",
+          "thumbnail": "https://img.youtube.com/vi/4SzUib7QMdU/hqdefault.jpg",
+          "url": "https://youtu.be/4SzUib7QMdU",
+          "duration": "19:50",
+          "chapter": "Analyse"
         },
         {
           "id": "video_logarithme",
-          "title": "Fonction Logarithme Népérien",
-          "subtitle": "Propriétés et équations",
+          "title": "Fonction Logarithme Népérien - Propriétés",
+          "subtitle": "Propriétés et équations avec ln",
           "thumbnail": "https://img.youtube.com/vi/5vZqyLS9-cA/hqdefault.jpg",
           "url": "https://youtu.be/5vZqyLS9-cA",
           "duration": "25:30",
@@ -82,65 +127,173 @@
         },
         {
           "id": "video_exponentielle",
-          "title": "Fonction Exponentielle",
-          "subtitle": "Propriétés et études de fonctions",
+          "title": "Fonction Exponentielle - Propriétés et études",
+          "subtitle": "Cours complet sur l'exponentielle",
           "thumbnail": "https://img.youtube.com/vi/_tHyW2r3zr4/hqdefault.jpg",
           "url": "https://youtu.be/_tHyW2r3zr4",
           "duration": "23:12",
           "chapter": "Analyse"
         },
         {
-          "id": "video_coniques",
-          "title": "Les Coniques",
-          "subtitle": "Ellipse, hyperbole, parabole",
-          "thumbnail": "https://img.youtube.com/vi/0JChohwl0FA/hqdefault.jpg",
-          "url": "https://youtu.be/0JChohwl0FA",
-          "duration": "19:55",
-          "chapter": "Géométrie"
-        },
-        {
           "id": "video_primitive",
-          "title": "Les Primitives",
-          "subtitle": "Cours sur les primitives et quelques exercices",
+          "title": "THE COURSE: Primitives - Terminale",
+          "subtitle": "Cours complet sur les primitives",
           "thumbnail": "https://img.youtube.com/vi/bQ-eS1zZCdw/hqdefault.jpg",
           "url": "https://youtu.be/bQ-eS1zZCdw",
           "duration": "21:40",
           "chapter": "Analyse"
         },
         {
-          "id": "video_limites",
-          "title": "Limites et Continuité",
-          "subtitle": "Théorème des valeurs intermédiaires",
-          "thumbnail": "https://img.youtube.com/vi/zclZEPmFB64/hqdefault.jpg",
-          "url": "https://youtu.be/zclZEPmFB64",
-          "duration": "17:28",
+          "id": "video_integrales",
+          "title": "Tle - INTÉGRATION et PRIMITIVES en 37 min",
+          "subtitle": "Cours complet intégration et primitives",
+          "thumbnail": "https://img.youtube.com/vi/ENjGUb-ZGtg/hqdefault.jpg",
+          "url": "https://youtu.be/ENjGUb-ZGtg",
+          "duration": "37:24",
           "chapter": "Analyse"
         },
         {
+          "id": "video_integration_parties",
+          "title": "Intégration par parties - Technique complète",
+          "subtitle": "Méthode d'intégration par parties avec exercices",
+          "thumbnail": "https://img.youtube.com/vi/uNIpYeaNfsg/hqdefault.jpg",
+          "url": "https://youtu.be/uNIpYeaNfsg",
+          "duration": "18:55",
+          "chapter": "Analyse"
+        },
+        {
+          "id": "video_valeur_moyenne",
+          "title": "Valeur moyenne d'une fonction",
+          "subtitle": "Calcul de la valeur moyenne avec interprétations",
+          "thumbnail": "https://img.youtube.com/vi/FYu8eNhtLHo/hqdefault.jpg",
+          "url": "https://youtu.be/FYu8eNhtLHo",
+          "duration": "13:20",
+          "chapter": "Analyse"
+        },
+        {
+          "id": "video_complexes",
+          "title": "THE COURSE: Complex numbers - Final year",
+          "subtitle": "Nombres complexes - Cours complet Terminale",
+          "thumbnail": "https://img.youtube.com/vi/ABo2m52oEYw/hqdefault.jpg",
+          "url": "https://youtu.be/ABo2m52oEYw",
+          "duration": "22:33",
+          "chapter": "Géométrie"
+        },
+        {
+          "id": "video_formule_euler",
+          "title": "Formules d'Euler - Application aux complexes",
+          "subtitle": "cos(θ) et sin(θ) en fonction de l'exponentielle",
+          "thumbnail": "https://img.youtube.com/vi/BuHuKhDy2ZU/hqdefault.jpg",
+          "url": "https://youtu.be/BuHuKhDy2ZU",
+          "duration": "14:30",
+          "chapter": "Géométrie"
+        },
+        {
+          "id": "video_moivre",
+          "title": "Appliquer la formule de Moivre - Terminale",
+          "subtitle": "Utilisation de la formule de Moivre en trigonométrie",
+          "thumbnail": "https://img.youtube.com/vi/RU2C4i3n5Ik/hqdefault.jpg",
+          "url": "https://youtu.be/RU2C4i3n5Ik",
+          "duration": "12:45",
+          "chapter": "Géométrie"
+        },
+        {
+          "id": "video_racines_niemes",
+          "title": "Racines n-ièmes d'un nombre complexe",
+          "subtitle": "Calcul et propriétés des racines n-ièmes",
+          "thumbnail": "https://img.youtube.com/vi/Ztr0zbn-LHw/hqdefault.jpg",
+          "url": "https://youtu.be/Ztr0zbn-LHw",
+          "duration": "16:20",
+          "chapter": "Géométrie"
+        },
+        {
+          "id": "video_trigonometrie",
+          "title": "Trigonométrie - Formules d'addition et duplication",
+          "subtitle": "Identités trigonométriques fondamentales",
+          "thumbnail": "https://img.youtube.com/vi/hf2iC0aSVeQ/hqdefault.jpg",
+          "url": "https://youtu.be/hf2iC0aSVeQ",
+          "duration": "20:15",
+          "chapter": "Trigonométrie"
+        },
+        {
+          "id": "video_coniques",
+          "title": "Coniques : Ellipses, Paraboles, Hyperboles",
+          "subtitle": "Cours complet sur les coniques",
+          "thumbnail": "https://img.youtube.com/vi/XhCmFsOip7I/hqdefault.jpg",
+          "url": "https://youtu.be/XhCmFsOip7I",
+          "duration": "28:40",
+          "chapter": "Géométrie"
+        },
+        {
+          "id": "video_barycentre",
+          "title": "Barycentre et produit vectoriel - Espace",
+          "subtitle": "Géométrie dans l'espace Terminale",
+          "thumbnail": "https://img.youtube.com/vi/zJlbhuITH-I/hqdefault.jpg",
+          "url": "https://youtu.be/zJlbhuITH-I",
+          "duration": "20:18",
+          "chapter": "Géométrie"
+        },
+        {
+          "id": "video_produit_vectoriel",
+          "title": "Produit vectoriel - Calcul et applications",
+          "subtitle": "Aire et volume avec le produit vectoriel",
+          "thumbnail": "https://img.youtube.com/vi/-HGedUpZEPI/hqdefault.jpg",
+          "url": "https://youtu.be/-HGedUpZEPI",
+          "duration": "17:30",
+          "chapter": "Géométrie"
+        },
+        {
           "id": "video_denombrement",
-          "title": "Dénombrement",
-          "subtitle": "Arrangements, permutations, combinaisons",
+          "title": "Dénombrement - Arrangements et Combinaisons",
+          "subtitle": "Techniques de dénombrement Terminale",
           "thumbnail": "https://img.youtube.com/vi/9aeTIhYMDnk/hqdefault.jpg",
           "url": "https://youtu.be/9aeTIhYMDnk",
           "duration": "16:33",
           "chapter": "Probabilités"
         },
         {
-          "id": "video_arithmetique",
-          "title": "Arithmétique",
-          "subtitle": "PGCD, PPCM, nombres premiers",
-          "thumbnail": "https://img.youtube.com/vi/bU602m6oGfk/hqdefault.jpg",
-          "url": "https://youtu.be/bU602m6oGfk",
-          "duration": "14:22",
-          "chapter": "Arithmétique"
+          "id": "video_binome_newton",
+          "title": "Formule du Binôme de Newton",
+          "subtitle": "Développement de (a+b)^n et coefficients binomiaux",
+          "thumbnail": "https://img.youtube.com/vi/9M28OHsVMao/hqdefault.jpg",
+          "url": "https://youtu.be/9M28OHsVMao",
+          "duration": "18:45",
+          "chapter": "Probabilités"
         },
         {
-          "id": "video_trigonometrie",
-          "title": "Trigonométrie",
-          "subtitle": "Formules d'addition et de duplication",
-          "thumbnail": "https://img.youtube.com/vi/hf2iC0aSVeQ/hqdefault.jpg",
-          "url": "https://youtu.be/hf2iC0aSVeQ",
-          "duration": "20:15",
+          "id": "video_proba",
+          "title": "Dénombrement et Probabilités - Terminale",
+          "subtitle": "Probabilités conditionnelles et indépendance",
+          "thumbnail": "https://img.youtube.com/vi/9M28OHsVMao/hqdefault.jpg",
+          "url": "https://youtu.be/9M28OHsVMao",
+          "duration": "18:45",
+          "chapter": "Probabilités"
+        },
+        {
+          "id": "video_variable_aleatoire",
+          "title": "Variable aléatoire - Espérance et Variance",
+          "subtitle": "Caractéristiques d'une variable aléatoire",
+          "thumbnail": "https://img.youtube.com/vi/o67OOavrbHQ/hqdefault.jpg",
+          "url": "https://youtu.be/o67OOavrbHQ",
+          "duration": "15:40",
+          "chapter": "Probabilités"
+        },
+        {
+          "id": "video_loi_binomiale",
+          "title": "THE COURSE: Binomial Law - Terminale",
+          "subtitle": "Loi binomiale - Cours complet avec exercices",
+          "thumbnail": "https://img.youtube.com/vi/xMmfPUoBTtM/hqdefault.jpg",
+          "url": "https://youtu.be/xMmfPUoBTtM",
+          "duration": "20:25",
+          "chapter": "Probabilités"
+        },
+        {
+          "id": "video_equation_diff",
+          "title": "Équations différentielles y' = ay - Terminale",
+          "subtitle": "Résolution et applications des équations différentielles",
+          "thumbnail": "https://img.youtube.com/vi/YJNHTq85tJA/hqdefault.jpg",
+          "url": "https://youtu.be/YJNHTq85tJA",
+          "duration": "17:55",
           "chapter": "Analyse"
         }
       ]
