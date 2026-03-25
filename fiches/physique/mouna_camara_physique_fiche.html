@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Fiche de Révision - Physique - Terminale SM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d1b2a;
+            --text-color: #f0ead6;
+            --accent-color: #e9c46a;
+            --link-color: #e76f51;
+            --code-bg: #1b263b;
+            --border-color: #415a77;
+            --header-bg: #003049;
+            --section-bg: #1b263b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            padding-left: max(2rem, calc((100vw - 100%) / 2 + 1rem));
+            padding-right: max(2rem, calc((100vw - 100%) / 2 + 1rem));
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--header-bg) 0%, #004a6e 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .badge-source {
+            background: var(--accent-color);
+            color: #000;
+        }
+
+        .badge-level {
+            background: var(--link-color);
+            color: white;
+        }
+
+        .section {
+            background: var(--section-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .emoji-icon {
+            font-size: 1.5rem;
+        }
+
+        .chapter {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .chapter-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--link-color);
+        }
+
+        .subsection {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--link-color);
+        }
+
+        .subsection-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 0.75rem;
+        }
+
+        .formula {
+            padding: 1.25rem;
+            margin: 1rem 0;
+            background: var(--code-bg);
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            border: 1px solid var(--border-color);
+            overflow-x: auto;
+        }
+
+        .formula-name {
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .formula-content {
+            color: var(--text-color);
+        }
+
+        .formula-display {
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th {
+            background: var(--accent-color);
+            color: #000;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 700;
+        }
+
+        td {
+            padding: 0.9rem;
+            border: 1px solid var(--border-color);
+            background: var(--code-bg);
+        }
+
+        tr:hover td {
+            background: rgba(233, 196, 106, 0.1);
+        }
+
+        .info-box {
+            padding: 1.25rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+
+        .info-box.definition {
+            background: linear-gradient(135deg, rgba(46, 204, 113, 0.1) 0%, rgba(46, 204, 113, 0.05) 100%);
+            border-color: #2ecc71;
+        }
+
+        .info-box.theorem {
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.1) 0%, rgba(231, 76, 60, 0.05) 100%);
+            border-color: #e74c3c;
+        }
+
+        .info-box.important {
+            background: linear-gradient(135deg, rgba(241, 196, 15, 0.1) 0%, rgba(241, 196, 15, 0.05) 100%);
+            border-color: var(--accent-color);
+        }
+
+        .info-box-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .definition .info-box-title {
+            color: #2ecc71;
+        }
+
+        .theorem .info-box-title {
+            color: #e74c3c;
+        }
+
+        .important .info-box-title {
+            color: var(--accent-color);
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 1rem 0;
+        }
+
+        ul li {
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .katex-display {
+            overflow-x: auto;
+            padding: 0.75rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--header-bg);
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            color: var(--text-color);
+            opacity: 0.8;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--accent-color);
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            .container {
+                padding: 1rem 0.75rem;
+                width: 100%;
+                max-width: 100%;
+                border-radius: 0;
+            }
+
+            header {
+                padding: 2rem 1rem;
+                border-radius: 0;
+                margin-bottom: 1rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 1.25rem 0.75rem;
+                margin-bottom: 1.25rem;
+                border-radius: 0;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+            }
+
+            .chapter {
+                padding: 1rem 0.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .chapter-title {
+                font-size: 1.15rem;
+            }
+
+            .subsection {
+                padding-left: 1rem;
+                margin: 1rem 0;
+            }
+
+            .subsection-title {
+                font-size: 1rem;
+            }
+
+            .formula {
+                font-size: 0.85rem;
+                padding: 1rem 0.75rem;
+                margin: 0.75rem 0;
+                border-radius: 8px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .formula-name {
+                font-size: 0.85rem;
+            }
+
+            table {
+                font-size: 0.8rem;
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            th, td {
+                padding: 0.6rem 0.4rem;
+                white-space: nowrap;
+            }
+
+            .info-box {
+                padding: 1rem 0.75rem;
+                margin: 0.75rem 0;
+            }
+
+            ul li {
+                padding: 0.4rem 0 0.4rem 1.25rem;
+            }
+
+            .katex-display {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            footer {
+                padding: 1.5rem 1rem;
+                border-radius: 0;
+            }
+
+            .back-to-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 45px;
+                height: 45px;
+            }
+
+            .badge-container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0.75rem 0.5rem;
+            }
+
+            header {
+                padding: 1.5rem 0.75rem;
+            }
+
+            header h1 {
+                font-size: 1.3rem;
+            }
+
+            .section {
+                padding: 1rem 0.5rem;
+            }
+
+            .chapter {
+                padding: 0.75rem 0.25rem;
+            }
+
+            .formula {
+                font-size: 0.8rem;
+                padding: 0.75rem 0.5rem;
+            }
+
+            table {
+                font-size: 0.75rem;
+            }
+
+            th, td {
+                padding: 0.5rem 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Physique - Terminale SM</h1>
+            <p>Collection Mouna Camara - Programme complet</p>
+            <div class="badge-container">
+                <span class="badge badge-source">Collection Mouna Camara</span>
+                <span class="badge badge-level">Terminale SM</span>
+            </div>
+        </header>
+
+        <!-- PARTIE 1: MÉCANIQUE -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="emoji-icon">⚙️</span>
+                Partie 1: Mécanique
+            </h2>
+
+            <!-- Chapitre 1: Cinématique -->
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 1: Cinématique du Point</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">1.1 Grandeurs Cinématiques Fondamentales</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Position dans l'espace (vecteur)</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{OM} = x\vec{i} + y\vec{j} + z\vec{k}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Vitesse moyenne</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{v}_m = \frac{\Delta \vec{OM}}{\Delta t} = \frac{\vec{M_2M_1}}{t_2 - t_1}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Vitesse instantanée</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{v} = \lim_{\Delta t \to 0} \frac{\Delta \vec{OM}}{\Delta t} = \frac{d\vec{OM}}{dt}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Accélération</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{a} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{OM}}{dt^2}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📌</span> Coordonnées cartésiennes
+                        </div>
+                        <p>En coordonnées cartésiennes, les composantes sont:</p>
+                        <div class="formula-display">
+                            $$v_x = \frac{dx}{dt}, \quad v_y = \frac{dy}{dt}, \quad v_z = \frac{dz}{dt}$$
+                        </div>
+                        <div class="formula-display">
+                            $$a_x = \frac{dv_x}{dt} = \frac{d^2x}{dt^2}, \quad a_y = \frac{dv_y}{dt} = \frac{d^2y}{dt^2}, \quad a_z = \frac{dv_z}{dt} = \frac{d^2z}{dt^2}$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">1.2 Mouvement Rectiligne Uniforme (MRU)</h4>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📐</span> Propriétés du MRU
+                        </div>
+                        <ul>
+                            <li>Trajectoire: droite</li>
+                            <li>Vitesse constante: $\vec{v} = cte$</li>
+                            <li>Accélération nulle: $\vec{a} = \vec{0}$</li>
+                        </ul>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Équation horaire du MRU</div>
+                        <div class="formula-content formula-display">
+                            $$x(t) = x_0 + v(t - t_0) \quad \text{ou} \quad x(t) = v \cdot t + x_0$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Vitesse</div>
+                        <div class="formula-content formula-display">
+                            $$v = \frac{x - x_0}{t - t_0}$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">1.3 Mouvement Rectiligne Uniformément Varié (MRUV)</h4>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📐</span> Propriétés du MRUV
+                        </div>
+                        <ul>
+                            <li>Trajectoire: droite</li>
+                            <li>Accélération constante: $\vec{a} = cte$</li>
+                            <li>Vitesse: fonction affine du temps</li>
+                        </ul>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Accélération constante</div>
+                        <div class="formula-content formula-display">
+                            $$a = \frac{v - v_0}{t - t_0} = cte$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Vitesse en fonction du temps</div>
+                        <div class="formula-content formula-display">
+                            $$v(t) = v_0 + a(t - t_0) \quad \text{ou} \quad v = v_0 + at$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Position en fonction du temps</div>
+                        <div class="formula-content formula-display">
+                            $$x(t) = x_0 + v_0(t - t_0) + \frac{1}{2}a(t - t_0)^2$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Formule indépendante du temps (formule de Torricelli)</div>
+                        <div class="formula-content formula-display">
+                            $$v^2 - v_0^2 = 2a(x - x_0)$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">1.4 Mouvement Circulaire Uniforme (MCU)</h4>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📐</span> Propriétés du MCU
+                        </div>
+                        <ul>
+                            <li>Trajectoire: cercle</li>
+                            <li>Vitesse angulaire constante: $\omega = cte$</li>
+                            <li>Vitesse linéaire constante en module: $|\vec{v}| = cte$</li>
+                        </ul>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Vitesse angulaire</div>
+                        <div class="formula-content formula-display">
+                            $$\omega = \frac{d\theta}{dt} = \frac{2\pi}{T} = 2\pi f$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Relation entre vitesse linéaire et angulaire</div>
+                        <div class="formula-content formula-display">
+                            $$v = \omega \cdot R$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Accélération centripète</div>
+                        <div class="formula-content formula-display">
+                            $$a_n = \frac{v^2}{R} = \omega^2 R$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Période et fréquence</div>
+                        <div class="formula-content formula-display">
+                            $$T = \frac{2\pi R}{v} = \frac{2\pi}{\omega}, \quad f = \frac{1}{T} = \frac{\omega}{2\pi}$$
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapitre 2: Dynamique -->
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 2: Dynamique - Lois de Newton</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">2.1 Les Trois Lois de Newton</h4>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>⚖️</span> Première loi de Newton (Principe d'inertie)
+                        </div>
+                        <p>Tout corps persévère dans son état de repos ou de mouvement rectiligne uniforme s'il n'est soumis à aucune force ou si les forces qui s'exercent sur lui se compensent.</p>
+                        <div class="formula-display">
+                            $$\sum \vec{F} = \vec{0} \Leftrightarrow \vec{a} = \vec{0}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>⚡</span> Deuxième loi de Newton (Relation fondamentale de la dynamique)
+                        </div>
+                        <p>Dans un référentiel galiléen, la somme vectorielle des forces appliquées à un corps est égale au produit de sa masse par son vecteur accélération.</p>
+                        <div class="formula-display">
+                            $$\sum \vec{F} = m \cdot \vec{a}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>🔄</span> Troisième loi de Newton (Principe des actions réciproques)
+                        </div>
+                        <p>Tout corps A exerçant une force sur un corps B exerce simultanément sur A une force de même droite d'action, même intensité et sens opposé.</p>
+                        <div class="formula-display">
+                            $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">2.2 Poids et Gravitation</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Poids d'un corps</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{P} = m \cdot \vec{g}$$
+                        </div>
+                        <p>où $g \approx 9{,}81 \text{ m/s}^2$ à la surface de la Terre</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Loi de gravitation universelle (Newton)</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{F} = G \cdot \frac{m_1 \cdot m_2}{r^2} \cdot \vec{u_r}$$
+                        </div>
+                        <p>où $G = 6{,}67 \times 10^{-11} \text{ N·m}^2\text{/kg}^2$ (constante de gravitation)</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Champ de pesanteur terrestre</div>
+                        <div class="formula-content formula-display">
+                            $$g = G \cdot \frac{M_T}{R_T^2}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box important">
+                        <div class="info-box-title">
+                            <span>⭐</span> Valeurs importantes
+                        </div>
+                        <ul>
+                            <li>Masse de la Terre: $M_T = 5{,}98 \times 10^{24}$ kg</li>
+                            <li>Rayon de la Terre: $R_T = 6{,}37 \times 10^6$ m</li>
+                            <li>$g \approx 9{,}8$ m/s² (valeur approchée)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">2.3 Travail et Énergie</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Travail d'une force constante</div>
+                        <div class="formula-content formula-display">
+                            $$W_{AB}(\vec{F}) = \vec{F} \cdot \vec{AB} = F \cdot AB \cdot \cos(\alpha)$$
+                        </div>
+                    </div>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📊</span> Conventions
+                        </div>
+                        <ul>
+                            <li>$W > 0$: force motrice (dans le sens du mouvement)</li>
+                            <li>$W < 0$: force résistance (opposée au mouvement)</li>
+                            <li>$W = 0$: force perpendiculaire au déplacement</li>
+                        </ul>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Énergie cinétique</div>
+                        <div class="formula-content formula-display">
+                            $$E_c = \frac{1}{2}mv^2$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Énergie potentielle de pesanteur</div>
+                        <div class="formula-content formula-display">
+                            $$E_p = m \cdot g \cdot h$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Énergie mécanique</div>
+                        <div class="formula-content formula-display">
+                            $$E_m = E_c + E_p = \frac{1}{2}mv^2 + mgh$$
+                        </div>
+                    </div>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>🔒</span> Théorème de l'énergie mécanique
+                        </div>
+                        <p>Dans un système soumis uniquement à des forces conservatives, l'énergie mécanique se conserve:</p>
+                        <div class="formula-display">
+                            $$E_m(A) = E_m(B) \Rightarrow \Delta E_m = 0$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Théorème de l'énergie cinétique</div>
+                        <div class="formula-content formula-display">
+                            $$\Delta E_c = E_c(B) - E_c(A) = \sum W(\vec{F} \rightarrow \text{système})$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">2.4 Quantité de Mouvement et Chocs</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Quantité de mouvement</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{p} = m \cdot \vec{v}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>🔄</span> Conservation de la quantité de mouvement
+                        </div>
+                        <p>Pour un système isolé (ou pseudo-isolé), la quantité de mouvement totale se conserve:</p>
+                        <div class="formula-display">
+                            $$\vec{p}_{\text{totale}} = cte \quad \Rightarrow \quad \sum \vec{p}_i = \sum \vec{p}_i'$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Relation entre impulsion et force</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{F} = \frac{d\vec{p}}{dt}$$
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapitre 3: Oscillations Mécaniques -->
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 3: Oscillations Mécaniques</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">3.1 Oscillateur Harmonique Simple</h4>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>〰️</span> Oscillateur harmonique
+                        </div>
+                        <p>Un oscillateur harmonique est un système qui oscille librement sous l'effet d'une force de rappel proportionnelle à l'élongation.</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Équation différentielle du mouvement</div>
+                        <div class="formula-content formula-display">
+                            $$\frac{d^2x}{dt^2} + \omega_0^2 x = 0$$
+                        </div>
+                        <p>où $\omega_0$ est la pulsation propre</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Solution (position)</div>
+                        <div class="formula-content formula-display">
+                            $$x(t) = X_m \cos(\omega_0 t + \varphi)$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Vitesse</div>
+                        <div class="formula-content formula-display">
+                            $$v(t) = -X_m \omega_0 \sin(\omega_0 t + \varphi)$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Période propre</div>
+                        <div class="formula-content formula-display">
+                            $$T_0 = \frac{2\pi}{\omega_0} = 2\pi\sqrt{\frac{m}{k}}$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">3.2 Pendule Simple</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Période propre du pendule simple</div>
+                        <div class="formula-content formula-display">
+                            $$T_0 = 2\pi\sqrt{\frac{L}{g}}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box important">
+                        <div class="info-box-title">
+                            <span>⚠️</span> Condition de validité
+                        </div>
+                        <p>Cette formule n'est valable que pour les petites oscillations: $\theta < 15°$</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTIE 2: ÉLECTRICITÉ -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="emoji-icon">⚡</span>
+                Partie 2: Électricité
+            </h2>
+
+            <!-- Chapitre 4: Électrostatique -->
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 4: Électrostatique</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">4.1 Loi de Coulomb</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Loi de Coulomb</div>
+                        <div class="formula-content formula-display">
+                            $$F = k \cdot \frac{|q_1| \cdot |q_2|}{r^2}$$
+                        </div>
+                        <p>où $k = \frac{1}{4\pi\varepsilon_0} \approx 9 \times 10^9$ N·m²/C²</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Force électrostatique vectorielle</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{F}_{1/2} = k \cdot \frac{q_1 \cdot q_2}{r^2} \cdot \vec{u}_{12}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box important">
+                        <div class="info-box-title">
+                            <span>🔋</span> Constante électrique
+                        </div>
+                        <ul>
+                            <li>$\varepsilon_0 = 8{,}85 \times 10^{-12}$ F/m (permittivité du vide)</li>
+                            <li>$k = 8{,}99 \times 10^9$ N·m²/C²</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">4.2 Champ Électrostatique</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Champ créé par une charge ponctuelle</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{E} = k \cdot \frac{q}{r^2} \cdot \vec{u}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Champ créé par un dipole</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{p} = q \cdot \vec{AB} \quad \text{(moment dipolaire)}$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">4.3 Énergie Potentielle Électrique</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Énergie potentielle d'une charge</div>
+                        <div class="formula-content formula-display">
+                            $$E_p = q \cdot V$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Potentiel électrique</div>
+                        <div class="formula-content formula-display">
+                            $$V = k \cdot \frac{q}{r}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Tension électrique</div>
+                        <div class="formula-content formula-display">
+                            $$U_{AB} = V_A - V_B = \frac{E_{pA} - E_{pB}}{q}$$
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapitre 5: Circuits Électriques -->
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 5: Circuits Électriques - Régime Continu</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">5.1 Lois d'Ohm et de Kirchhoff</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Loi d'Ohm (résistor)</div>
+                        <div class="formula-content formula-display">
+                            $$U = R \cdot I$$
+                        </div>
+                    </div>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>🔗</span> Loi des noeuds (Kirchhoff)
+                        </div>
+                        <p>La somme des courants entrant dans un noeud est égale à la somme des courants sortants:</p>
+                        <div class="formula-display">
+                            $$\sum I_{\textentrant} = \sum I_{\textsortant}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>🔄</span> Loi des mailles (Kirchhoff)
+                        </div>
+                        <p>La somme algébrique des tensions dans une maille est nulle:</p>
+                        <div class="formula-display">
+                            $$\sum U_i = 0$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">5.2 Associations de Résistances</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Résistances en série</div>
+                        <div class="formula-content formula-display">
+                            $$R_{\text{eq}} = R_1 + R_2 + ... + R_n$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Résistances en parallèle</div>
+                        <div class="formula-content formula-display">
+                            $$\frac{1}{R_{\text{eq}}} = \frac{1}{R_1} + \frac{1}{R_2} + ... + \frac{1}{R_n}$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">5.3 Puissance et Énergie Électrique</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Puissance électrique</div>
+                        <div class="formula-content formula-display">
+                            $$P = U \cdot I = R \cdot I^2 = \frac{U^2}{R}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Énergie électrique</div>
+                        <div class="formula-content formula-display">
+                            $$E = P \cdot t = U \cdot I \cdot t$$
+                        </div>
+                        <p>Unité: le joule (J) ou le watt-heure (Wh)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapitre 6: Condensateurs et Bobines -->
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 6: Condensateurs et Bobines - Régime Transitoire</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">6.1 Le Condensateur</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Capacité d'un condensateur</div>
+                        <div class="formula-content formula-display">
+                            $$C = \frac{Q}{U} = \varepsilon_0 \cdot \frac{S}{d}$$
+                        </div>
+                        <p>Unité: le farad (F)</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Énergie emmagasinée</div>
+                        <div class="formula-content formula-display">
+                            $$E_c = \frac{1}{2}CU^2 = \frac{Q^2}{2C} = \frac{1}{2}QU$$
+                        </div>
+                    </div>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📊</span> Relation intensité-tension
+                        </div>
+                        <div class="formula-display">
+                            $$i = \frac{dq}{dt} = C \cdot \frac{du}{dt}$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">6.2 La Bobine</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Inductance d'une bobine</div>
+                        <div class="formula-content formula-display">
+                            $$L = \frac{N^2 \cdot \mu \cdot S}{l}$$
+                        </div>
+                        <p>Unité: le henry (H)</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Énergie emmagasinée</div>
+                        <div class="formula-content formula-display">
+                            $$E_L = \frac{1}{2}LI^2$$
+                        </div>
+                    </div>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📊</span> Relation intensité-tension
+                        </div>
+                        <div class="formula-display">
+                            $$u_L = L \cdot \frac{di}{dt}$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">6.3 Oscillations Électriques (Circuit LC)</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Équation différentielle</div>
+                        <div class="formula-content formula-display">
+                            $$\frac{d^2q}{dt^2} + \frac{1}{LC}q = 0$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Pulsation propre</div>
+                        <div class="formula-content formula-display">
+                            $$\omega_0 = \frac{1}{\sqrt{LC}}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Période propre</div>
+                        <div class="formula-content formula-display">
+                            $$T_0 = 2\pi\sqrt{LC}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Charge du condensateur</div>
+                        <div class="formula-content formula-display">
+                            $$q(t) = Q_m \cos(\omega_0 t + \varphi)$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Conservation de l'énergie</div>
+                        <div class="formula-content formula-display">
+                            $$E_{\text{totale}} = \frac{Q^2}{2C} + \frac{1}{2}LI^2 = cte$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">6.4 Circuit RC - Charge et Décharge</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Constante de temps</div>
+                        <div class="formula-content formula-display">
+                            $$\tau = RC$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Charge du condensateur</div>
+                        <div class="formula-content formula-display">
+                            $$q(t) = Q(1 - e^{-t/\tau}) = CE(1 - e^{-t/RC})$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Décharge du condensateur</div>
+                        <div class="formula-content formula-display">
+                            $$q(t) = Q_0 e^{-t/\tau}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box important">
+                        <div class="info-box-title">
+                            <span>⏱️</span> Propriétés de τ
+                        </div>
+                        <ul>
+                            <li>Après $t = \tau$: $q = 0{,}63Q$ (charge) ou $q = 0{,}37Q_0$ (décharge)</li>
+                            <li>Après $t = 5\tau$: charge quasi-complète (>99%)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTIE 3: OPTIQUE -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="emoji-icon">🔍</span>
+                Partie 3: Optique
+            </h2>
+
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 7: Lentilles Minces</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">7.1 Éléments Caractéristiques</h4>
+
+                    <ul>
+                        <li><strong>Centre optique O</strong>: point invariant</li>
+                        <li><strong>Axe principal</strong>: droite passant par O perpendiculaire à la lentille</li>
+                        <li><strong>Foyers F et F'</strong>: $OF = OF' = f'$ (distance focale)</li>
+                        <li><strong>Vergence C</strong>: $C = \frac{1}{f'}$ en dioptries (δ)</li>
+                    </ul>
+
+                    <div class="formula">
+                        <div class="formula-name">Relation de conjugaison (Descartes)</div>
+                        <div class="formula-content formula-display">
+                            $$\frac{1}{\overline{OA'}} - \frac{1}{\overline{OA}} = \frac{1}{\overline{OF'}} = C$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Grandissement transversal</div>
+                        <div class="formula-content formula-display">
+                            $$\gamma = \frac{\overline{A'B'}}{\overline{AB}} = \frac{\overline{OA'}}{\overline{OA}}$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">7.2 Construction Graphique</h4>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📏</span> Rayons particuliers
+                        </div>
+                        <ul>
+                            <li>Rayon passant par O: non dévié</li>
+                            <li>Rayon parallèle à l'axe: passe par F'</li>
+                            <li>Rayon passant par F: émerge parallèle à l'axe</li>
+                        </ul>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Formules des loupeurs</div>
+                        <div class="formula-content formula-display">
+                            $$\gamma = -\frac{\overline{F'A'}}{\overline{F'O}} = -\frac{\overline{OA'}}{\overline{OA}}$$
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 8:的眼睛 Interférences Lumineuses</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">8.1 Conditions d'Interférences</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Différence de marche</div>
+                        <div class="formula-content formula-display">
+                            $$\delta = S_2M - S_1M$$
+                        </div>
+                    </div>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>🔆</span> Condition d'interférences
+                        </div>
+                        <ul>
+                            <li><strong>Constructives:</strong> $\delta = k\lambda$ (franges brillantes)</li>
+                            <li><strong>Destructives:</strong> $\delta = (2k+1)\frac{\lambda}{2}$ (franges sombres)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">8.2 Franges d'Interférences</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Interfrange</div>
+                        <div class="formula-content formula-display">
+                            $$i = \frac{\lambda D}{a}$$
+                        </div>
+                        <p>où $D$: distance fentes-écran, $a$: distance entre les fentes</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Ordre d'interférence</div>
+                        <div class="formula-content formula-display">
+                            $$k = \frac{\delta}{\lambda}$$
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTIE 4: THERMODYNAMIQUE -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="emoji-icon">🌡️</span>
+                Partie 4: Thermodynamique
+            </h2>
+
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 9: Transferts Thermiques</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">9.1 Chaleur et Capacité Thermique</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Quantité de chaleur</div>
+                        <div class="formula-content formula-display">
+                            $$Q = mc\Delta T$$
+                        </div>
+                        <p>où $c$: capacité thermique massique (J·kg⁻¹·K⁻¹)</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Capacité thermique</div>
+                        <div class="formula-content formula-display">
+                            $$C = mc$$
+                        </div>
+                    </div>
+
+                    <div class="info-box important">
+                        <div class="info-box-title">
+                            <span>💧</span> Chaleur latente
+                        </div>
+                        <div class="formula-display">
+                            $$Q = mL$$
+                        </div>
+                        <p>où $L$: chaleur latente massique (J·kg⁻¹)</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">9.2 Calorimétrie</h4>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>⚖️</span> Principe de conservation de l'énergie
+                        </div>
+                        <p>Dans un calorimètre parfaitement isolé:</p>
+                        <div class="formula-display">
+                            $$\sum Q_i = 0$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Équation calorimétrique</div>
+                        <div class="formula-content formula-display">
+                            $$m_1 c_1 (T_{\text{eq}} - T_1) + m_2 c_2 (T_{\text{eq}} - T_2) = 0$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Capacité thermique du calorimètre (équivalent en eau)</div>
+                        <div class="formula-content formula-display">
+                            $$m_{\text{eau}} \cdot c_{\text{eau}}$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">9.3 Transferts Thermiques</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Flux thermique</div>
+                        <div class="formula-content formula-display">
+                            $$\Phi = \frac{Q}{\Delta t}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Loi de Fourier (conduction)</div>
+                        <div class="formula-content formula-display">
+                            $$\Phi = \lambda \cdot S \cdot \frac{\Delta T}{\Delta x}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>🔥</span> Types de transfert
+                        </div>
+                        <ul>
+                            <li><strong>Conduction:</strong> transfert sans déplacement de matière</li>
+                            <li><strong>Convection:</strong> transfert avec déplacement de fluide</li>
+                            <li><strong>Rayonnement:</strong> transfert par ondes électromagnétiques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTIE 5: PHYSIQUE NUCLÉAIRE -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="emoji-icon">☢️</span>
+                Partie 5: Physique Nucléaire
+            </h2>
+
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 10: Noyau Atomique et Radioactivité</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">10.1 Structure du Noyau</h4>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>⚛️</span> Composition du noyau
+                        </div>
+                        <ul>
+                            <li><strong>Protons:</strong> Z (numéro atomique)</li>
+                            <li><strong>Neutrons:</strong> N</li>
+                            <li><strong>Nombre de masse:</strong> A = Z + N</li>
+                        </ul>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Notation d'un noyau</div>
+                        <div class="formula-content formula-display">
+                            $$^A_ZX$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Masse du noyau (défaut de masse)</div>
+                        <div class="formula-content formula-display">
+                            $$\Delta m = [Z m_p + N m_n] - m_{\text{noyau}}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Énergie de liaison</div>
+                        <div class="formula-content formula-display">
+                            $$E_l = \Delta m \cdot c^2$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">10.2 Radioactivité</h4>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>🔬</span> Lois de désintégration radioactive
+                        </div>
+                        <div class="formula-display">
+                            $$N(t) = N_0 e^{-\lambda t}$$
+                        </div>
+                        <div class="formula-display">
+                            $$A(t) = A_0 e^{-\lambda t}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Constante radioactive</div>
+                        <div class="formula-content formula-display">
+                            $$\lambda = \frac{\ln 2}{T_{1/2}}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Demi-vie radioactive</div>
+                        <div class="formula-content formula-display">
+                            $$T_{1/2} = \frac{\ln 2}{\lambda}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Activité</div>
+                        <div class="formula-content formula-display">
+                            $$A = \lambda N = \frac{\ln 2}{T_{1/2}} N$$
+                        </div>
+                        <p>Unité: becquerel (Bq)</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">10.3 Équivalence Masse-Énergie</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Relation d'Einstein</div>
+                        <div class="formula-content formula-display">
+                            $$E = mc^2$$
+                        </div>
+                    </div>
+
+                    <div class="info-box important">
+                        <div class="info-box-title">
+                            <span>⚡</span> Unités pratiques
+                        </div>
+                        <ul>
+                            <li>1 eV = $1{,}6 \times 10^{-19}$ J</li>
+                            <li>1 u (unité de masse atomique) = $931{,}5$ MeV/c²</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TABLEAUX RÉCAPITULATIFS -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="emoji-icon">📊</span>
+                Tableaux Récapitulatifs
+            </h2>
+
+            <div class="chapter">
+                <h3 class="chapter-title">Constantes Physiques Fondamentales</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Constante</th>
+                            <th>Symbole</th>
+                            <th>Valeur</th>
+                            <th>Unité</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Constante de gravitation</td>
+                            <td>G</td>
+                            <td>6,67 × 10⁻¹¹</td>
+                            <td>N·m²/kg²</td>
+                        </tr>
+                        <tr>
+                            <td>Constante électrique</td>
+                            <td>k</td>
+                            <td>8,99 × 10⁹</td>
+                            <td>N·m²/C²</td>
+                        </tr>
+                        <tr>
+                            <td>Permittivité du vide</td>
+                            <td>ε₀</td>
+                            <td>8,85 × 10⁻¹²</td>
+                            <td>F/m</td>
+                        </tr>
+                        <tr>
+                            <td>Masse de la Terre</td>
+                            <td>M_T</td>
+                            <td>5,98 × 10²⁴</td>
+                            <td>kg</td>
+                        </tr>
+                        <tr>
+                            <td>Rayon de la Terre</td>
+                            <td>R_T</td>
+                            <td>6,37 × 10⁶</td>
+                            <td>m</td>
+                        </tr>
+                        <tr>
+                            <td>Champ de pesanteur</td>
+                            <td>g</td>
+                            <td>9,81</td>
+                            <td>m/s²</td>
+                        </tr>
+                        <tr>
+                            <td>Vitesse de la lumière</td>
+                            <td>c</td>
+                            <td>3 × 10⁸</td>
+                            <td>m/s</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="chapter">
+                <h3 class="chapter-title">Unités du Système International (SI)</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Grandeur</th>
+                            <th>Unité</th>
+                            <th>Symbole</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Longueur</td>
+                            <td>mètre</td>
+                            <td>m</td>
+                        </tr>
+                        <tr>
+                            <td>Masse</td>
+                            <td>kilogramme</td>
+                            <td>kg</td>
+                        </tr>
+                        <tr>
+                            <td>Temps</td>
+                            <td>seconde</td>
+                            <td>s</td>
+                        </tr>
+                        <tr>
+                            <td>Intensité</td>
+                            <td>ampère</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Tension</td>
+                            <td>volt</td>
+                            <td>V</td>
+                        </tr>
+                        <tr>
+                            <td>Résistance</td>
+                            <td>ohm</td>
+                            <td>Ω</td>
+                        </tr>
+                        <tr>
+                            <td>Capacité</td>
+                            <td>farad</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>Inductance</td>
+                            <td>henry</td>
+                            <td>H</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- PARTIE 6: CHAMP MAGNÉTIQUE -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="emoji-icon">🧲</span>
+                Partie 6: Champ Magnétique et Induction
+            </h2>
+
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 11: Force de Lorentz et Mouvement dans un Champ Magnétique</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">11.1 Force de Lorentz</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Force de Lorentz (force magnétique)</div>
+                        <div class="formula-content formula-display">
+                            $$\vec{F} = q\vec{v} \wedge \vec{B}$$
+                        </div>
+                        <p>où q est la charge (C), v la vitesse (m/s), B le champ magnétique (T)</p>
+                    </div>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📌</span> Propriétés
+                        </div>
+                        <ul>
+                            <li>La force est perpendiculaire à v et à B</li>
+                            <li>Le travail de la force magnétique est nul: $W = 0$</li>
+                            <li>La force magnétique ne modifie pas l'énergie cinétique</li>
+                        </ul>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Cas d'une particule dans un champ uniforme perpendiculaire à v</div>
+                        <div class="formula-content formula-display">
+                            $$R = \frac{mv}{|q|B}$$
+                        </div>
+                        <p>où R est le rayon de la trajectoire circulaire</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Période du mouvement circulaire</div>
+                        <div class="formula-content formula-display">
+                            $$T = \frac{2\pi m}{|q|B}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box important">
+                        <div class="info-box-title">
+                            <span>🔑</span> Applications
+                        </div>
+                        <ul>
+                            <li><strong>Cyclotron:</strong> accélérateur de particules</li>
+                            <li><strong>Spectromètre de masse:</strong> séparation des isotopes</li>
+                            <li><strong>Tokamak:</strong> confinement du plasma pour la fusion nucléaire</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">11.2 Champ Magnétique Créé par un Courant</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Champ au centre d'une spire circulaire</div>
+                        <div class="formula-content formula-display">
+                            $$B = \frac{\mu_0 I}{2R}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Champ au centre d'un solénoïde</div>
+                        <div class="formula-content formula-display">
+                            $$B = \mu_0 n I = \mu_0 \frac{N}{\ell} I$$
+                        </div>
+                        <p>où n = N/ℓ est le nombre de spires par unité de longueur</p>
+                    </div>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>🔧</span> Perméabilité du vide
+                        </div>
+                        <p>$\mu_0 = 4\pi \times 10^{-7}$ H/m</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 12: Induction Électromagnétique</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">12.1 Flux Magnétique</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Flux magnétique à travers une surface</div>
+                        <div class="formula-content formula-display">
+                            $$\Phi = \vec{B} \cdot \vec{S} = BS\cos\alpha$$
+                        </div>
+                        <p>Unité: le weber (Wb)</p>
+                    </div>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📊</span> Conventions
+                        </div>
+                        <ul>
+                            <li>Flux maximal quand $\alpha = 0°$: $\Phi_{max} = BS$</li>
+                            <li>Flux nul quand $\alpha = 90°$</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">12.2 Loi de Faraday (Induction)</h4>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>⚡</span> Loi de Faraday
+                        </div>
+                        <p>La force électromotrice (f.é.m.) d'induction est égale à l'opposé de la variation temporelle du flux magnétique:</p>
+                        <div class="formula-display">
+                            $$e = -\frac{d\Phi}{dt}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">F.é.m. d'auto-induction</div>
+                        <div class="formula-content formula-display">
+                            $$e = -L\frac{di}{dt}$$
+                        </div>
+                        <p>où L est l'inductance de la bobine (en henry)</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">12.3 Loi de Lenz</h4>
+
+                    <div class="info-box theorem">
+                        <div class="info-box-title">
+                            <span>🔄</span> Loi de Lenz
+                        </div>
+                        <p>Le courant induit possède un sens tel qu'il s'oppose par ses effets à la cause qui lui a donné naissance.</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Convention de signes</div>
+                        <div class="formula-content formula-display">
+                            $$e = -\frac{d\Phi}{dt}$$
+                        </div>
+                        <p>Le signe moins traduit l'opposition du courant induit</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">12.4 Transformateur</h4>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>⚡</span> Principe
+                        </div>
+                        <p>Un transformateur est constitué de deux bobines enroulées sur un noyau de fer commun.</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Relation des tensions</div>
+                        <div class="formula-content formula-display">
+                            $$\frac{U_1}{U_2} = \frac{N_1}{N_2}$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Puissance (idéale)</div>
+                        <div class="formula-content formula-display">
+                            $$P_1 = P_2 \Rightarrow U_1 I_1 = U_2 I_2$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Rapport de transformation</div>
+                        <div class="formula-content formula-display">
+                            $$m = \frac{N_2}{N_1} = \frac{U_2}{U_1}$$
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTIE 7: OSCILLATEURS AMORTIS -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="emoji-icon">📳</span>
+                Partie 7: Oscillations Électriques Amorties
+            </h2>
+
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 13: Circuit RLC Série Amorti</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">13.1 Équation Différentielle</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Équation différentielle du circuit RLC série</div>
+                        <div class="formula-content formula-display">
+                            $$\frac{d^2q}{dt^2} + \frac{R}{L}\frac{dq}{dt} + \frac{1}{LC}q = 0$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">En fonction de l'intensité</div>
+                        <div class="formula-content formula-display">
+                            $$\frac{d^2i}{dt^2} + \frac{R}{L}\frac{di}{dt} + \frac{1}{LC}i = 0$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">13.2 Régimes d'Oscillation</h4>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📉</span> Régime apériodique (R > 2√(L/C))
+                        </div>
+                        <p>Le système retourne à l'équilibre sans osciller.</p>
+                    </div>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>🔄</span> Régime pseudo-périodique (R < 2√(L/C))
+                        </div>
+                        <p>Le système oscille avec une amplitude décroissante.</p>
+                        <div class="formula-display">
+                            $$T = \frac{2\pi}{\omega'} \quad \text{avec} \quad \omega' = \sqrt{\frac{1}{LC} - \left(\frac{R}{2L}\right)^2}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>⚡</span> Régime critique (R = 2√(L/C))
+                        </div>
+                        <p>Retour à l'équilibre le plus rapide sans oscillation.</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Pseudo-période</div>
+                        <div class="formula-content formula-display">
+                            $$T = \frac{2\pi}{\sqrt{\omega_0^2 - \alpha^2}}$$
+                        </div>
+                        <p>où $\omega_0 = \frac{1}{\sqrt{LC}}$ et $\alpha = \frac{R}{2L}$</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">13.3 Entretien des Oscillations</h4>
+
+                    <div class="formula">
+                        <div class="formula-name">Condition d'oscillation entretenue</div>
+                        <div class="formula-content formula-display">
+                            $$R_{entretenu} = R = 2\sqrt{\frac{L}{C}}$$
+                        </div>
+                    </div>
+
+                    <div class="info-box important">
+                        <div class="info-box-title">
+                            <span>🔋</span> Résonance
+                        </div>
+                        <p>La résonance en intensité se produit quand $\omega = \omega_0 = \frac{1}{\sqrt{LC}}$</p>
+                        <p>À la résonance, l'intensité est maximale et $Z_{min} = R$</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTIE 8: OPTIQUE ONDULATOIRE -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="emoji-icon">🌊</span>
+                Partie 8: Optique Ondulatoire
+            </h2>
+
+            <div class="chapter">
+                <h3 class="chapter-title">Chapitre 14: Diffraction et Réseaux</h3>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">14.1 Phénomène de Diffraction</h4>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📐</span> Définition
+                        </div>
+                        <p>La diffraction est le现象 par lequel une onde est écartée de sa propagation rectiligne lorsqu'elle rencontre un obstacle ou une ouverture de dimensions comparables à sa longueur d'onde.</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Écart angulaire (diffraction par une fente)</div>
+                        <div class="formula-content formula-display">
+                            $$\theta \approx \frac{\lambda}{a}$$
+                        </div>
+                        <p>où a est la largeur de la fente, λ la longueur d'onde</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Position des минимумs</div>
+                        <div class="formula-content formula-display">
+                            $$a \sin\theta = k\lambda \quad (k = \pm 1, \pm 2, \pm 3...)$$
+                        </div>
+                    </div>
+
+                    <div class="info-box important">
+                        <div class="info-box-title">
+                            <span>📏</span> Condition d'observation
+                        </div>
+                        <p>La diffraction est significative quand $a \approx \lambda$ (obstacle comparable à la longueur d'onde)</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4 class="subsection-title">14.2 Réseaux de Diffraction</h4>
+
+                    <div class="info-box definition">
+                        <div class="info-box-title">
+                            <span>📊</span> Réseau
+                        </div>
+                        <p>Un réseau est une surface plane portant des fentes parallèles équidistantes.</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Constante du réseau</div>
+                        <div class="formula-content formula-display">
+                            $$a = \frac{1}{N}$$
+                        </div>
+                        <p>où N est le nombre de traits par unité de longueur (en traits/mm)</p>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Condition de diffraction (maxima)</div>
+                        <div class="formula-content formula-display">
+                            $$a \sin\theta = k\lambda \quad (k = 0, \pm 1, \pm 2...)$$
+                        </div>
+                    </div>
+
+                    <div class="formula">
+                        <div class="formula-name">Écart angulaire entre deux ordres consécutifs</div>
+                        <div class="formula-content formula-display">
+                            $$\Delta\theta = \arcsin\left(\frac{k\lambda}{a}\right) - \arcsin\left(\frac{(k-1)\lambda}{a}\right)$$
+                        </div>
+                    </div>
+
+                    <div class="info-box important">
+                        <div class="info-box-title">
+                            <span>🎯</span> Applications
+                        </div>
+                        <ul>
+                            <li>Spectroscopie: analyse des spectres lumineux</li>
+                            <li>Détermination des longueurs d'onde</li>
+                            <li>Spectromètre à réseau</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p><strong>Fiche de Révision Physique - Terminale SM</strong></p>
+            <p>Collection Mouna Camara - Programme complet</p>
+            <p>EduFiche - Pour une révision efficace</p>
+        </footer>
+    </div>
+
+    <a href="#" class="back-to-top" title="Retour en haut">↑</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
