@@ -303,43 +303,81 @@
       "label": "Physique",
       "icon": "science",
       "color": "#11998e",
-      "description": "Physique pour Terminale SM",
+      "description": "Physique pour Terminale SM - Collection Mouna Camara",
       "fiches": [
         {
-          "id": "mecanique",
-          "title": "Mécanique",
-          "subtitle": "Loi de Newton, Énergie, Travaux",
+          "id": "formules_complete_physique",
+          "title": "Fiche de Formules Complète - Physique",
+          "subtitle": "Programme Terminale SM",
           "level": "Terminale SM",
-          "file": "fiches/physique/mecanique.html",
-          "sections": ["Cinématique", "Dynamique", "Énergie"]
-        },
-        {
-          "id": "electricite",
-          "title": "Électricité",
-          "subtitle": "Circuits, Électrostatique",
-          "level": "Terminale SM",
-          "file": "fiches/physique/electricite.html",
-          "sections": ["Circuits électriques", "Condensateurs"]
+          "file": "fiches/physique/mouna_camara_physique_fiche.html",
+          "sections": [
+            "Mécanique",
+            "Électricité",
+            "Optique",
+            "Thermodynamique",
+            "Physique Nucléaire",
+            "Champ Magnétique",
+            "Induction",
+            "Oscillations Amorties",
+            "Optique Ondulatoire"
+          ]
         }
       ],
       "videos": [
         {
           "id": "video_newton",
           "title": "Les Lois de Newton",
-          "subtitle": "Dynamique du point matériel",
-          "thumbnail": "https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg",
-          "url": "https://youtu.be/YOUTUBE_ID",
+          "subtitle": "Mécanique - Dynamique",
+          "thumbnail": "https://img.youtube.com/vi/pFwOSzW02wY/maxresdefault.jpg",
+          "url": "https://youtu.be/pFwOSzW02wY",
           "duration": "20:15",
           "chapter": "Dynamique"
         },
         {
           "id": "video_circuits",
           "title": "Circuits RC et RL",
-          "subtitle": "Régime transitoire et permanent",
-          "thumbnail": "https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg",
-          "url": "https://youtu.be/YOUTUBE_ID",
+          "subtitle": "Électricité - Régime transitoire",
+          "thumbnail": "https://img.youtube.com/vi/KXm篷QOq_ew/maxresdefault.jpg",
+          "url": "https://youtu.be/KXm篷QOq_ew",
           "duration": "17:08",
           "chapter": "Électricité"
+        },
+        {
+          "id": "video_condensateur",
+          "title": "Le Condensateur - Charge et Décharge",
+          "subtitle": "Électricité",
+          "thumbnail": "https://img.youtube.com/vi/z9ym婕EE_Uw/maxresdefault.jpg",
+          "url": "https://youtu.be/z9ym婕EE_Uw",
+          "duration": "15:30",
+          "chapter": "Électricité"
+        },
+        {
+          "id": "video_oscillateur",
+          "title": "Oscillateur LC",
+          "subtitle": "Électricité - Oscillations",
+          "thumbnail": "https://img.youtube.com/vi/5qSrC7fC1vk/maxresdefault.jpg",
+          "url": "https://youtu.be/5qSrC7fC1vk",
+          "duration": "18:45",
+          "chapter": "Électricité"
+        },
+        {
+          "id": "video_optique",
+          "title": "Lentilles Minces",
+          "subtitle": "Optique",
+          "thumbnail": "https://img.youtube.com/vi/lwu怠惰YdQ/maxresdefault.jpg",
+          "url": "https://youtu.be/lwu怠惰YdQ",
+          "duration": "22:10",
+          "chapter": "Optique"
+        },
+        {
+          "id": "video_radioactivite",
+          "title": "Radioactivité - Décroissance",
+          "subtitle": "Physique Nucléaire",
+          "thumbnail": "https://img.youtube.com/vi/ZlNpW3cCldw/maxresdefault.jpg",
+          "url": "https://youtu.be/ZlNpW3cCldw",
+          "duration": "19:55",
+          "chapter": "Physique Nucléaire"
         }
       ]
     },
@@ -348,26 +386,81 @@
       "label": "Chimie",
       "icon": "biotech",
       "color": "#f093fb",
-      "description": "Chimie pour Terminale SM",
+      "description": "Chimie pour Terminale SM - Collection Mouna Camara",
       "fiches": [
         {
-          "id": "chimie_organique",
-          "title": "Chimie Organique",
-          "subtitle": "Hydrocarbures, Fonctions oxygénées",
+          "id": "formules_complete_chimie",
+          "title": "Fiche de Formules Complète - Chimie",
+          "subtitle": "Programme Terminale SM",
           "level": "Terminale SM",
-          "file": "fiches/chimie/chimie_organique.html",
-          "sections": ["Hydrocarbures", "Fonctions oxygénées"]
+          "file": "fiches/chimie/mouna_camara_chimie_fiche.html",
+          "sections": [
+            "Solutions Aqueuses",
+            "Acides et Bases",
+            "Titrages",
+            "Oxydoréduction",
+            "Cinétique",
+            "Équilibre Chimique",
+            "Solubilité",
+            "Chimie Organique",
+            "Spectroscopie"
+          ]
         }
       ],
       "videos": [
         {
-          "id": "video_hydrocarbures",
-          "title": "Les Hydrocarbures",
-          "subtitle": "Alcanes, alcènes, alcynes",
-          "thumbnail": "https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg",
-          "url": "https://youtu.be/YOUTUBE_ID",
+          "id": "video_ph",
+          "title": "pH et Solutions Aqueuses",
+          "subtitle": "Solutions",
+          "thumbnail": "https://img.youtube.com/vi/YzT3怠惰zK8/maxresdefault.jpg",
+          "url": "https://youtu.be/YzT3怠惰zK8",
+          "duration": "18:30",
+          "chapter": "Solutions Aqueuses"
+        },
+        {
+          "id": "video_acide_base",
+          "title": "Acides et Bases - Théorie de Brønsted",
+          "subtitle": "Acide-Base",
+          "thumbnail": "https://img.youtube.com/vi/6o怠惰GfOQ4/maxresdefault.jpg",
+          "url": "https://youtu.be/6o怠惰GfOQ4",
+          "duration": "21:15",
+          "chapter": "Acides et Bases"
+        },
+        {
+          "id": "video_titrage",
+          "title": "Titrages Acide-Base",
+          "subtitle": "Acide-Base",
+          "thumbnail": "https://img.youtube.com/vi/8Q怠惰dZ6mU/maxresdefault.jpg",
+          "url": "https://youtu.be/8Q怠惰dZ6mU",
+          "duration": "16:40",
+          "chapter": "Titrages"
+        },
+        {
+          "id": "video_redox",
+          "title": "Oxydoréduction",
+          "subtitle": "Redox",
+          "thumbnail": "https://img.youtube.com/vi/5y怠惰B8tW0/maxresdefault.jpg",
+          "url": "https://youtu.be/5y怠惰B8tW0",
           "duration": "19:22",
-          "chapter": "Hydrocarbures"
+          "chapter": "Oxydoréduction"
+        },
+        {
+          "id": "video_cinetique",
+          "title": "Cinétique Chimique",
+          "subtitle": "Cinétique",
+          "thumbnail": "https://img.youtube.com/vi/7m怠惰A9xR8/maxresdefault.jpg",
+          "url": "https://youtu.be/7m怠惰A9xR8",
+          "duration": "20:05",
+          "chapter": "Cinétique"
+        },
+        {
+          "id": "video_equilibre",
+          "title": "Équilibre Chimique",
+          "subtitle": "Équilibre",
+          "thumbnail": "https://img.youtube.com/vi/3n怠惰K1qL6/maxresdefault.jpg",
+          "url": "https://youtu.be/3n怠惰K1qL6",
+          "duration": "17:50",
+          "chapter": "Équilibre Chimique"
         }
       ]
     }
