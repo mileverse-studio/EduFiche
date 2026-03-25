@@ -1,322 +1,952 @@
 {
   "mathematiques": {
-    "systemPrompt": "Tu es un professeur de mathematiques certifie, expert en analyse, geometrie, algebre et probabilites pour le programme de Terminale SM. Ta mission est d'expliquer les concepts mathematiques de maniere claire et pedagogique. Utilise des exemples concrets et des analogies pour faciliter la comprehension. Sois precis dans tes explications mais accessible. Reponds toujours en francais.",
+    "systemPrompt": "Tu es un professeur de mathématiques certifié, expert en analyse, géométrie, algèbre et probabilités pour le programme de Terminale SM. Ta mission est d'expliquer les concepts mathématiques de manière claire et pédagogique. Utilise des exemples concrets et des analogies pour faciliter la compréhension. Sois précis dans tes explications mais accessible. Réponds toujours en français.",
     "formulas": [
       {
         "name": "PGCD et PPCM",
         "latex": "\\text{PGCD}(a,b) \\times \\text{PPCM}(a,b) = |a \\times b|",
-        "explainPrompt": "Explique la relation entre PGCD et PPCM : 1) Definitions du PGCD (plus grand diviseur commun) et du PPCM (plus petit multiple commun), 2) La formule fondamentale PGCD x PPCM = |a x b|, 3) Comment calculer le PGCD avec l'algorithme d'Euclide, 4) Exemples pratiques avec des nombres comme 12 et 18, 5) Quand utiliser le PGCD versus le PPCM dans les problemes.",
-        "exercisePrompt": "Cree 3 exercices progressifs sur PGCD et PPCM : 1) Exercice facile : calculer le PGCD de 24 et 36 par Euclide, 2) Exercice moyen : utiliser la formule PGCD x PPCM pour trouver le PPCM sachant le PGCD, 3) Exercice difficile : probleme applique impliquant la synchronisation d'evenements periodiques. Inclut les solutions detaillees etape par etape."
+        "explainPrompt": "Explique en détail le PGCD et PPCM : 1) Définition du PGCD (plus grand commun diviseur), 2) Définition du PPCM (plus petit commun multiple), 3) Relation entre PGCD et PPCM, 4) Méthode de calcul par l'algorithme d'Euclide, 5) Exemples concrets d'utilisation.",
+        "exercisePrompt": "Génère 3 exercices progressifs sur PGCD et PPCM : 1) Exercice simple de calcul du PGCD par Euclide, 2) Exercice moyen avec la relation PGCD × PPCM, 3) Exercice difficile sur les propriétés arithmétiques. Inclut les solutions détaillées."
       },
       {
-        "name": "Divisibilite dans Z",
+        "name": "Divisibilité dans Z",
         "latex": "a | b \\Leftrightarrow \\exists k \\in \\mathbb{Z} : b = ka",
-        "explainPrompt": "Explique la divisibilite dans l'ensemble des entiers relatifs : 1) Definition formelle de a divise b, 2) Notation et lecture mathematique, 3) Proprietes fondamentales : reflexivite, transitivite, compatibilite avec les operations, 4) Exemples concrets de divisibilite, 5) Lien avec les notions de multiple et de diviseur.",
-        "exercisePrompt": "Genere 3 exercices sur la divisibilite : 1) Demontrer que si a|b et a|c alors a|(b+c), 2) Trouver tous les diviseurs de 60, 3) Demontrer que le carre d'un entier impair est impair. Solutions avec demonstrations detaillees."
+        "explainPrompt": "Explique la divisibilité dans Z : 1) Notation et définition, 2) Propriétés de la divisibilité (transitive, réflexive), 3) Critères de divisibilité, 4) Division euclidienne, 5) Applications pratiques.",
+        "exercisePrompt": "Génère 3 exercices sur la divisibilité : 1) Démontrer qu'un nombre est divisible, 2) Trouver les diviseurs d'un nombre, 3) Utiliser les propriétés de divisibilité dans des démonstrations. Solutions détaillées."
       },
       {
         "name": "Nombres premiers",
         "latex": "n = p_1^{\\alpha_1} \\times p_2^{\\alpha_2} \\times \\cdots \\times p_k^{\\alpha_k}",
-        "explainPrompt": "Explique la decomposition en facteurs premiers : 1) Definition d'un nombre premier, 2) Theoreme fondamental de l'arithmetique (tout entier > 1 se decompose de maniere unique), 3) Comment effectuer la decomposition en facteurs premiers, 4) Applications : simplification de fractions, calcul de PGCD/PPCM, 5) Exemples detaillees de decomposition.",
-        "exercisePrompt": "Cree 3 exercices sur les nombres premiers : 1) Decomposer 126 en facteurs premiers, 2) Utiliser la decomposition pour simplifier la fraction 156/84, 3) Montrer que deux nombres sont premiers entre eux grace a leurs decompositions. Solutions completes."
+        "explainPrompt": "Explique les nombres premiers : 1) Définition d'un nombre premier, 2) Théorème fondamental de l'arithmétique, 3) Décomposition en facteurs premiers, 4) Crible d'Ératosthène, 5) Applications en cryptographie.",
+        "exercisePrompt": "Génère 3 exercices sur les nombres premiers : 1) Décomposer un nombre en facteurs premiers, 2) Calculer le PGCD par décomposition, 3) Démontrer qu'un nombre est premier ou composé. Solutions détaillées."
       },
       {
-        "name": "Suite arithmetique",
+        "name": "Suite arithmétique",
         "latex": "u_n = u_0 + nr \\quad \\text{ou} \\quad u_n = u_p + (n-p)r",
-        "explainPrompt": "Explique les suites arithmetiques en detail : 1) Definition avec la raison r, 2) Relation de recurrence u_{n+1} = u_n + r, 3) Formule du terme general u_n = u_0 + nr, 4) Formule de la somme des n+1 premiers termes, 5) Exemples concrets de la vie courante.",
-        "exercisePrompt": "Cree 3 exercices sur les suites arithmetiques : 1) Calculer le 10eme terme d'une suite de premier terme 3 et de raison 5, 2) Calculer la somme des 20 premiers termes, 3) Un athlete s'entraine en courant 1km le premier jour et augmente de 200m chaque jour. Quelle distance aura-t-il courue apres 30 jours? Solutions detaillees."
+        "explainPrompt": "Explique les suites arithmétiques : 1) Définition et raison, 2) Formule explicite, 3) Sens de variation, 4) Somme des termes, 5) Représentation graphique.",
+        "exercisePrompt": "Génère 3 exercices sur les suites arithmétiques : 1) Calcul du terme général, 2) Somme de termes consécutifs, 3) Problème appliqué à la finance. Solutions détaillées."
       },
       {
-        "name": "Suite geometrique",
+        "name": "Suite géométrique",
         "latex": "u_n = u_0 \\times q^n \\quad \\text{et} \\quad S_n = u_0 \\frac{1-q^{n+1}}{1-q} \\ (q \\neq 1)",
-        "explainPrompt": "Explique les suites geometriques en detail : 1) Definition avec la raison q, 2) Relation de recurrence u_{n+1} = q x u_n, 3) Formule du terme general u_n = u_0 x q^n, 4) Formule de la somme des n+1 premiers termes (cas q different de 1), 5) Lien avec les interets composes et la croissance exponentielle, 6) Exemples concrets : placement financier, decroissance radioactive.",
-        "exercisePrompt": "Cree 3 exercices sur les suites geometriques : 1) Calculer le 10eme terme d'une suite de premier terme 2 et de raison 3, 2) Calculer la somme des 20 premiers termes d'une suite geometrique, 3) Un capital de 1000 euros place a 5% par an, trouver le montant apres 10 ans. Solutions detaillees."
+        "explainPrompt": "Explique les suites géométriques : 1) Définition et raison, 2) Formule explicite, 3) Sens de variation selon q, 4) Somme des n premiers termes, 5) Limite d'une suite géométrique.",
+        "exercisePrompt": "Génère 3 exercices sur les suites géométriques : 1) Calcul du terme général et de la somme, 2) Étude de la convergence, 3) Application aux intérêts composés. Solutions détaillées."
       },
       {
         "name": "Limites de suites",
         "latex": "\\lim_{n \\to \\infty} q^n = \\begin{cases} 0 & \\text{si } |q| < 1 \\\\ +\\infty & \\text{si } q > 1 \\\\ 1 & \\text{si } q = 1 \\end{cases}",
-        "explainPrompt": "Explique les limites de suites geometriques et autres suites importantes : 1) Limite de q^n selon les valeurs de q, 2) Cas ou q = -1 et q < -1 (pas de limite), 3) Limite de 1/n^alpha quand n tend vers l'infini, 4) Theoreme d'encadrement (gendarmes), 5) Suite monotone bornee converge, 6) Exemples concrets de convergence.",
-        "exercisePrompt": "Genere 3 exercices sur les limites : 1) Determiner la limite de (0.5)^n quand n tend vers l'infini, 2) Montrer que la suite u_n = n/(n+1) converge et trouver sa limite, 3) Utiliser le theoreme des gendarmes pour limiter sin(n)/racine(n). Solutions completes."
+        "explainPrompt": "Explique les limites de suites : 1) Définition intuitive de la limite, 2) Propriétés des limites, 3) Formes indéterminées, 4) Théorèmes de comparaison, 5) Exemples de suites convergentes et divergentes.",
+        "exercisePrompt": "Génère 3 exercices sur les limites : 1) Calcul de limites simples, 2) Utilisation des théorèmes de comparaison, 3) Suite arithmético-géométrique. Solutions détaillées."
       },
       {
-        "name": "Derivee de x^n",
+        "name": "Dérivée de x^n",
         "latex": "(x^n)' = nx^{n-1} \\quad \\text{pour } n \\in \\mathbb{N}^*",
-        "explainPrompt": "Explique la formule de derivation des puissances : 1) Regle generale de derivation des puissances entieres positives, 2) Demonstration pour n = 2, n = 3, 3) Cas des puissances negatives : (x^{-n})' = -nx^{-n-1}, 4) Interpretation geometrique : coefficient directeur de la tangente, 5) Exemples : derivee de x^5, x^{-2}, x^{1/2}.",
-        "exercisePrompt": "Cree 3 exercices de difficulte progressive : 1) Calculer la derivee de x^3, x^4, x^10, 2) Deriver x^{-3} et x^{-1}, 3) Deriver des fonctions composees comme (x^2 + 1)^5. Solutions avec etapes detaillees."
+        "explainPrompt": "Explique la dérivation : 1) Définition du nombre dérivé, 2) Interprétation géométrique (tangente), 3) Règles de calcul, 4) Dérivée des fonctions usuelles, 5) Dérivabilité et continuité.",
+        "exercisePrompt": "Génère 3 exercices sur la dérivation : 1) Calcul de dérivées simples, 2) Dérivée d'une fonction composée, 3) Application à l'étude de variations. Solutions détaillées."
       },
       {
-        "name": "Derivee de ln(x)",
+        "name": "Dérivée de ln(x)",
         "latex": "(\\ln x)' = \\frac{1}{x} \\quad \\text{pour } x > 0",
-        "explainPrompt": "Explique la derivee du logarithme neperien : 1) Definition de ln x comme primitive de 1/t, 2) Demonstration que (ln x)' = 1/x, 3) Domaine de definition et derivabilite, 4) Derivee de ln|u| : (ln|u|)' = u'/u, 5) Applications : derivation de ln(x^2 + 1), 6) Lien avec la fonction exponentielle.",
-        "exercisePrompt": "Genere 3 exercices sur la derivee de ln : 1) Deriver ln(x) et ln(2x), 2) Deriver ln(x^2 + 3x + 1), 3) Deriver x·ln(x) et (ln x)^2. Solutions detaillees avec utilisation de la regle de composition."
+        "explainPrompt": "Explique la dérivée du logarithme : 1) Définition de ln(x), 2) Démonstration de la dérivée, 3) Propriétés algébriques, 4) Dérivées successives, 5) Relation avec l'exponentielle.",
+        "exercisePrompt": "Génère 3 exercices sur ln(x) : 1) Dérivées de fonctions logarithmiques, 2) Dérivation logarithmique, 3) Limites avec ln. Solutions détaillées."
       },
       {
-        "name": "Derivee de e^x",
+        "name": "Dérivée de e^x",
         "latex": "(e^x)' = e^x",
-        "explainPrompt": "Explique l'extraordinaire propriete de l'exponentielle : 1) Definition de e comme limite de (1 + 1/n)^n, 2) Pourquoi (e^x)' = e^x (egale a sa propre derivee), 3) Demonstration intuitive du comportement, 4) Comparaison avec les autres bases : (a^x)' = a^x ln(a), 5) Importance en modelisation (croissance exponentielle), 6) Tangente en x=0 : y = x + 1.",
-        "exercisePrompt": "Cree 3 exercices sur la derivee de e^x : 1) Deriver e^x, e^{2x}, e^{-x}, 2) Deriver e^{x^2} et e^{\\sin x}, 3) Trouver l'equation de la tangente a y = e^x en x = 0. Solutions completes."
+        "explainPrompt": "Explique la dérivée de l'exponentielle : 1) Définition de e^x, 2) Démonstration que la dérivée est elle-même, 3) Propriétés remarquables, 4) Lien avec ln, 5) Croissance comparée.",
+        "exercisePrompt": "Génère 3 exercices sur e^x : 1) Dérivées de fonctions exponentielles, 2) Limites avec exponentielle, 3) Équations différentielles. Solutions détaillées."
       },
       {
-        "name": "Regles de derivation",
-        "latex": "(u+v)' = u'+v' \\quad ; \\quad (u \\cdot v)' = u'v + uv' \\quad ; \\quad \\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}",
-        "explainPrompt": "Explique les regles operationnelles de derivation : 1) Derivee d'une somme (linearite), 2) Derivee d'un produit (formule de Leibniz), 3) Derivee d'un quotient avec demonstration, 4) Quand utiliser chaque formule, 5) Exemples : deriver x^2·sin x, (x+1)/(x-1), 6) Cas particulier : derivee de 1/u = -u'/u^2.",
-        "exercisePrompt": "Genere 3 exercices sur les regles de derivation : 1) Deriver (x^2 + 1)(x^3 - 2), 2) Deriver (2x+1)/(x^2+1), 3) Deriver x^2·e^x et e^x/x. Solutions detaillees avec application des formules."
+        "name": "Règles de dérivation",
+        "latex": "(u+v)' = u'+v'; \\quad (u \\cdot v)' = u'v + uv'; \\quad \\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}",
+        "explainPrompt": "Explique les règles de dérivation : 1) Dérivée d'une somme, 2) Dérivée d'un produit, 3) Dérivée d'un quotient, 4) Dérivée d'une fonction composée, 5) Exemples d'application.",
+        "exercisePrompt": "Génère 3 exercices sur les règles de dérivation : 1) Appliquer les formules à des fonctions simples, 2) Dérivation de fonctions composées, 3) Problème d'optimisation. Solutions détaillées."
       },
       {
-        "name": "Theoreme des Accroissements Finis",
+        "name": "Théorème des Accroissements Finis",
         "latex": "\\exists c \\in ]a,b[ : f(b) - f(a) = f'(c)(b - a)",
-        "explainPrompt": "Explique le Theoreme des Accroissements Finis : 1) Conditions : f continue sur [a,b], derivable sur ]a,b[, 2) Interpretation geometrique : il existe au moins une tangente parallele a la corde AB, 3) Consequences importantes : si f' = 0 alors f est constante, 4) Inegalite des accroissements finis, 5) Application : demonstration d'inegalites.",
-        "exercisePrompt": "Cree 3 exercices sur le TAF : 1) Appliquer le TAF a f(x) = x^2 sur [1,3], 2) Montrer que pour tout x > 0 : ln(1+x) < x, 3) Demontrer que si f'(x) > 0 alors f est strictement croissante. Solutions avec rigueur mathematique."
+        "explainPrompt": "Explique le TAF : 1) Énoncé du théorème, 2) Interprétation géométrique, 3) Démonstration, 4) Applications (inégalités, approximation), 5) Formules de Taylor.",
+        "exercisePrompt": "Génère 3 exercices sur le TAF : 1) Démontrer une inégalité, 2) Montrer qu'une équation admet une solution, 3) Encadrer une intégrale. Solutions détaillées."
       },
       {
         "name": "Primitives de x^n",
         "latex": "\\int x^n \\, dx = \\frac{x^{n+1}}{n+1} + C \\quad (n \\neq -1)",
-        "explainPrompt": "Explique les primitives des fonctions puissances : 1) Relation primitive-derivee, 2) Formule pour n different de -1 avec demonstration, 3) Cas particulier n = -1 : integrale de 1/x dx = ln|x| + C, 4) Exemples : primitives de x^2, x^3, racine(x), 5) Signification de la constante C, 6) Primitive passant par un point donne.",
-        "exercisePrompt": "Genere 3 exercices sur les primitives : 1) Trouver les primitives de x^3 et x^{1/2}, 2) Calculer integrale de (x^2 + 2x + 1) dx, 3) Trouver la primitive F de f(x) = 1/x sachant F(1) = 0. Solutions detaillees."
+        "explainPrompt": "Explique les primitives : 1) Définition d'une primitive, 2) Primitive des fonctions usuelles, 3) Propriétés des primitives, 4) Primitive d'une composée, 5) Existence de primitives.",
+        "exercisePrompt": "Génère 3 exercices sur les primitives : 1) Primitives de fonctions simples, 2) Primitives avec condition initiale, 3) Recherche de primitive. Solutions détaillées."
       },
       {
-        "name": "Integration par parties",
+        "name": "Intégration par parties",
         "latex": "\\int u \\, dv = uv - \\int v \\, du",
-        "explainPrompt": "Explique l'integration par parties en detail : 1) Formule et methode de choix de u et dv, 2) Regles mnemotechniques : 'LIATE' pour choisir u, 3) Exemples classiques : integrale de x e^x dx, integrale de ln x dx, 4) Integration par parties repetee pour integrale de x^2 e^x dx, 5) Cas des polynomes de degre eleve.",
-        "exercisePrompt": "Cree 3 exercices d'integration par parties : 1) Calculer integrale de x e^x dx, 2) Calculer integrale de ln x dx, 3) Calculer integrale de x^2 sin x dx. Solutions detaillees avec choix de u et dv justifies."
+        "explainPrompt": "Explique l'intégration par parties : 1) Formule de l'IPP, 2) Choix de u et dv, 3) Exemples classiques, 4) IPP répétées, 5) Applications au calcul d'intégrales.",
+        "exercisePrompt": "Génère 3 exercices sur l'IPP : 1) Application directe de la formule, 2) IPP répétées, 3) Calcul d'intégrales classiques. Solutions détaillées."
       },
       {
-        "name": "Theoreme Fondamental de l'Analyse",
-        "latex": "\\int_a^b f(x) \\, dx = F(b) - F(a) \\quad \\text{ou } F' = f",
-        "explainPrompt": "Explique le lien entre primitive et integrale : 1) Toute fonction continue admet des primitives, 2) Theoreme fondamental : l'integrale de a a b vaut F(b) - F(a), 3) Notation : [F(x)]_a^b = F(b) - F(a), 4) Proprietes : linearite, relation de Chasles, positivite, 5) Application au calcul d'aires.",
-        "exercisePrompt": "Genere 3 exercices sur le theoreme fondamental : 1) Calculer integrale de 0 a 1 de x^2 dx, 2) Calculer integrale de 1 a 2 de (1/x) dx, 3) Calculer l'aire entre la courbe y = x^2 et l'axe Ox de 0 a 2. Solutions avec interpretation geometrique."
+        "name": "Théorème Fondamental de l'Analyse",
+        "latex": "\\int_a^b f(x) \\, dx = F(b) - F(a) \\quad \\text{où } F' = f",
+        "explainPrompt": "Explique le théorème fondamental : 1) Lien entre primitive et intégrale, 2) Démonstration, 3) Applications au calcul d'aires, 4) Primitive comme intégrale, 5) Formule de Barrow.",
+        "exercisePrompt": "Génère 3 exercices sur le théorème fondamental : 1) Calcul d'intégrales, 2) Primitive définie par une intégrale, 3) Dérivation sous le signe somme. Solutions détaillées."
       },
       {
-        "name": "Logarithme neperien - Proprietes",
-        "latex": "\\ln(ab) = \\ln a + \\ln b \\quad ; \\quad \\ln\\left(\\frac{a}{b}\\right) = \\ln a - \\ln b \\quad ; \\quad \\ln(a^n) = n\\ln a",
-        "explainPrompt": "Explique les proprietes du logarithme neperien : 1) Demonstration de ln(ab) = ln a + ln b, 2) Propriete du quotient et de la puissance, 3) ln(1) = 0, ln(e) = 1, 4) Changement de base : log_a x = ln x / ln a, 5) Limites importantes : limite de ln x / x = 0, limite de x ln x = 0 quand x tend vers 0^+.",
-        "exercisePrompt": "Cree 3 exercices sur les proprietes du ln : 1) Simplifier ln(2) + ln(3) - ln(6), 2) Resoudre ln(x+1) - ln(x-1) = 1, 3) Calculer la limite de ln(1+x)/x quand x tend vers 0. Solutions completes."
+        "name": "Logarithme népérien - Propriétés",
+        "latex": "\\ln(ab) = \\ln a + \\ln b; \\quad \\ln\\left(\\frac{a}{b}\\right) = \\ln a - \\ln b; \\quad \\ln(a^n) = n\\ln a",
+        "explainPrompt": "Explique les propriétés de ln : 1) Définition de ln, 2) Propriétés algébriques, 3) Changement de base, 4) Dérivée et primitive, 5) Équations et inéquations.",
+        "exercisePrompt": "Génère 3 exercices sur ln : 1) Simplification d'expressions, 2) Résolution d'équations, 3) Limites et dérivées. Solutions détaillées."
       },
       {
-        "name": "Exponentielle - Proprietes",
-        "latex": "e^{a+b} = e^a \\cdot e^b \\quad ; \\quad e^{a-b} = \\frac{e^a}{e^b} \\quad ; \\quad (e^a)^n = e^{na}",
-        "explainPrompt": "Explique les proprietes de la fonction exponentielle : 1) Propriete fondamentale : e^{a+b} = e^a e^b, 2) Demonstration a partir de la definition, 3) Limites remarquables : limite de e^x/x = +infini, limite de x e^x = 0 quand x tend vers -infini, 4) Derivee de e^{u(x)} = e^{u} u', 5) Forme generale : a^x = e^{x ln a}.",
-        "exercisePrompt": "Genere 3 exercices sur l'exponentielle : 1) Simplifier e^2 x e^3 / e^4, 2) Deriver e^{x^2} et e^{racine(x)}, 3) Resoudre e^{2x} - 3e^x + 2 = 0. Solutions detaillees."
+        "name": "Exponentielle - Propriétés",
+        "latex": "e^{a+b} = e^a \\cdot e^b; \\quad e^{a-b} = \\frac{e^a}{e^b}; \\quad (e^a)^n = e^{na}",
+        "explainPrompt": "Explique les propriétés de exp : 1) Définition de e^x, 2) Propriétés algébriques, 3) Lien avec ln, 4) Dérivée et primitive, 5) Équations différentielles y' = y.",
+        "exercisePrompt": "Génère 3 exercices sur exp : 1) Simplification d'expressions, 2) Résolution d'équations, 3) Limites et croissances comparées. Solutions détaillées."
       },
       {
         "name": "Formule d'Euler",
-        "latex": "e^{i\\theta} = \\cos\\theta + i\\sin\\theta \\quad ; \\quad \\cos\\theta = \\frac{e^{i\\theta}+e^{-i\\theta}}{2} \\quad ; \\quad \\sin\\theta = \\frac{e^{i\\theta}-e^{-i\\theta}}{2i}",
-        "explainPrompt": "Explique les formules d'Euler et leur importance : 1) Definition de e^{i theta} via la serie entiere, 2) Demonstration que e^{i theta} = cos theta + i sin theta, 3) Formules pour cos theta et sin theta en fonction de e^{i theta}, 4) Applications : linearisation de cos^2 x, 5) Lien avec la formule de Moivre, 6) Notation trigonometrique des nombres complexes.",
-        "exercisePrompt": "Cree 3 exercices sur les formules d'Euler : 1) Exprimer cos^3 x en fonction de cos 3x, 2) Demontrer que cos x = (e^{ix}+e^{-ix})/2, 3) Utiliser Euler pour calculer (1+i)^4. Solutions detaillees."
+        "latex": "e^{i\\theta} = \\cos\\theta + i\\sin\\theta; \\quad \\cos\\theta = \\frac{e^{i\\theta}+e^{-i\\theta}}{2}; \\quad \\sin\\theta = \\frac{e^{i\\theta}-e^{-i\\theta}}{2i}",
+        "explainPrompt": "Explique les formules d'Euler : 1) Formule fondamentale e^(iθ), 2) Expression de cos et sin, 3) Applications en trigonométrie, 4) Formules de Moivre, 5) Linéarisation.",
+        "exercisePrompt": "Génère 3 exercices sur Euler : 1) Démontrer des formules trigonométriques, 2) Linéariser cos^n et sin^n, 3) Calculer des sommes. Solutions détaillées."
       },
       {
-        "name": "Nombres complexes - Forme algebrique",
+        "name": "Nombres complexes - Forme algébrique",
         "latex": "z = a + bi \\quad \\text{avec } a,b \\in \\mathbb{R} \\text{ et } i^2 = -1",
-        "explainPrompt": "Explique la structure des nombres complexes : 1) Definition de i par i^2 = -1, 2) Forme algebrique z = a + bi, 3) Partie reelle Re(z) = a, partie imaginaire Im(z) = b, 4) Operations : addition, multiplication, conjugue, 5) Module : |z| = racine(a^2 + b^2), 6) Inverse : 1/z = zbar/|z|^2.",
-        "exercisePrompt": "Genere 3 exercices sur les nombres complexes : 1) Calculer (1+2i)(3-i), 2) Trouver le conjugue et le module de z = 3+4i, 3) Resoudre z^2 + 1 = 0 dans C. Solutions completes."
+        "explainPrompt": "Explique les nombres complexes : 1) Définition et partie réelle/imaginaire, 2) Opérations (addition, multiplication), 3) Conjugué et module, 4) Forme trigonométrique, 5) Équations dans C.",
+        "exercisePrompt": "Génère 3 exercices sur les complexes : 1) Opérations dans C, 2) Module et conjugué, 3) Résolution d'équations. Solutions détaillées."
       },
       {
-        "name": "Nombres complexes - Forme trigonometrique",
+        "name": "Nombres complexes - Forme trigonométrique",
         "latex": "z = r(\\cos\\theta + i\\sin\\theta) = re^{i\\theta} \\quad \\text{avec } r = |z| \\text{ et } \\theta = \\arg(z)",
-        "explainPrompt": "Explique la forme trigonometrique des complexes : 1) Module r et argument theta, 2) Passage de la forme algebrique a trigonometrique, 3) Notation exponentielle re^{i theta}, 4) Proprietes des arguments : arg(z1z2) = arg(z1) + arg(z2), 5) Applications aux puissances : z^n = r^n e^{in theta}.",
-        "exercisePrompt": "Cree 3 exercices sur la forme trigonometrique : 1) Mettre z = 1+i sous forme trigonometrique, 2) Calculer (1+i)^10 en utilisant la forme trigonometrique, 3) Determiner arg(z) pour z = racine(3) + i. Solutions detaillees."
+        "explainPrompt": "Explique la forme trigonométrique : 1) Module et argument, 2) Passage algébrique → trigonométrique, 3) Opérations sous forme trigonométrique, 4) Formule de Moivre, 5) Racines n-ièmes.",
+        "exercisePrompt": "Génère 3 exercices sur la forme trigonométrique : 1) Calcul de module et argument, 2) Opérations, 3) Racines n-ièmes. Solutions détaillées."
       },
       {
         "name": "Formule de Moivre",
         "latex": "(\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta)",
-        "explainPrompt": "Explique la formule de Moivre et ses applications : 1) Enonce et demonstration par recurrence, 2) Lien direct avec les formules d'Euler, 3) Applications : exprimer cos(n theta) et sin(n theta) en fonction de cos theta et sin theta, 4) Exemples : cos(3 theta), sin(3 theta), 5) Utilisation pour calculer des puissances comme (1+i)^20.",
-        "exercisePrompt": "Genere 3 exercices sur la formule de Moivre : 1) Exprimer cos(3 theta) et sin(3 theta) en fonction de cos theta et sin theta, 2) Calculer (cos(pi/6) + i sin(pi/6))^6, 3) Demontrer que cos(pi/3) = 1/2 en utilisant Moivre. Solutions completes."
+        "explainPrompt": "Explique la formule de Moivre : 1) Énoncé et démonstration, 2) Applications au calcul de cos(nθ) et sin(nθ), 3) Linéarisation, 4) Formules de duplication, 5) Racines de l'unité.",
+        "exercisePrompt": "Génère 3 exercices sur Moivre : 1) Application directe, 2) Calcul de cos(nθ), 3) Démonstration de formules. Solutions détaillées."
       },
       {
-        "name": "Racines n-iemes",
+        "name": "Racines n-ièmes",
         "latex": "z_k = r^{1/n} e^{i(\\theta+2k\\pi)/n} \\quad \\text{pour } k = 0, 1, \\ldots, n-1",
-        "explainPrompt": "Explique les racines n-iemes d'un nombre complexe : 1) Definition : trouver z tel que z^n = w, 2) Nombre de racines : exactement n racines distinctes, 3) Formule generale pour les racines, 4) Cas particulier des racines n-iemes de l'unite, 5) Representation geometrique sur le cercle trigonometrique, 6) Exemples : racines cubiques de 1, racines carrees de i.",
-        "exercisePrompt": "Cree 3 exercices sur les racines n-iemes : 1) Trouver les racines cubiques de 8, 2) Trouver les racines carrees de 1+i, 3) Representer les racines 4-iemes de l'unite sur un graphique. Solutions detaillees avec interpretation geometrique."
+        "explainPrompt": "Explique les racines n-ièmes : 1) Définition, 2) Nombre de racines, 3) Représentation dans le plan complexe, 4) Cas particulier des racines de l'unité, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices sur les racines : 1) Calcul de racines n-ièmes, 2) Représentation graphique, 3) Équations avec racines. Solutions détaillées."
       },
       {
-        "name": "Identites trigonometriques",
-        "latex": "\\sin^2 x + \\cos^2 x = 1 \\quad ; \\quad \\sin(a+b) = \\sin a \\cos b + \\cos a \\sin b",
-        "explainPrompt": "Explique les identites trigonometriques fondamentales : 1) Relation pythagoricienne sin^2 x + cos^2 x = 1, 2) Formules d'addition pour sin(a+b) et cos(a+b), 3) Formules de duplication : cos(2a) = 2cos^2 a - 1, 4) Formules de linearisation, 5) Exemples d'utilisation pour calculer sin(pi/12), cos(pi/8).",
-        "exercisePrompt": "Genere 3 exercices de trigonometrie : 1) Demontrer que sin(pi/12) = (racine(6) - racine(2))/4, 2) Lineariser cos^2 x, 3) Simplifier sin(x)cos(x). Solutions detaillees avec formules utilisees."
+        "name": "Identités trigonométriques",
+        "latex": "\\sin^2 x + \\cos^2 x = 1; \\quad \\sin(a+b) = \\sin a \\cos b + \\cos a \\sin b",
+        "explainPrompt": "Explique les identités trigonométriques : 1) Relation fondamentale, 2) Formules d'addition, 3) Formules de duplication, 4) Formules de linearisation, 5) Résolution d'équations trigonométriques.",
+        "exercisePrompt": "Génère 3 exercices sur la trigonométrie : 1) Démontrer une identité, 2) Résoudre une équation, 3) Calculer une somme. Solutions détaillées."
       },
       {
-        "name": "Equation differentielle y' = ay",
-        "latex": "y = Ce^{ax} \\quad (C \\in \\mathbb{R}) \\quad \\text{et si } y(x_0) = y_0 \\Rightarrow y = y_0 e^{a(x-x_0)}",
-        "explainPrompt": "Explique la resolution des equations differentielles du premier ordre : 1) Forme generale y' = ay, 2) Solution generale y = Ce^{ax}, 3) Determination de C avec condition initiale, 4) Interpretation : croissance (a>0) ou decroissance (a<0) exponentielle, 5) Applications : radioactivite, modeles biologiques, circuits electriques.",
-        "exercisePrompt": "Cree 3 exercices sur y' = ay : 1) Resoudre y' = 2y avec y(0) = 1, 2) Un echantillon radioactif decroit a 3% par an. Trouver la demi-vie, 3) Population de bacteries double chaque heure. Trouver la formule. Solutions completes."
+        "name": "Équation différentielle y' = ay",
+        "latex": "y = Ce^{ax} \\quad \\text{et si } y(x_0) = y_0 \\Rightarrow y = y_0 e^{a(x-x_0)}",
+        "explainPrompt": "Explique les équations différentielles : 1) Définition et ordre, 2) Résolution de y' = ay, 3) Condition initiale, 4) Interprétation (croissance exponentielle, décroissance radioactive), 5) Méthode d'Euler.",
+        "exercisePrompt": "Génère 3 exercices sur les équations différentielles : 1) Résolution de y' = ay, 2) Problème avec condition initiale, 3) Application à la physique. Solutions détaillées."
       },
       {
-        "name": "Equation differentielle y'' + ay' + by = 0",
-        "latex": "r^2 + ar + b = 0 \\quad \\Delta = a^2 - 4b",
-        "explainPrompt": "Explique la resolution des equations differentielles du second ordre : 1) Equation caracteristique r^2 + ar + b = 0, 2) Calcul du discriminant delta, 3) Trois cas selon le signe de delta, 4) Solutions pour delta > 0 (racines reelles), delta = 0 (racine double), delta < 0 (racines complexes), 5) Cas de l'oscillateur harmonique : y'' + omega^2 y = 0.",
-        "exercisePrompt": "Genere 3 exercices sur les equations differentielles du second ordre : 1) Resoudre y'' - 3y' + 2y = 0, 2) Resoudre y'' + 4y = 0 avec y(0) = 1, y'(0) = 0, 3) Resoudre y'' + 2y' + 5y = 0. Solutions detaillees par cas."
+        "name": "Équation différentielle y'' + ay' + by = 0",
+        "latex": "r^2 + ar + b = 0 \\quad \\text{avec } \\Delta = a^2 - 4b",
+        "explainPrompt": "Explique l'équation du second ordre : 1) Équation caractéristique, 2) Cas Δ > 0, Δ = 0, Δ < 0, 3) Solutions réelles et complexes, 4) Oscillateurs harmoniques, 5) Conditions initiales.",
+        "exercisePrompt": "Génère 3 exercices sur l'équation du second ordre : 1) Résolution selon Δ, 2) Oscillateur harmonique, 3) Conditions initiales. Solutions détaillées."
       },
       {
         "name": "Barycentre",
         "latex": "\\alpha_1 \\overrightarrow{GA_1} + \\alpha_2 \\overrightarrow{GA_2} + \\cdots + \\alpha_n \\overrightarrow{GA_n} = \\vec{0}",
-        "explainPrompt": "Explique le barycentre de points ponderes : 1) Definition avec les coefficients alpha_i, 2) Condition somme alpha_i different de 0, 3) Coordonnees du barycentre dans un repere, 4) Proprietes : associativite, isobarycentre, 5) Application aux systemes masses-points, 6) Exemples : barycentre de deux points, centre de gravite d'un triangle.",
-        "exercisePrompt": "Cree 3 exercices sur le barycentre : 1) Trouver le barycentre de A(1,2) et B(4,6) avec coefficients 2 et 3, 2) Montrer que le centre de gravite d'un triangle est le barycentre des sommets avec coefficients 1, 3) Barycentre de trois points A, B, C. Solutions detaillees."
+        "explainPrompt": "Explique le barycentre : 1) Définition du barycentre de deux points, 2) Généralisation à n points, 3) Propriétés (associativité, invariant), 4) Coordonnées du barycentre, 5) Applications en physique.",
+        "exercisePrompt": "Génère 3 exercices sur le barycentre : 1) Calcul de barycentre de deux points, 2) Barycentre avec trois points, 3) Alignement de points. Solutions détaillées."
       },
       {
         "name": "Produit vectoriel",
         "latex": "\\|\\overrightarrow{u \\wedge v}\\| = \\|\\overrightarrow{u}\\| \\cdot \\|\\overrightarrow{v}\\| \\cdot |\\sin(\\overrightarrow{u}, \\overrightarrow{v})|",
-        "explainPrompt": "Explique le produit vectoriel dans l'espace : 1) Definition et proprietes : orthogonal a u et v, 2) Regle du triedre direct, 3) Norme = aire du parallelogramme, 4) Formules : antisymetrie, linearite, 5) Double produit vectoriel, 6) Applications : calcul d'aires et de volumes.",
-        "exercisePrompt": "Genere 3 exercices sur le produit vectoriel : 1) Calculer l'aire du parallelogramme defini par AB et AC, 2) Montrer que le produit vectoriel est anticommutatif, 3) Calculer le volume du parallelepipede defini par trois vecteurs. Solutions detaillees."
+        "explainPrompt": "Explique le produit vectoriel : 1) Définition dans l'espace, 2) Propriétés (antisymétrie, bilinéarité), 3) Norme et angle, 4) Règle de la main droite, 5) Applications (aire, volume, moment).",
+        "exercisePrompt": "Génère 3 exercices sur le produit vectoriel : 1) Calcul de produit vectoriel, 2) Aire d'un parallélogramme, 3) Volume d'un tétraèdre. Solutions détaillées."
       },
       {
         "name": "Aire et Volume avec produit vectoriel",
         "latex": "\\mathcal{A}_{\\parallelogramme} = \\|\\overrightarrow{AB} \\wedge \\overrightarrow{AC}\\|",
-        "explainPrompt": "Explique les applications du produit vectoriel : 1) Aire du parallelogramme = norme du produit vectoriel, 2) Aire du triangle = demi de cette aire, 3) Volume du parallelepipede = valeur absolue du produit mixte, 4) Volume du tetraedre = 1/6 de ce volume, 5) Exemples concrets de calcul dans l'espace.",
-        "exercisePrompt": "Cree 3 exercices sur les applications : 1) Calculer l'aire du triangle ABC avec A(1,0,0), B(0,1,0), C(0,0,1), 2) Calculer le volume du tetraedre defini par ces memes points, 3) Trouver la distance du point D au plan (ABC). Solutions completes."
+        "explainPrompt": "Explique les applications du produit vectoriel : 1) Aire d'un parallélogramme, 2) Aire d'un triangle, 3) Volume d'un parallélépipède, 4) Volume d'un tétraèdre, 5) Démonstrations.",
+        "exercisePrompt": "Génère 3 exercices sur les aires et volumes : 1) Calcul d'aire, 2) Calcul de volume, 3) Application à la géométrie. Solutions détaillées."
       },
       {
-        "name": "Coniques - Definition",
+        "name": "Coniques - Définition",
         "latex": "\\frac{MF}{d(M,\\Delta)} = e",
-        "explainPrompt": "Explique la definition unifiee des coniques : 1) Definition par foyer et directrice avec excentricite e, 2) Ellipse : e < 1, somme des distances aux foyers constante, 3) Parabole : e = 1, equidistance foyer-directrice, 4) Hyperbole : e > 1, difference des distances constante, 5) Equations reduites de chaque conique.",
-        "exercisePrompt": "Genere 3 exercices sur les coniques : 1) Identifier le type de conique pour e = 0.5, e = 1, e = 2, 2) Trouver l'equation de la parabole de foyer (1,0) et directrice x = -1, 3) Montrer que l'ellipse x^2/9 + y^2/4 = 1 a pour excentricite racine(5)/3. Solutions detaillees."
+        "explainPrompt": "Explique les coniques : 1) Définition générale par foyer et directrice, 2) Excentricité e, 3) Classification (ellipse, parabole, hyperbole), 4) Propriétés optiques, 5) Équations réduites.",
+        "exercisePrompt": "Génère 3 exercices sur les coniques : 1) Identifier le type de conique, 2) Équation réduite, 3) Propriétés. Solutions détaillées."
       },
       {
         "name": "Ellipse",
         "latex": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad \\text{avec } a \\geq b > 0",
-        "explainPrompt": "Explique l'ellipse en detail : 1) Equation reduite x^2/a^2 + y^2/b^2 = 1, 2) Grand axe = 2a, petit axe = 2b, 3) Foyers F(c,0) et F'(-c,0) avec c^2 = a^2 - b^2, 4) Excentricite e = c/a < 1, 5) Propriete focale : MF + MF' = 2a, 6) Representation graphique et sommets.",
-        "exercisePrompt": "Cree 3 exercices sur l'ellipse : 1) Identifier a, b, c pour x^2/16 + y^2/9 = 1, 2) Trouver l'equation de l'ellipse de foyers (3,0) et (-3,0) et de grand axe 10, 3) Calculer l'excentricite. Solutions avec interpretation geometrique."
+        "explainPrompt": "Explique l'ellipse : 1) Définition par foyer, 2) Équation réduite, 3) Grand axe et petit axe, 4) Excentricité, 5) Tangente à l'ellipse.",
+        "exercisePrompt": "Génère 3 exercices sur l'ellipse : 1) Tracer une ellipse, 2) Calcul d'excentricité, 3) Tangente. Solutions détaillées."
       },
       {
         "name": "Hyperbole",
         "latex": "\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1",
-        "explainPrompt": "Explique l'hyperbole en detail : 1) Equation reduite x^2/a^2 - y^2/b^2 = 1, 2) Sommets en (+a, 0), 3) Foyers F(c,0) et F'(-c,0) avec c^2 = a^2 + b^2, 4) Excentricite e = c/a > 1, 5) Asymptotes : y = +-(b/a)x, 6) Propriete focale : |MF - MF'| = 2a.",
-        "exercisePrompt": "Genere 3 exercices sur l'hyperbole : 1) Identifier a, b, c pour x^2/9 - y^2/16 = 1, 2) Trouver les equations des asymptotes, 3) Calculer l'excentricite. Solutions completes."
+        "explainPrompt": "Explique l'hyperbole : 1) Définition par foyer, 2) Équation réduite, 3) Asymptotes, 4) Excentricité, 5) Propriété de réflexion.",
+        "exercisePrompt": "Génère 3 exercices sur l'hyperbole : 1) Tracer une hyperbole, 2) Asymptotes, 3) Équation tangente. Solutions détaillées."
       },
       {
         "name": "Parabole",
         "latex": "y^2 = 2px \\quad (p > 0)",
-        "explainPrompt": "Explique la parabole en detail : 1) Equation reduite y^2 = 2px, 2) Parametre p distance foyer-directrice, 3) Foyer F(p/2, 0), directrice x = -p/2, 4) Excentricite e = 1, 5) Propriete : tout point equidistant du foyer et de la directrice, 6) Applications : miroirs paraboliques, trajectoires.",
-        "exercisePrompt": "Cree 3 exercices sur la parabole : 1) Trouver foyer et directrice de y^2 = 8x, 2) Ecrire l'equation de la parabole de foyer (2,0) et directrice x = -2, 3) Verifier que M(2,4) appartient a cette parabole. Solutions detaillees."
+        "explainPrompt": "Explique la parabole : 1) Définition par foyer et directrice, 2) Équation réduite, 3) Paramètre p, 4) Tangente, 5) Propriété de réflexion.",
+        "exercisePrompt": "Génère 3 exercices sur la parabole : 1) Équation de parabole, 2) Tangente, 3) Application. Solutions détaillées."
       },
       {
         "name": "Arrangements",
         "latex": "A_n^p = \\frac{n!}{(n-p)!}",
-        "explainPrompt": "Explique les arrangements (permutations ordonnees) : 1) Definition : nombre de facons d'ordonner p elements parmi n, 2) Formule avec factorielles, 3) Difference avec les combinaisons (ordre important vs indifferent), 4) Notation A_n^p ou ^nP_p, 5) Exemples : arrangements de mots, codes, 6) Cas particulier : A_n^n = n! (permutations).",
-        "exercisePrompt": "Genere 3 exercices sur les arrangements : 1) Calculer A_5^2 et A_6^3, 2) Combien de mots de 3 lettres peut-on former avec les lettres A, B, C, D, E (sans repetition)?, 3) Exercice type bac : code PIN a 4 chiffres tous differents. Solutions detaillees."
+        "explainPrompt": "Explique les arrangements : 1) Définition, 2) Lien avec les permutations, 3) Formule de calcul, 4) Différence avec les combinaisons, 5) Applications au dénombrement.",
+        "exercisePrompt": "Génère 3 exercices sur les arrangements : 1) Calcul d'arrangements, 2) Arrangement vs combinaison, 3) Problème de dénombrement. Solutions détaillées."
       },
       {
         "name": "Combinaisons",
         "latex": "\\binom{n}{p} = \\frac{n!}{p!(n-p)!}",
-        "explainPrompt": "Explique les combinaisons (choix sans ordre) : 1) Definition : nombre de parties de p elements dans un ensemble de n, 2) Formule et demonstration, 3) Symetrie : C(n,p) = C(n,n-p), 4) Relation de Pascal : C(n,p) + C(n,p+1) = C(n+1,p+1), 5) Triangle de Pascal, 6) Lien avec le binome de Newton.",
-        "exercisePrompt": "Cree 3 exercices sur les combinaisons : 1) Calculer C(5,2), C(10,3), C(6,0), 2) Demontrer que C(5,2) = C(5,3), 3) Combien de mains de 5 cartes contiennent 2 piques dans un jeu de 52 cartes? Solutions detaillees."
+        "explainPrompt": "Explique les combinaisons : 1) Définition, 2) Formule de calcul, 3) Triangle de Pascal, 4) Propriétés (symétrie, relation de Pascal), 5) Applications aux probabilités.",
+        "exercisePrompt": "Génère 3 exercices sur les combinaisons : 1) Calcul de combinaisons, 2) Propriétés, 3) Application aux probabilités. Solutions détaillées."
       },
       {
-        "name": "Formule du binome de Newton",
+        "name": "Formule du binôme de Newton",
         "latex": "(a+b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^k b^{n-k}",
-        "explainPrompt": "Explique le binome de Newton : 1) Formule generale et demonstration par recurrence, 2) Coefficients binomiaux et triangle de Pascal, 3) Exemples : (a+b)^2 = a^2 + 2ab + b^2, (a+b)^3, 4) Utilisation pour developper (2x+1)^5, 5) Coefficient de x^k dans le developpement, 6) Applications en probabilites.",
-        "exercisePrompt": "Genere 3 exercices sur le binome : 1) Developper (x+2)^4, 2) Trouver le coefficient de x^3 dans le developpement de (2x+1)^6, 3) Demontrer que la somme des coefficients binomiaux vaut 2^n. Solutions detaillees."
+        "explainPrompt": "Explique le binôme de Newton : 1) Démonstration par récurrence, 2) Coefficients binomiaux, 3) Triangle de Pascal, 4) Applications, 5) Formule pour (a+b)^n.",
+        "exercisePrompt": "Génère 3 exercices sur le binôme : 1) Développement de (a+b)^n, 2) Calcul de coefficients, 3) Somme de coefficients. Solutions détaillées."
       },
       {
-        "name": "Probabilites conditionnelles",
+        "name": "Probabilités conditionnelles",
         "latex": "P_A(B) = \\frac{P(A \\cap B)}{P(A)}",
-        "explainPrompt": "Explique les probabilites conditionnelles : 1) Definition de P_A(B) : probabilite de B sachant A, 2) Formule des probabilites composees, 3) Arbres de probabilites, 4) Formule des probabilites totales : P(B) = P(A coupe B) + P(Abarre coupe B), 5) Independence : P(A coupe B) = P(A)xP(B), 6) Exemples concrets.",
-        "exercisePrompt": "Cree 3 exercices sur les probabilites conditionnelles : 1) Une urne contient 3 boules rouges et 2 boules noires. Probabilite de tirer 2 rouges?, 2) Utiliser un arbre pour calculer P(B) avec P(A) = 0.3, P_B(A) = 0.5, 3) Demontrer que si A et B sont independants, alors Abarre et B aussi. Solutions detaillees."
+        "explainPrompt": "Explique les probabilités conditionnelles : 1) Définition de P(A/B), 2) Formule des probabilités composées, 3) Formule des probabilités totales, 4) Formule de Bayes, 5) Indépendance.",
+        "exercisePrompt": "Génère 3 exercices sur les probabilités conditionnelles : 1) Calcul de P(A/B), 2) Formule des probabilités totales, 3) Formule de Bayes. Solutions détaillées."
       },
       {
-        "name": "Variable aleatoire - Esperance et Variance",
-        "latex": "E(X) = \\sum_{i} x_i p_i \\quad ; \\quad V(X) = E(X^2) - [E(X)]^2",
-        "explainPrompt": "Explique les caracteristiques d'une variable aleatoire : 1) Definition d'une variable aleatoire X, 2) Esperance E(X) : moyenne ponderee par les probabilites, 3) Variance V(X) : mesure de la dispersion, 4) Ecart-type sigma(X), 5) Linearite de l'esperance : E(aX+b) = aE(X)+b, 6) Exemples : lancer de des, roulette.",
-        "exercisePrompt": "Genere 3 exercices sur les variables aleatoires : 1) Calculer E(X) et V(X) pour X = resultat du lancer d'un de, 2) Un jeu cote 5 euros pour jouer. X = gain. Calculer l'esperance, 3) Demontrer que V(aX+b) = a^2 V(X). Solutions completes."
+        "name": "Variable aléatoire - Espérance et Variance",
+        "latex": "E(X) = \\sum_{i} x_i p_i; \\quad V(X) = E(X^2) - [E(X)]^2",
+        "explainPrompt": "Explique les variables aléatoires : 1) Définition d'une VA, 2) Espérance (moyenne), 3) Variance et écart-type, 4) Propriétés, 5) Linéarité de l'espérance.",
+        "exercisePrompt": "Génère 3 exercices sur les VA : 1) Calcul d'espérance et variance, 2) Propriétés, 3) Problème appliqué. Solutions détaillées."
       },
       {
         "name": "Loi binomiale",
-        "latex": "X \\sim \\mathcal{B}(n,p) \\quad ; \\quad P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}",
-        "explainPrompt": "Explique la loi binomiale : 1) Conditions : n repetitions independantes, succes avec probabilite p, 2) Variable X = nombre de succes, 3) Formule et demonstration, 4) Esperance et variance, 5) Exemples : lancers de pieces, controles qualite, 6) Approximation par loi normale pour n grand.",
-        "exercisePrompt": "Cree 3 exercices sur la loi binomiale : 1) On lance 10 fois une piece. Probabilite d'obtenir exactement 6 piles?, 2) Une machine produit 5% de defauts. Dans un lot de 100 pieces, esperance et variance du nombre de defauts, 3) Calculer P(X <= 3) avec X suit B(10, 0.3). Solutions detaillees."
+        "latex": "X \\sim \\mathcal{B}(n,p); \\quad P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}",
+        "explainPrompt": "Explique la loi binomiale : 1) Schéma de Bernoulli, 2) Conditions pour une loi binomiale, 3) Formule, 4) Espérance et variance, 5) Approximation par Poisson ou normale.",
+        "exercisePrompt": "Génère 3 exercices sur la loi binomiale : 1) Calcul de probabilités, 2) Espérance et variance, 3) Approximation. Solutions détaillées."
       },
       {
-        "name": "Theoreme des Valeurs Intermediaires",
+        "name": "Théorème des Valeurs Intermédiaires",
         "latex": "\\text{Si } f \\text{ est continue sur } [a,b] \\text{ et } f(a) \\cdot f(b) < 0 \\Rightarrow \\exists c : f(c) = 0",
-        "explainPrompt": "Explique le TVI et ses applications : 1) Conditions : continuite sur [a,b], 2) Conclusion : existence d'au moins une solution a f(x) = 0, 3) Interpretation geometrique : la courbe traverse l'axe des abscisses, 4) Utilisation pour montrer l'existence de solutions d'equations, 5) Extension : image d'un intervalle par une fonction continue est un intervalle.",
-        "exercisePrompt": "Genere 3 exercices sur le TVI : 1) Montrer que x^3 + x - 1 = 0 a une solution dans [0,1], 2) Demontrer que l'equation ln(x) + x = 0 a une solution, 3) Localiser cette solution par dichotomie. Solutions detaillees avec rigueur."
+        "explainPrompt": "Explique le TVI : 1) Énoncé du théorème, 2) Conditions (continuité), 3) Interprétation graphique, 4) Conséquence (valeur intermédiaire), 5) Méthode de dichotomie.",
+        "exercisePrompt": "Génère 3 exercices sur le TVI : 1) Montrer l'existence d'une racine, 2) Encadrer une solution, 3) Application. Solutions détaillées."
       },
       {
         "name": "Asymptotes",
-        "latex": "\\text{Verticale : } x = a \\quad ; \\quad \\text{Horizontale : } y = b \\quad ; \\quad \\text{Oblique : } y = mx + p",
-        "explainPrompt": "Explique les asymptotes d'une fonction : 1) Asymptote verticale : x = a quand f(x) tend vers plus ou moins l'infini, 2) Asymptote horizontale : y = b quand x tend vers plus ou moins l'infini, 3) Asymptote oblique : y = mx + p quand f(x) - (mx+p) tend vers 0, 4) Calcul de m et p par les limites, 5) Exemples : asymptotes de 1/x, (x+1)/(x-1), 6) Utilite pour l'etude de fonction.",
-        "exercisePrompt": "Cree 3 exercices sur les asymptotes : 1) Trouver les asymptotes de f(x) = (2x+1)/(x-3), 2) Determiner l'asymptote oblique de g(x) = (x^2+1)/x, 3) Etudier la position de la courbe par rapport a ses asymptotes. Solutions detaillees."
+        "latex": "\\text{Verticale : } x = a; \\quad \\text{Horizontale : } y = b; \\quad \\text{Oblique : } y = mx + p",
+        "explainPrompt": "Explique les asymptotes : 1) Définition des différents types, 2) Recherche d'asymptotes verticales, 3) Asymptotes horizontales, 4) Asymptotes obliques, 5) Position relative.",
+        "exercisePrompt": "Génère 3 exercices sur les asymptotes : 1) Recherche d'asymptotes, 2) Position relative, 3) Graphe complet. Solutions détaillées."
       },
       {
         "name": "Similitudes directes",
         "latex": "z' = az + b \\quad \\text{avec } a \\in \\mathbb{C}^*",
-        "explainPrompt": "Explique les similitudes directes dans le plan complexe : 1) Ecriture complexe z' = az + b, 2) Rapport k = |a|, angle theta = arg(a), 3) Centre omega verifie omega = a omega + b, 4) Classification : rotation (k=1), homothetie (theta=0), similitude (k different de 1, theta different de 0), 5) Composition de transformations, 6) Exemples concrets.",
-        "exercisePrompt": "Genere 3 exercices sur les similitudes : 1) Identifier le rapport et l'angle de z' = 2e^{ipi/3}z + 1, 2) Trouver le centre de la similitude z' = iz + (1-i), 3) Determiner l'image du point (2,3) par la similitude z' = 3z + i. Solutions detaillees."
+        "explainPrompt": "Explique les similitudes : 1) Définition, 2) Forme complexe, 3) Centre et rapport, 4) Classification (translations, rotations, homothéties), 5) Composition.",
+        "exercisePrompt": "Génère 3 exercices sur les similitudes : 1) Identifier le type, 2) Calcul de centre et rapport, 3) Composition. Solutions détaillées."
       },
       {
-        "name": "Isometries du plan",
-        "latex": "\\text{Translation } T_{\\vec{u}} \\quad ; \\quad \\text{Rotation } R_{(O,\\theta)} \\quad ; \\quad \\text{Symetrie } S_{\\Delta}",
-        "explainPrompt": "Explique les isometries du plan : 1) Definition : conservation des distances, 2) Translation : pas de point fixe, 3) Rotation : un point fixe (centre), 4) Symetrie axiale : droite de points fixes, 5) Symetrie centrale : point fixe, 6) Classification des isometries, 7) Composition : commutativite des translations.",
-        "exercisePrompt": "Cree 3 exercices sur les isometries : 1) Identifier le type d'isometrie : M'(x,y) = (-x,y), 2) Composer une translation de vecteur (1,2) avec une rotation de centre O et angle pi/2, 3) Montrer que la composee de deux symetries centrales est une translation. Solutions detaillees."
+        "name": "Isométries du plan",
+        "latex": "T_{\\vec{u}}; \\quad R_{(O,\\theta)}; \\quad S_{\\Delta}",
+        "explainPrompt": "Explique les isométries : 1) Définition d'une isométrie, 2) Translations, 3) Rotations, 4) Symétries (axiale, centrale), 5) Classification des isométries.",
+        "exercisePrompt": "Génère 3 exercices sur les isométries : 1) Identifier une isométrie, 2) Composée d'isométries, 3) Points fixes. Solutions détaillées."
       },
       {
-        "name": "Formules d'addition trigonometriques",
-        "latex": "\\sin(a \\pm b) = \\sin a \\cos b \\pm \\cos a \\sin b",
-        "explainPrompt": "Explique les formules d'addition en detail : 1) Demonstration de sin(a+b) et cos(a+b), 2) Formules pour a-b (signe different), 3) Utilisation pour calculer sin(pi/12), cos(75 deg), 4) Tangente de a+b : tan(a+b) = (tan a + tan b)/(1 - tan a tan b), 5) Applications aux equations trigonometriques.",
-        "exercisePrompt": "Genere 3 exercices sur les formules d'addition : 1) Calculer sin(75 deg) = sin(45 deg+30 deg), 2) Demontrer que cos(pi/2 - x) = sin x, 3) Resoudre l'equation sin x cos 30 deg + cos x sin 30 deg = racine(3)/2. Solutions completes."
+        "name": "Formules d'addition trigonométriques",
+        "latex": "\\sin(a \\pm b) = \\sin a \\cos b \\pm \\cos a \\sin b; \\quad \\cos(a \\pm b) = \\cos a \\cos b \\mp \\sin a \\sin b",
+        "explainPrompt": "Explique les formules d'addition : 1) Formules pour sin(a±b) et cos(a±b), 2) Démonstration, 3) Applications, 4) Tangente d'une somme, 5) Formules de Carnot.",
+        "exercisePrompt": "Génère 3 exercices sur les formules d'addition : 1) Calcul de sin(75°), 2) Démontrer une identité, 3) Résoudre une équation. Solutions détaillées."
       },
       {
         "name": "Formules de duplication",
-        "latex": "\\sin(2a) = 2\\sin a \\cos a \\quad ; \\quad \\cos(2a) = 2\\cos^2 a - 1",
-        "explainPrompt": "Explique les formules de duplication : 1) sin(2a) a partir de sin(a+b), 2) cos(2a) sous ses trois formes, 3) tan(2a) et condition tan a different de plus ou moins 1, 4) Utilisation pour lineariser cos^2 a, sin^2 a, 5) Application au calcul de sin(pi/6), cos(pi/8), 6) Formules de bissection (angle moitié).",
-        "exercisePrompt": "Cree 3 exercices sur les formules de duplication : 1) Exprimer cos^2 x en fonction de cos(2x), 2) Calculer sin(pi/12) en utilisant la duplication, 3) Demontrer que sin(3a) = 3sin a - 4sin^3 a. Solutions detaillees."
+        "latex": "\\sin(2a) = 2\\sin a \\cos a; \\quad \\cos(2a) = 2\\cos^2 a - 1",
+        "explainPrompt": "Explique les formules de duplication : 1) sin(2a) et cos(2a), 2) Formules alternatives, 3) Applications, 4) Linéarisation (formules inverse), 5) Tangente de 2a.",
+        "exercisePrompt": "Génère 3 exercices sur la duplication : 1) Application directe, 2) Linéarisation, 3) Démonstration. Solutions détaillées."
       },
       {
         "name": "Limites remarquables",
-        "latex": "\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1 \\quad ; \\quad \\lim_{x \\to 0} \\frac{e^x - 1}{x} = 1",
-        "explainPrompt": "Explique les limites fondamentales : 1) Limite de sin x / x quand x tend vers 0 (demonstration geometrique), 2) Limite de (e^x - 1) / x = 1, 3) Limite de ln(1+x) / x = 1, 4) Formes determinees et theoreme de l'Hospital, 5) Applications : calcul de limites complexes, 6) Developpements limites d'ordre 1.",
-        "exercisePrompt": "Genere 3 exercices sur les limites : 1) Calculer limite de sin(3x)/x quand x tend vers 0, 2) Calculer limite de (e^{2x}-1)/x quand x tend vers 0, 3) Calculer limite de ln(1+x^2)/x^2 quand x tend vers 0. Solutions detaillees avec application des limites remarquables."
+        "latex": "\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1; \\quad \\lim_{x \\to 0} \\frac{e^x - 1}{x} = 1; \\quad \\lim_{x \\to 0} \\frac{\\ln(1+x)}{x} = 1",
+        "explainPrompt": "Explique les limites remarquables : 1) sin(x)/x → 1 quand x→0, 2) (e^x-1)/x → 1, 3) ln(1+x)/x → 1, 4) Croissance comparée, 5) Applications au calcul de limites.",
+        "exercisePrompt": "Génère 3 exercices sur les limites remarquables : 1) Calcul de limites, 2) Formes indéterminées, 3) Croissance comparée. Solutions détaillées."
       },
       {
         "name": "Valeur moyenne d'une fonction",
         "latex": "\\mu = \\frac{1}{b-a} \\int_a^b f(x) \\, dx",
-        "explainPrompt": "Explique la valeur moyenne d'une fonction : 1) Definition et formule, 2) Interpretation geometrique : hauteur du rectangle de meme aire, 3) Theoreme de la moyenne : il existe c dans [a,b] tel que f(c) = mu, 4) Applications : temperature moyenne, vitesse moyenne, 5) Calcul sur des exemples concrets.",
-        "exercisePrompt": "Cree 3 exercices sur la valeur moyenne : 1) Calculer la valeur moyenne de f(x) = x^2 sur [0,2], 2) Un objet se deplace a la vitesse v(t) = t^2. Quelle est sa vitesse moyenne sur [0,3]?, 3) Temperature moyenne sur 24h si T(t) = 20 + 5sin(tpi/12). Solutions detaillees."
+        "explainPrompt": "Explique la valeur moyenne : 1) Définition, 2) Interprétation géométrique (aire), 3) Théorème de la moyenne, 4) Applications en physique, 5) Lien avec l'espérance.",
+        "exercisePrompt": "Génère 3 exercices sur la valeur moyenne : 1) Calcul de valeur moyenne, 2) Application physique, 3) Théorème de la moyenne. Solutions détaillées."
       }
     ]
   },
   "physique": {
-    "systemPrompt": "Tu es un professeur de physique certifie, expert en mecanique, electricite et physique moderne pour le programme de Terminale SM. Ta mission est d'expliquer les lois physiques de maniere claire et pedagogique. Utilise des exemples concrets et des analogies pour faciliter la comprehension. Reponds toujours en francais.",
+    "systemPrompt": "Tu es un professeur de physique certifié, expert en mécanique, électricité, optique et physique moderne pour le programme de Terminale SM. Ta mission est d'expliquer les lois physiques de manière claire et pédagogique. Utilise des exemples concrets, des analogies et des applications technologiques pour faciliter la compréhension. Réponds toujours en français.",
     "formulas": [
       {
-        "name": "Deuxieme loi de Newton",
-        "latex": "\\vec{F} = m\\vec{a}",
-        "explainPrompt": "Explique la deuxieme loi de Newton en detail : 1) Relation entre force resultante, masse et acceleration, 2) Unites SI : force en newtons (N), 3) Caractere vectoriel de la loi, 4) Applications : chute libre, plan incline, 5) Cas particulier : equilibre quand somme des forces = 0.",
-        "exercisePrompt": "Genere 3 exercices sur F = ma : 1) Une force de 10N agit sur une masse de 2kg. Calculer l'acceleration, 2) Un objet de 5kg soumis a deux forces de 3N et 4N perpendiculaires. Trouver l'acceleration, 3) Ascenseur descendant avec a = 2m/s^2. Trouver la tension du cable. Solutions detaillees."
+        "name": "Position dans l'espace (vecteur)",
+        "latex": "\\vec{OM} = x\\vec{i} + y\\vec{j} + z\\vec{k}",
+        "explainPrompt": "Explique le vecteur position : 1) Coordonnées cartésiennes, 2) Unité et conventions, 3) Vecteur unitaire, 4) Changement de repère, 5) Applications en cinématique.",
+        "exercisePrompt": "Génère 3 exercices sur le vecteur position : 1) Écrire les coordonnées d'un point, 2) Calcul de distance, 3) Changement de repère. Solutions détaillées."
       },
       {
-        "name": "Energie cinetique",
+        "name": "Vitesse moyenne",
+        "latex": "\\vec{v}_m = \\frac{\\Delta \\vec{OM}}{\\Delta t} = \\frac{\\vec{M_2M_1}}{t_2 - t_1}",
+        "explainPrompt": "Explique la vitesse moyenne : 1) Définition vectorielle, 2) Unités SI, 3) Relation avec le déplacement, 4) Composantes de la vitesse, 5) Vitesse scalaire vs vectorielle.",
+        "exercisePrompt": "Génère 3 exercices sur la vitesse : 1) Calcul de vitesse moyenne, 2) Composantes de la vitesse, 3) Problème de rencontre. Solutions détaillées."
+      },
+      {
+        "name": "Vitesse instantanée",
+        "latex": "\\vec{v} = \\lim_{\\Delta t \\to 0} \\frac{\\Delta \\vec{OM}}{\\Delta t} = \\frac{d\\vec{OM}}{dt}",
+        "explainPrompt": "Explique la vitesse instantanée : 1) Définition comme dérivée, 2) Lien avec la vitesse moyenne, 3) Composantescartésiennes, 4) Vecteur tangent à la trajectoire, 5) Norme de la vitesse.",
+        "exercisePrompt": "Génère 3 exercices sur la vitesse instantanée : 1) Dérivation du vecteur position, 2) Calcul de la norme, 3) Vecteur tangent. Solutions détaillées."
+      },
+      {
+        "name": "Accélération",
+        "latex": "\\vec{a} = \\frac{d\\vec{v}}{dt} = \\frac{d^2\\vec{OM}}{dt^2}",
+        "explainPrompt": "Explique l'accélération : 1) Définition comme dérivée seconde, 2) Composantescartésiennes, 3) Accélération tangentielle et normale, 4) Unités, 5) Interprétation du mouvement.",
+        "exercisePrompt": "Génère 3 exercices sur l'accélération : 1) Calcul d'accélération, 2) Composantes tangentielle et normale, 3) Classification du mouvement. Solutions détaillées."
+      },
+      {
+        "name": "Mouvement Rectiligne Uniforme (MRU)",
+        "latex": "x(t) = x_0 + v(t - t_0) \\quad \\text{ou} \\quad x(t) = v \\cdot t + x_0",
+        "explainPrompt": "Explique le MRU : 1) Définition et conditions, 2) Équation horaire, 3) Diagramme horaire, 4) Propriétés (vitesse constante, accélération nulle), 5) Applications concrètes.",
+        "exercisePrompt": "Génère 3 exercices sur le MRU : 1) Équation horaire, 2) Calcul de position, 3) Problème de rencontre. Solutions détaillées."
+      },
+      {
+        "name": "Mouvement Rectiligne Uniformément Varié (MRUV)",
+        "latex": "v(t) = v_0 + a(t - t_0) \\quad \\text{et} \\quad x(t) = x_0 + v_0(t - t_0) + \\frac{1}{2}a(t - t_0)^2",
+        "explainPrompt": "Explique le MRUV : 1) Définition et conditions, 2) Équations horaires, 3) Formule de Torricelli (v²-v₀²=2aΔx), 4) Diagramme horaire, 5) Applications (chute libre, sécurité routière).",
+        "exercisePrompt": "Génère 3 exercices sur le MRUV : 1) Équations horaires, 2) Formule de Torricelli, 3) Problème de chute libre. Solutions détaillées."
+      },
+      {
+        "name": "Formule de Torricelli",
+        "latex": "v^2 - v_0^2 = 2a(x - x_0)",
+        "explainPrompt": "Explique la formule de Torricelli : 1) Démonstration, 2) Indépendance du temps, 3) Applications en cinématique, 4) Cas de la chute libre, 5) Utilisation sans calculer le temps.",
+        "exercisePrompt": "Génère 3 exercices sur Torricelli : 1) Application directe, 2) Résolution sans le temps, 3) Chute libre. Solutions détaillées."
+      },
+      {
+        "name": "Mouvement Circulaire Uniforme (MCU)",
+        "latex": "\\omega = \\frac{d\\theta}{dt} = \\frac{2\\pi}{T} = 2\\pi f \\quad \\text{et} \\quad v = \\omega \\cdot R",
+        "explainPrompt": "Explique le MCU : 1) Définition et conditions, 2) Vitesse angulaire ω, 3) Période T et fréquence f, 4) Relation v = ωR, 5) Accélération centripète.",
+        "exercisePrompt": "Génère 3 exercices sur le MCU : 1) Calcul de ω, T et v, 2) Accélération centripète, 3) Problème appliqué. Solutions détaillées."
+      },
+      {
+        "name": "Accélération centripète",
+        "latex": "a_n = \\frac{v^2}{R} = \\omega^2 R",
+        "explainPrompt": "Explique l'accélération centripète : 1) Direction et sens, 2) Démonstration, 3) Relation avec v et ω, 4) Applications (satellite, virage), 5) Énergie cinétique en MCU.",
+        "exercisePrompt": "Génère 3 exercices sur l'accélération centripète : 1) Calcul de aₙ, 2) Applications en sécurité routière, 3) Satellite. Solutions détaillées."
+      },
+      {
+        "name": "Première loi de Newton (Principe d'inertie)",
+        "latex": "\\sum \\vec{F} = \\vec{0} \\Leftrightarrow \\vec{a} = \\vec{0}",
+        "explainPrompt": "Explique le principe d'inertie : 1) Énoncé historique de Newton, 2) Référentiels galiléens, 3) Interprétation, 4) Exemples de mouvement inertiel, 5) Système pseudo-isolé.",
+        "exercisePrompt": "Génère 3 exercices sur l'inertie : 1) Identifier un référentiel galiléen, 2) Système pseudo-isolé, 3) Application. Solutions détaillées."
+      },
+      {
+        "name": "Deuxième loi de Newton (RFD)",
+        "latex": "\\sum \\vec{F} = m \\cdot \\vec{a}",
+        "explainPrompt": "Explique la relation fondamentale : 1) Énoncé de la RFD, 2) Unités et cohérence, 3) Applications à différents problèmes, 4) Forces usuelles (poids, frottement, tension), 5) Méthodes de résolution.",
+        "exercisePrompt": "Génère 3 exercices sur la RFD : 1) Application directe, 2) Plan incliné, 3) Système de masses. Solutions détaillées."
+      },
+      {
+        "name": "Troisième loi de Newton (Action-Réaction)",
+        "latex": "\\vec{F}_{A/B} = -\\vec{F}_{B/A}",
+        "explainPrompt": "Explique l'action et réaction : 1) Énoncé de la troisième loi, 2) Caractéristiques des forces, 3) Différence avec l'équilibre, 4) Applications (propulsion, collision), 5) Exemples concrets.",
+        "exercisePrompt": "Génère 3 exercices sur action-réaction : 1) Identifier les forces, 2) Propulsion, 3) Problème de collision. Solutions détaillées."
+      },
+      {
+        "name": "Poids d'un corps",
+        "latex": "\\vec{P} = m \\cdot \\vec{g}",
+        "explainPrompt": "Explique le poids : 1) Définition, 2) Différence avec la masse, 3) Valeur de g, 4) Variation avec l'altitude, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices sur le poids : 1) Calcul de poids, 2) Différence masse/poids, 3) Variation de g. Solutions détaillées."
+      },
+      {
+        "name": "Loi de gravitation universelle",
+        "latex": "\\vec{F} = G \\cdot \\frac{m_1 \\cdot m_2}{r^2} \\cdot \\vec{u_r}",
+        "explainPrompt": "Explique la gravitation : 1) Loi de Newton, 2) Constante G, 3) Champ de pesanteur terrestre, 4) Satellite et orbite, 5) Énergie potentielle gravitationnelle.",
+        "exercisePrompt": "Génère 3 exercices sur la gravitation : 1) Calcul de force, 2) Satellite, 3) Énergie orbitale. Solutions détaillées."
+      },
+      {
+        "name": "Travail d'une force",
+        "latex": "W_{AB}(\\vec{F}) = \\vec{F} \\cdot \\vec{AB} = F \\cdot AB \\cdot \\cos(\\alpha)",
+        "explainPrompt": "Explique le travail : 1) Définition scalaire, 2) Conventions (moteur, résistant, nul), 3) Unité (Joule), 4) Travail du poids, 5) Travail d'une force variable.",
+        "exercisePrompt": "Génère 3 exercices sur le travail : 1) Calcul de travail, 2) Travail du poids, 3) Diagramme de force. Solutions détaillées."
+      },
+      {
+        "name": "Énergie cinétique",
         "latex": "E_c = \\frac{1}{2}mv^2",
-        "explainPrompt": "Explique l'energie cinetique : 1) Definition et formule, 2) Unite : le joule (J), 3) Theoreme de l'energie cinetique : variation = travail des forces, 4) Applications aux problemes de collisions, 5) Relation avec le travail et la puissance.",
-        "exercisePrompt": "Cree 3 exercices sur l'energie cinetique : 1) Calculer l'energie cinetique d'une voiture de 1000kg a 72km/h, 2) Un projectile de 0.5kg frappe un mur a 20m/s et s'arrete. Calculer le travail des forces de resistance, 3) Un pendule. Calculer sa vitesse au point le plus bas. Solutions completes."
+        "explainPrompt": "Explique l'énergie cinétique : 1) Définition, 2) Propriétés (toujours positive, nulle au repos), 3) Théorème de l'énergie cinétique, 4) Unité SI, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices sur l'énergie cinétique : 1) Calcul d'énergie cinétique, 2) Théorème de l'énergie cinétique, 3) Sécurité routière. Solutions détaillées."
+      },
+      {
+        "name": "Énergie potentielle de pesanteur",
+        "latex": "E_p = m \\cdot g \\cdot h",
+        "explainPrompt": "Explique l'énergie potentielle : 1) Définition, 2) Choix de l'origine, 3) Propriétés (défini à une constante près), 4) Relation avec le travail du poids, 5) Conservation en chute libre.",
+        "exercisePrompt": "Génère 3 exercices sur Eₚ : 1) Calcul d'énergie potentielle, 2) Variation, 3) Conservation mécanique. Solutions détaillées."
+      },
+      {
+        "name": "Énergie mécanique",
+        "latex": "E_m = E_c + E_p = \\frac{1}{2}mv^2 + mgh",
+        "explainPrompt": "Explique l'énergie mécanique : 1) Définition, 2) Conservation en l'absence de frottements, 3) Cas avec forces non conservatives, 4) Théorème de l'énergie mécanique, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices sur l'énergie mécanique : 1) Calcul d'énergie mécanique, 2) Conservation, 3) Vitesse de libération. Solutions détaillées."
+      },
+      {
+        "name": "Théorème de l'énergie cinétique",
+        "latex": "\\Delta E_c = E_c(B) - E_c(A) = \\sum W(\\vec{F} \\rightarrow \\text{système})",
+        "explainPrompt": "Explique le théorème : 1) Énoncé, 2) Démonstration, 3) Applications, 4) Différence avec conservation, 5) Exemples.",
+        "exercisePrompt": "Génère 3 exercices : 1) Application du théorème, 2) Calcul de travail, 3) Vitesse finale. Solutions détaillées."
+      },
+      {
+        "name": "Quantité de mouvement",
+        "latex": "\\vec{p} = m \\cdot \\vec{v}",
+        "explainPrompt": "Explique la quantité de mouvement : 1) Définition vectorielle, 2) Unité SI, 3) Propriétés, 4) Conservation pour un système isolé, 5) Lien avec la force.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de quantité de mouvement, 2) Conservation, 3) Propulsion par réaction. Solutions détaillées."
+      },
+      {
+        "name": "Conservation de la quantité de mouvement",
+        "latex": "\\vec{p}_{\\text{totale}} = cte \\quad \\Rightarrow \\quad \\sum \\vec{p}_i = \\sum \\vec{p}_i'",
+        "explainPrompt": "Explique la conservation : 1) Condition (système isolé), 2) Applications aux collisions, 3) Collision élastique et inélastique, 4) Recul d'un canon, 5) Propulsion.",
+        "exercisePrompt": "Génère 3 exercices : 1) Collision élastique, 2) Collision inélastique, 3) Recul. Solutions détaillées."
+      },
+      {
+        "name": "Oscillateur harmonique - Équation",
+        "latex": "\\frac{d^2x}{dt^2} + \\omega_0^2 x = 0",
+        "explainPrompt": "Explique l'oscillateur harmonique : 1) Définition, 2) Équation différentielle, 3) Solutions, 4) Pulsation propre ω₀, 5) Applications (masse-ressort, pendule).",
+        "exercisePrompt": "Génère 3 exercices : 1) Vérifier qu'une fonction est solution, 2) Calcul de ω₀, 3) Période propre. Solutions détaillées."
+      },
+      {
+        "name": "Oscillateur harmonique - Solution",
+        "latex": "x(t) = X_m \\cos(\\omega_0 t + \\varphi)",
+        "explainPrompt": "Explique la solution : 1) Forme générale, 2) Amplitude Xₘ et phase φ, 3) Vitesse v(t), 4) Énergie de l'oscillateur, 5) Détermination des constantes.",
+        "exercisePrompt": "Génère 3 exercices : 1) Écrire x(t), 2) Calcul d'énergie, 3) Détermination de φ. Solutions détaillées."
+      },
+      {
+        "name": "Période du pendule simple",
+        "latex": "T_0 = 2\\pi\\sqrt{\\frac{L}{g}}",
+        "explainPrompt": "Explique le pendule : 1) Conditions de validité, 2) Démonstration, 3) Isochronisme, 4) Applications (horlogerie, sismomètre), 5) Période dépend de L et g.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de période, 2) Détermination de g, 3) Pendule simple vs compound. Solutions détaillées."
+      },
+      {
+        "name": "Loi de Coulomb",
+        "latex": "F = k \\cdot \\frac{|q_1| \\cdot |q_2|}{r^2} \\quad \\text{avec } k = 8,99 \\times 10^9 \\text{ N·m}^2\\text{/C}^2",
+        "explainPrompt": "Explique la loi de Coulomb : 1) Analogie avec gravitation, 2) Constante k, 3) Conditions d'application, 4) Principe de superposition, 5) Différence avec gravitation.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de force, 2) Comparaison gravitation/électrostatique, 3) Principe de superposition. Solutions détaillées."
+      },
+      {
+        "name": "Champ électrostatique",
+        "latex": "\\vec{E} = k \\cdot \\frac{q}{r^2} \\cdot \\vec{u}",
+        "explainPrompt": "Explique le champ électrique : 1) Définition, 2) Unité SI, 3) Lignes de champ, 4) Superposition, 5) Champ uniforme.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de champ, 2) Lignes de champ, 3) Force sur une charge. Solutions détaillées."
+      },
+      {
+        "name": "Énergie potentielle électrique",
+        "latex": "E_p = q \\cdot V",
+        "explainPrompt": "Explique l'énergie potentielle : 1) Définition, 2) Potentiel V, 3) Relation avec le travail, 4) Surface équipotentielle, 5) Conservation de l'énergie.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul d'énergie, 2) Potentiel, 3) Conservation. Solutions détaillées."
       },
       {
         "name": "Loi d'Ohm",
-        "latex": "U = RI",
-        "explainPrompt": "Explique la loi d'Ohm et ses applications : 1) Relation tension-resistance-courant U = RI, 2) Unites : volt, ampere, ohm, 3) Resistance d'un fil conducteur, 4) Puissance dissipee P = RI^2, 5) Association de resistances en serie et parallele, 6) Applications dans les circuits.",
-        "exercisePrompt": "Genere 3 exercices sur la loi d'Ohm : 1) Un resistor de 100 ohms est traverse par 0.2A. Trouver la tension, 2) Un fil de cuivre de longueur 10m et section 1mm^2. Calculer sa resistance (rho = 1.7x10^-8 ohm.m), 3) Circuit avec deux resistances en serie : 50 ohms et 100 ohms. Trouver la resistance equivalente. Solutions detaillees."
+        "latex": "U = R \\cdot I",
+        "explainPrompt": "Explique la loi d'Ohm : 1) Définition de R, 2) Unité (ohm), 3) Caractéristique U(I), 4) Puissance dissipée, 5) Association de résistances.",
+        "exercisePrompt": "Génère 3 exercices : 1) Application de la loi, 2) Puissance, 3) Association. Solutions détaillées."
+      },
+      {
+        "name": "Loi des noeuds (Kirchhoff)",
+        "latex": "\\sum I_{\\text{entrant}} = \\sum I_{\\text{sortant}}",
+        "explainPrompt": "Explique la loi des noeuds : 1) Énoncé, 2) Conservation de la charge, 3) Application aux circuits, 4) Exemples, 5) Méthode de résolution.",
+        "exercisePrompt": "Génère 3 exercices : 1) Application directe, 2) Circuit complexe, 3) Vérification. Solutions détaillées."
+      },
+      {
+        "name": "Loi des mailles (Kirchhoff)",
+        "latex": "\\sum U_i = 0",
+        "explainPrompt": "Explique la loi des mailles : 1) Énoncé, 2) Convention d'orientation, 3) Application aux circuits, 4) Méthode de Maxwell, 5) Résolution de circuits.",
+        "exercisePrompt": "Génère 3 exercices : 1) Écrire les équations, 2) Circuit simple, 3) Circuit complexe. Solutions détaillées."
+      },
+      {
+        "name": "Résistances en série",
+        "latex": "R_{\\text{eq}} = R_1 + R_2 + ... + R_n",
+        "explainPrompt": "Explique l'association série : 1) Caractéristiques, 2) Formule de calcul, 3) Diviseur de tension, 4) Applications, 5) Comparaison parallèle.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de R_eq, 2) Diviseur de tension, 3) Circuit mixte. Solutions détaillées."
+      },
+      {
+        "name": "Résistances en parallèle",
+        "latex": "\\frac{1}{R_{\\text{eq}}} = \\frac{1}{R_1} + \\frac{1}{R_2} + ... + \\frac{1}{R_n}",
+        "explainPrompt": "Explique l'association parallèle : 1) Caractéristiques, 2) Formule, 3) Cas de deux résistances, 4) Diviseur de courant, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de R_eq, 2) Diviseur de courant, 3) Circuit mixte. Solutions détaillées."
+      },
+      {
+        "name": "Puissance électrique",
+        "latex": "P = U \\cdot I = R \\cdot I^2 = \\frac{U^2}{R}",
+        "explainPrompt": "Explique la puissance : 1) Définition, 2) Unité (Watt), 3) Différentes formes, 4) Effet Joule, 5) Applications domestiques.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de puissance, 2) Effet Joule, 3) Facture d'électricité. Solutions détaillées."
+      },
+      {
+        "name": "Énergie électrique",
+        "latex": "E = P \\cdot t = U \\cdot I \\cdot t",
+        "explainPrompt": "Explique l'énergie électrique : 1) Définition, 2) Unité (Joule, Watt-heure), 3) Relation avec puissance, 4) Compteur électrique, 5) Coût de l'énergie.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul d'énergie, 2) Coût, 3) Comparaison appareils. Solutions détaillées."
+      },
+      {
+        "name": "Capacité d'un condensateur",
+        "latex": "C = \\frac{Q}{U}",
+        "explainPrompt": "Explique le condensateur : 1) Définition de C, 2) Unité (Farad), 3) Relation Q = CU, 4) Facteurs influençant C, 5) Condensateur plan.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de capacité, 2) Relation Q-U, 3) Énergie stockée. Solutions détaillées."
+      },
+      {
+        "name": "Énergie emmagasinée dans un condensateur",
+        "latex": "E_c = \\frac{1}{2}CU^2 = \\frac{Q^2}{2C} = \\frac{1}{2}QU",
+        "explainPrompt": "Explique l'énergie du condensateur : 1) Formule, 2) Démonstration, 3) Applications (flash, defibrillateur), 4) Décharge, 5) Comparaison avec bobine.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul d'énergie, 2) Flash photographique, 3) Comparaison. Solutions détaillées."
+      },
+      {
+        "name": "Relation intensité-tension condensateur",
+        "latex": "i = \\frac{dq}{dt} = C \\cdot \\frac{du}{dt}",
+        "explainPrompt": "Explique la relation : 1) Courant comme dérivée de charge, 2) Convention, 3) Impédance du condensateur, 4) Déphasage, 5) Applications en régime variable.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de courant, 2) Circuit RC, 3) Impédance. Solutions détaillées."
+      },
+      {
+        "name": "Inductance d'une bobine",
+        "latex": "u_L = L \\cdot \\frac{di}{dt}",
+        "explainPrompt": "Explique l'inductance : 1) Définition de L, 2) Unité (Henry), 3) Auto-induction, 4) Force contre-électromotrice, 5) Facteurs influençant L.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de f.c.é.m., 2) Constante de temps, 3) Énergie. Solutions détaillées."
+      },
+      {
+        "name": "Énergie emmagasinée dans une bobine",
+        "latex": "E_L = \\frac{1}{2}LI^2",
+        "explainPrompt": "Explique l'énergie de la bobine : 1) Formule, 2) Analogie avec condensateur, 3) Applications, 4) RL circuit, 5) Conversion d'énergie.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul d'énergie, 2) Circuit RL, 3) Comparaison LC. Solutions détaillées."
+      },
+      {
+        "name": "Circuit LC - Équation différentielle",
+        "latex": "\\frac{d^2q}{dt^2} + \\frac{1}{LC}q = 0",
+        "explainPrompt": "Explique l'oscillateur LC : 1) Équation, 2) Analogie mécanique, 3) Solutions, 4) Échange d'énergie, 5) Période propre.",
+        "exercisePrompt": "Génère 3 exercices : 1) Vérification de l'équation, 2) Calcul de période, 3) Échange d'énergie. Solutions détaillées."
+      },
+      {
+        "name": "Pulsation et période propre LC",
+        "latex": "\\omega_0 = \\frac{1}{\\sqrt{LC}} \\quad \\text{et} \\quad T_0 = 2\\pi\\sqrt{LC}",
+        "explainPrompt": "Explique la période propre : 1) Formule, 2) Démonstration, 3) Indépendance de l'amplitude, 4) Applications, 5) Mesure de L ou C.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de T₀, 2) Mesure de L, 3) Oscillation forcée. Solutions détaillées."
+      },
+      {
+        "name": "Circuit RC - Constante de temps",
+        "latex": "\\tau = RC",
+        "explainPrompt": "Explique la constante τ : 1) Définition, 2) Unité (seconde), 3) Signification physique, 4) Charge et décharge, 5) Détermination expérimentale.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de τ, 2) Charge du condensateur, 3) Décharge. Solutions détaillées."
+      },
+      {
+        "name": "Charge d'un condensateur (RC)",
+        "latex": "q(t) = Q(1 - e^{-t/\\tau}) = CE(1 - e^{-t/RC})",
+        "explainPrompt": "Explique la charge : 1) Équation différentielle, 2) Solution, 3) Comportement asymptotique, 4) Durée de charge, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de charge, 2) Temps de charge, 3) Constante de temps. Solutions détaillées."
+      },
+      {
+        "name": "Décharge d'un condensateur",
+        "latex": "q(t) = Q_0 e^{-t/\\tau}",
+        "explainPrompt": "Explique la décharge : 1) Solution de l'équation, 2) Comportement exponentiel, 3) Temps de demi-décharge, 4) Applications (mémoire), 5) Énergie dissipée.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de décharge, 2) Temps caractéristique, 3) Énergie dissipée. Solutions détaillées."
+      },
+      {
+        "name": "Lentilles minces - Relation de conjugaison",
+        "latex": "\\frac{1}{\\overline{OA'}} - \\frac{1}{\\overline{OA}} = \\frac{1}{\\overline{OF'}} = C",
+        "explainPrompt": "Explique la conjugaison : 1) Convention de signes, 2) Formule de Descartes, 3) Vergence C, 4) Foyers, 5) Grandissement.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de position, 2) Grandissement, 3) Construction graphique. Solutions détaillées."
+      },
+      {
+        "name": "Grandissement transversal",
+        "latex": "\\gamma = \\frac{\\overline{A'B'}}{\\overline{AB}} = \\frac{\\overline{OA'}}{\\overline{OA}}",
+        "explainPrompt": "Explique le grandissement : 1) Définition, 2) Signe (image droite/inversée), 3) Valeur absolue (taille), 4) Formule, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de γ, 2) Taille de l'image, 3) Grossissement. Solutions détaillées."
+      },
+      {
+        "name": "Interférences - Condition",
+        "latex": "\\delta = S_2M - S_1M",
+        "explainPrompt": "Explique les interférences : 1) Différence de marche δ, 2) Conditions d'interférences, 3) Franges brillantes et sombres, 4) Cohérence, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de δ, 2) Franges brillantes, 3) Franges sombres. Solutions détaillées."
+      },
+      {
+        "name": "Interfrange",
+        "latex": "i = \\frac{\\lambda D}{a}",
+        "explainPrompt": "Explique l'interfrange : 1) Définition, 2) Formule, 3) Paramètres influençant, 4) Mesure de λ, 5) Trous d'Young.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul d'interfrange, 2) Mesure de λ, 3) Trous d'Young. Solutions détaillées."
+      },
+      {
+        "name": "Quantité de chaleur",
+        "latex": "Q = mc\\Delta T",
+        "explainPrompt": "Explique la calorimétrie : 1) Définition de c, 2) Unité (J/kg·K), 3) Relation avec la capacité thermique, 4) Applications, 5) Pertes calorimétriques.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de chaleur, 2) Échange thermique, 3) Calorimètre. Solutions détaillées."
+      },
+      {
+        "name": "Chaleur latente",
+        "latex": "Q = mL",
+        "explainPrompt": "Explique la chaleur latente : 1) Définition de L, 2) Changement d'état, 3) Unité (J/kg), 4) Fusion et vaporisation, 5) Applications (frigo, climatisation).",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de chaleur latente, 2) Changement d'état, 3) Application. Solutions détaillées."
+      },
+      {
+        "name": "Premier principe de la thermodynamique",
+        "latex": "\\Delta U = Q + W",
+        "explainPrompt": "Explique le premier principe : 1) Énoncé, 2) Énergie interne U, 3) Chaleur Q et travail W, 4) Convention de signes, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de ΔU, 2) Transformation isochore, 3) Cycle. Solutions détaillées."
+      },
+      {
+        "name": "Noyau atomique - Notation",
+        "latex": "^A_ZX",
+        "explainPrompt": "Explique la notation nucléaire : 1) Nombre de masse A, 2) Numéro atomique Z, 3) Neutrons N = A-Z, 4) Isotopes, 5) Unité de masse atomique.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier A, Z, N, 2) Isotopes, 3) Masse nucleus. Solutions détaillées."
+      },
+      {
+        "name": "Défaut de masse",
+        "latex": "\\Delta m = [Z m_p + N m_n] - m_{\\text{noyau}}",
+        "explainPrompt": "Explique le défaut de masse : 1) Définition, 2) Origine (énergie de liaison), 3) Formule d'Einstein, 4) Mesure expérimentale, 5) Stabilité nucleus.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de Δm, 2) Énergie de liaison, 3) Stabilité. Solutions détaillées."
+      },
+      {
+        "name": "Énergie de liaison",
+        "latex": "E_l = \\Delta m \\cdot c^2",
+        "explainPrompt": "Explique l'énergie de liaison : 1) Formule, 2) Unité (MeV), 3) Énergie de liaison par nucleon, 4) Courbe d'Aston, 5) Stabilité.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul d'énergie de liaison, 2) Courbe d'Aston, 3) Fusion vs fission. Solutions détaillées."
+      },
+      {
+        "name": "Loi de décroissance radioactive",
+        "latex": "N(t) = N_0 e^{-\\lambda t}",
+        "explainPrompt": "Explique la décroissance : 1) Constante radioactive λ, 2) Demi-vie T₁/₂, 3) Relation λ et T₁/₂, 4) Activité A, 5) Applications (datation).",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de N(t), 2) Demi-vie, 3) Datation au carbone 14. Solutions détaillées."
+      },
+      {
+        "name": "Demi-vie radioactive",
+        "latex": "T_{1/2} = \\frac{\\ln 2}{\\lambda}",
+        "explainPrompt": "Explique la demi-vie : 1) Définition, 2) Relation avec λ, 3) Exemples de demi-vies, 4) Datation radioactive, 5) Applications médicales.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de T₁/₂, 2) Datation, 3) Activité. Solutions détaillées."
+      },
+      {
+        "name": "Activité radioactive",
+        "latex": "A = \\lambda N = \\frac{\\ln 2}{T_{1/2}} N",
+        "explainPrompt": "Explique l'activité : 1) Définition, 2) Unité (Becquerel), 3) Relation avec N et λ, 4) Décroissance de A, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul d'activité, 2) Unités, 3) Dose reçue. Solutions détaillées."
+      },
+      {
+        "name": "Relation d'Einstein",
+        "latex": "E = mc^2",
+        "explainPrompt": "Explique E = mc² : 1) Démonstration relativiste, 2) Unité et conversion, 3) Applications (nucléaire, lumière), 4) Défaut de masse, 5) Limites.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul d'énergie, 2) Perte de masse, 3) Fission. Solutions détaillées."
+      },
+      {
+        "name": "Force de Lorentz",
+        "latex": "\\vec{F} = q\\vec{v} \\wedge \\vec{B}",
+        "explainPrompt": "Explique la force de Lorentz : 1) Définition vectorielle, 2) Règle de la main droite, 3) Propriétés (perpendiculaire à v et B), 4) Travail nul, 5) Applications (cyclotron).",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de force, 2) Trajectoire circulaire, 3) Cyclotron. Solutions détaillées."
+      },
+      {
+        "name": "Rayon de la trajectoire",
+        "latex": "R = \\frac{mv}{|q|B}",
+        "explainPrompt": "Explique le rayon de giration : 1) Formule, 2) Démonstration, 3) Dépendance en m, v, q, B, 4) Applications, 5) Spectromètre de masse.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de R, 2) Spectromètre, 3) Cyclotron. Solutions détaillées."
+      },
+      {
+        "name": "Champ au centre d'un solénoïde",
+        "latex": "B = \\mu_0 n I = \\mu_0 \\frac{N}{\\ell} I",
+        "explainPrompt": "Explique le champ magnétique : 1) Perméabilité μ₀, 2) Solénoïde long, 3) Champ uniforme à l'intérieur, 4) Applications (électroaimant), 5) bobine de Helmholtz.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de B, 2) Électroaimant, 3) Champ terrestre. Solutions détaillées."
+      },
+      {
+        "name": "Flux magnétique",
+        "latex": "\\Phi = \\vec{B} \\cdot \\vec{S} = BS\\cos\\alpha",
+        "explainPrompt": "Explique le flux : 1) Définition, 2) Unité (Weber), 3) Convention d'orientation, 4) Variation du flux, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de Φ, 2) Flux maximal, 3) Variation. Solutions détaillées."
+      },
+      {
+        "name": "Loi de Faraday",
+        "latex": "e = -\\frac{d\\Phi}{dt}",
+        "explainPrompt": "Explique l'induction : 1) Force électromotrice, 2) Sens de la f.é.m. (Lenz), 3) Applications (alternateur), 4) Courants de Foucault, 5) Auto-induction.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de f.é.m., 2) Alternateur, 3) Auto-induction. Solutions détaillées."
+      },
+      {
+        "name": "Circuit RLC amorti - Équation",
+        "latex": "\\frac{d^2q}{dt^2} + \\frac{R}{L}\\frac{dq}{dt} + \\frac{1}{LC}q = 0",
+        "explainPrompt": "Explique l'amortissement : 1) Équation avec R, 2) Différents régimes, 3) Pseudo-période, 4) Facteur de qualité, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier le régime, 2) Pseudo-période, 3) Facteur de qualité. Solutions détaillées."
+      },
+      {
+        "name": "Condition de résonance",
+        "latex": "\\omega = \\omega_0 = \\frac{1}{\\sqrt{LC}}",
+        "explainPrompt": "Explique la résonance : 1) Définition, 2) Résonance en intensité, 3) Bande passante, 4) Facteur de qualité Q, 5) Applications (radio, acoustique).",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de ω₀, 2) Bande passante, 3) Facteur Q. Solutions détaillées."
+      },
+      {
+        "name": "Diffraction par une fente",
+        "latex": "\\theta \\approx \\frac{\\lambda}{a}",
+        "explainPrompt": "Explique la diffraction : 1) Condition d'observation, 2) Écart angulaire, 3) Limites du modèle, 4) Applications, 5) Résolution optique.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de θ, 2) Condition d'observation, 3) Résolution. Solutions détaillées."
+      },
+      {
+        "name": "Réseau de diffraction",
+        "latex": "a \\sin\\theta = k\\lambda \\quad (k = 0, \\pm 1, \\pm 2...)\\",
+        "explainPrompt": "Explique les réseaux : 1) Constante du réseau a, 2) Formule, 3) Ordres de diffraction, 4) Pouvoir de résolution, 5) Applications spectrales.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul d'angle, 2) Spectre, 3) Pouvoir de résolution. Solutions détaillées."
       }
     ]
   },
   "chimie": {
-    "systemPrompt": "Tu es un professeur de chimie certifie, expert en chimie organique et reactions chimiques pour le programme de Terminale SM. Ta mission est d'expliquer les concepts chimiques de maniere claire et pedagogique. Reponds toujours en francais.",
+    "systemPrompt": "Tu es un professeur de chimie certifié, expert en solutions aqueuses, chimie des réactions acide-base, oxydoréduction et chimie organique pour le programme de Terminale SM. Ta mission est d'expliquer les concepts chimiques de manière claire et pédagogique. Utilise des exemples concrets, des schémas réactionnels et des applications industrielles pour faciliter la compréhension. Réponds toujours en français.",
     "formulas": [
       {
-        "name": "Formule generale des alcools",
+        "name": "Concentration massique",
+        "latex": "C_m = \\frac{m_{\\text{soluté}}}{V_{\\text{solution}}}",
+        "explainPrompt": "Explique la concentration massique : 1) Définition, 2) Unités (g/L, g/mL), 3) Relation avec la concentration molaire, 4) Applications, 5) Préparation de solutions.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de concentration, 2) Préparation de solution, 3) Dilution. Solutions détaillées."
+      },
+      {
+        "name": "Concentration molaire",
+        "latex": "C = \\frac{n_{\\text{soluté}}}{V_{\\text{solution}}}",
+        "explainPrompt": "Explique la molarité : 1) Définition, 2) Unité (mol/L ou M), 3) Relation avec la masse, 4) Formule n = m/M, 5) Préparation de solutions.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de concentration, 2) Préparation de solution, 3) Relation C et Cm. Solutions détaillées."
+      },
+      {
+        "name": "Relation dilution",
+        "latex": "C_i \\times V_i = C_f \\times V_f",
+        "explainPrompt": "Explique la dilution : 1) Principe de conservation, 2) Formule, 3) Facteur de dilution, 4) Volume à prélever, 5) Applications de laboratoire.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de concentration finale, 2) Volume à prélever, 3) Facteur de dilution. Solutions détaillées."
+      },
+      {
+        "name": "Dissolution d'un sel",
+        "latex": "A_xB_y(s) \\rightarrow xA^+_{(aq)} + yB^-_{(aq)}",
+        "explainPrompt": "Explique la dissolution : 1) Équation de dissolution, 2) Concentration des ions, 3) Relation avec C, 4) Électrolytes forts et faibles, 5) Solvatation.",
+        "exercisePrompt": "Génère 3 exercices : 1) Écrire l'équation, 2) Concentration ionique, 3) Préparation. Solutions détaillées."
+      },
+      {
+        "name": "Définition du pH",
+        "latex": "\\text{pH} = -\\log[H_3O^+]",
+        "explainPrompt": "Explique le pH : 1) Définition, 2) Échelle de pH (0-14), 3) Solutions acides, neutres, basiques, 4) Limites du modèle, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de pH, 2) [H₃O⁺], 3) Échelle. Solutions détaillées."
+      },
+      {
+        "name": "Concentration en ions oxonium",
+        "latex": "[H_3O^+] = 10^{-\\text{pH}}",
+        "explainPrompt": "Explique [H₃O⁺] : 1) Relation avec pH, 2) Unité mol/L, 3) Solutions très diluées, 4) pH de l'eau pure, 5) Précision.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de [H₃O⁺], 2) pH de solutions, 3) Relation. Solutions détaillées."
+      },
+      {
+        "name": "Produit ionique de l'eau",
+        "latex": "K_e = [H_3O^+] \\times [OH^-] = 10^{-14} \\text{ à } 25°C",
+        "explainPrompt": "Explique Ke : 1) Autoprotolyse de l'eau, 2) Constante, 3) Neutralité électrique, 4) pH et pOH, 5) Température.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de [OH⁻], 2) pOH, 3) pH + pOH = 14. Solutions détaillées."
+      },
+      {
+        "name": "Relation pH + pOH",
+        "latex": "\\text{pH} + \\text{pOH} = 14",
+        "explainPrompt": "Explique la relation : 1) Démonstration, 2) Applications, 3) Calcul de pH pour une base, 4) Limites du modèle, 5) Température.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de pOH, 2) Solution basique, 3) Base forte. Solutions détaillées."
+      },
+      {
+        "name": "Acide de Brønsted",
+        "latex": "\\text{Acide} \\rightarrow \\text{Base} + H^+",
+        "explainPrompt": "Explique les acides : 1) Définition de Brønsted, 2) Couples acide/base, 3) Acides forts et faibles, 4) Réaction avec l'eau, 5) Exemples.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier l'acide, 2) Couples, 3) Réaction. Solutions détaillées."
+      },
+      {
+        "name": "Base de Brønsted",
+        "latex": "\\text{Base} + H^+ \\rightarrow \\text{Acide}",
+        "explainPrompt": "Explique les bases : 1) Définition, 2) Réaction avec l'eau, 3) Bases fortes et faibles, 4) Hydroxyde OH⁻, 5) Ammoniac NH₃.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier la base, 2) Réaction, 3) Force. Solutions détaillées."
+      },
+      {
+        "name": "Constante d'acidité Ka",
+        "latex": "K_a = \\frac{[A^-] \\times [H_3O^+]}{[AH]}",
+        "explainPrompt": "Explique Ka : 1) Définition, 2) Relation avec pKa, 3) Force des acides, 4) Échelle de Ka, 5) Comparaison d'acides.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de Ka, 2) Force des acides, 3) Comparaison. Solutions détaillées."
+      },
+      {
+        "name": "Relation pKa",
+        "latex": "\\text{p}K_a = -\\log K_a",
+        "explainPrompt": "Explique pKa : 1) Définition, 2) Relation avec Ka, 3) Interprétation, 4) Échelle de pKa, 5) Usage pratique.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de pKa, 2) Force des acides, 3) Applications. Solutions détaillées."
+      },
+      {
+        "name": "Relation pH-pKa (Henderson-Hasselbalch)",
+        "latex": "\\text{pH} = \\text{p}K_a + \\log\\frac{[A^-]}{[AH]}",
+        "explainPrompt": "Explique Henderson-Hasselbalch : 1) Démonstration, 2) Utilisation, 3) Solution tampon, 4) Demi-équivalence, 5) Diagramme de prédominance.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de pH, 2) Tampon, 3) Prédominance. Solutions détaillées."
+      },
+      {
+        "name": "pH d'un acide fort",
+        "latex": "\\text{pH} = -\\log C_a",
+        "explainPrompt": "Explique le pH des acides forts : 1) Réaction totale, 2) Formule, 3) Solutions très diluées, 4) Correction, 5) Exemples.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de pH, 2) Solutions diluées, 3) Mélange. Solutions détaillées."
+      },
+      {
+        "name": "pH d'un acide faible",
+        "latex": "[H_3O^+] = \\sqrt{K_a \\times C_a} \\quad \\Rightarrow \\quad \\text{pH} = \\frac{1}{2}\\text{p}K_a - \\frac{1}{2}\\log C_a",
+        "explainPrompt": "Explique le pH des acides faibles : 1) Hypothèses, 2) Démonstration, 3) Conditions de validité, 4) Comparaison avec acide fort, 5) Exemples.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de pH, 2) Comparaison, 3) Applications. Solutions détaillées."
+      },
+      {
+        "name": "pH d'une base forte",
+        "latex": "\\text{pH} = 14 + \\log C_b",
+        "explainPrompt": "Explique le pH des bases fortes : 1) Réaction totale, 2) Formule, 3) pOH, 4) Solutions très diluées, 5) Exemples.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de pH, 2) Solutions diluées, 3) Mélange. Solutions détaillées."
+      },
+      {
+        "name": "pH d'une base faible",
+        "latex": "[OH^-] = \\sqrt{K_b \\times C_b} \\quad \\text{avec } K_b = \\frac{K_e}{K_a}",
+        "explainPrompt": "Explique le pH des bases faibles : 1) Kb, 2) Relation Ka et Kb, 3) Formule approchée, 4) Conditions, 5) Comparaison.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de pH, 2) Kb, 3) Comparaison. Solutions détaillées."
+      },
+      {
+        "name": "Équivalence d'un titrage",
+        "latex": "C_a \\times V_a = C_b \\times V_{BE}",
+        "explainPrompt": "Explique l'équivalence : 1) Définition, 2) Relation, 3) Repérage, 4) Calcul de concentration inconnue, 5) Indicateurs colorés.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de concentration, 2) Volume équivalent, 3) Indicateur. Solutions détaillées."
+      },
+      {
+        "name": "Oxydation",
+        "latex": "\\text{Réducteur} \\rightarrow \\text{Oxydant} + ne^-",
+        "explainPrompt": "Explique l'oxydation : 1) Définition, 2) Perte d'électrons, 3) Exemples, 4) Différence avec réduction, 5) Corrosion.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier l'oxydation, 2) Équation, 3) Corrosion. Solutions détaillées."
+      },
+      {
+        "name": "Réduction",
+        "latex": "\\text{Oxydant} + ne^- \\rightarrow \\text{Réducteur}",
+        "explainPrompt": "Explique la réduction : 1) Définition, 2) Gain d'électrons, 3) Exemples, 4) Lien avec oxydation, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier la réduction, 2) Équation, 3) Pile. Solutions détaillées."
+      },
+      {
+        "name": "Couple oxydant/réducteur",
+        "latex": "\\text{Oxydant} / \\text{Réducteur}",
+        "explainPrompt": "Explique les couples redox : 1) Définition, 2) Notation, 3) Exemples, 4) Nombre d'oxydation, 5) Classification.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier les couples, 2) Nombre d'ox, 3) Applications. Solutions détaillées."
+      },
+      {
+        "name": "Équilibrage des réactions redox",
+        "latex": "\\text{Oxydant}_1 + \\text{Réducteur}_2 \\rightarrow \\text{Réducteur}_1 + \\text{Oxydant}_2",
+        "explainPrompt": "Explique l'équilibrage : 1) Transfert d'électrons, 2) Égalisation, 3) Exemples, 4) Milieu acide/base, 5) Méthode ion-électron.",
+        "exercisePrompt": "Génère 3 exercices : 1) Équilibrer, 2) Milieu acide, 3) Milieu basique. Solutions détaillées."
+      },
+      {
+        "name": "Force électromotrice",
+        "latex": "E = U = V_{\\text{droite}} - V_{\\text{gauche}} = E_{\\text{cathode}} - E_{\\text{anode}}",
+        "explainPrompt": "Explique la f.é.m. : 1) Définition, 2) Convention, 3) Potentiels standard, 4) Pile Daniell, 5) Prédiction du sens.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de E, 2) Pile, 3) Sens. Solutions détaillées."
+      },
+      {
+        "name": "Relation de Nernst",
+        "latex": "E = E° + \\frac{0,059}{n} \\log\\frac{[\\text{oxydant}]}{[\\text{réducteur}]}",
+        "explainPrompt": "Explique Nernst : 1) Formule, 2) Conditions non standard, 3) n électrons, 4) Applications, 5) Potentiel d'électrode.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de E, 2) Pile, 3) Électrode. Solutions détaillées."
+      },
+      {
+        "name": "Loi de Beer-Lambert",
+        "latex": "A = \\varepsilon \\cdot \\ell \\cdot C",
+        "explainPrompt": "Explique Beer-Lambert : 1) Absorbance A, 2) Coefficient ε, 3) Longueur ℓ, 4) Concentration C, 5) Applications (dosage).",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de C, 2) Dosage, 3) Tracé de courbe. Solutions détaillées."
+      },
+      {
+        "name": "Vitesse volumique de réaction",
+        "latex": "v = \\frac{1}{\\nu_i \\cdot V} \\cdot \\frac{d[n_i]}{dt}",
+        "explainPrompt": "Explique la vitesse : 1) Définition, 2) Coefficients stœchiométriques, 3) Unité, 4) Facteurs cinétiques, 5) Méthodes de suivi.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de vitesse, 2) Facteurs, 3) Suivi. Solutions détaillées."
+      },
+      {
+        "name": "Loi de vitesse",
+        "latex": "v = k[A]^p[B]^q",
+        "explainPrompt": "Explique la loi de vitesse : 1) Ordres partiels, 2) Constante k, 3) Détermination, 4) Molecularité, 5) Mécanisme réactionnel.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier l'ordre, 2) Calcul de k, 3) Mécanisme. Solutions détaillées."
+      },
+      {
+        "name": "Cinétique d'ordre 1",
+        "latex": "[A](t) = [A]_0 e^{-kt} \\quad \\Rightarrow \\quad \\ln[A] = \\ln[A]_0 - kt",
+        "explainPrompt": "Explique l'ordre 1 : 1) Loi, 2) Représentation graphique, 3) Constante de vitesse k, 4) Demi-vie, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de concentration, 2) Demi-vie, 3) Tracé. Solutions détaillées."
+      },
+      {
+        "name": "Cinétique d'ordre 2",
+        "latex": "\\frac{1}{[A]}(t) = \\frac{1}{[A]_0} + kt",
+        "explainPrompt": "Explique l'ordre 2 : 1) Loi, 2) Représentation graphique, 3) Constante k, 4) Demi-vie, 5) Comparaison ordre 1.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul, 2) Demi-vie, 3) Tracé. Solutions détaillées."
+      },
+      {
+        "name": "Temps de demi-réaction",
+        "latex": "t_{1/2} = \\begin{cases} \\dfrac{[A]_0}{2k} & \\text{ordre 0} \\\\ \\dfrac{\\ln 2}{k} & \\text{ordre 1} \\\\ \\dfrac{1}{k[A]_0} & \\text{ordre 2} \\end{cases}",
+        "explainPrompt": "Explique la demi-vie : 1) Définition, 2) Formules selon l'ordre, 3) Indépendance pour ordre 1, 4) Applications, 5) Datation radioactive.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de t₁/₂, 2) Comparaison, 3) Datation. Solutions détaillées."
+      },
+      {
+        "name": "Quotient de réaction Qr",
+        "latex": "Q_r = \\frac{[C]^c [D]^d}{[A]^a [B]^b}",
+        "explainPrompt": "Explique Qr : 1) Définition, 2) Convention d'activité, 3) Solides et liquides purs, 4) Comparaison avec K, 5) Prévoir l'évolution.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de Qr, 2) Prévoir le sens, 3) Applications. Solutions détaillées."
+      },
+      {
+        "name": "Constante d'équilibre Kc",
+        "latex": "K_c = \\frac{[C]_{eq}^c [D]_{eq}^d}{[A]_{eq}^a [B]_{eq}^b}",
+        "explainPrompt": "Explique Kc : 1) Définition, 2) Propriétés, 3) Indépendance des concentrations initiales, 4) Température, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Écrire Kc, 2) Calcul, 3) Sens. Solutions détaillées."
+      },
+      {
+        "name": "Relation Kp et Kc",
+        "latex": "K_p = K_c (RT)^{\\Delta n}",
+        "explainPrompt": "Explique Kp : 1) Définition avec pressions, 2) Relation avec Kc, 3) Δn, 4) Unité, 5) Applications aux gaz.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de Kp, 2) Relation, 3) Applications. Solutions détaillées."
+      },
+      {
+        "name": "Principe de Le Chatelier",
+        "latex": "\\text{Un système à l'équilibre soumis à une perturbation évolue dans le sens qui tend à atténuer cette perturbation.}",
+        "explainPrompt": "Explique Le Chatelier : 1) Énoncé, 2) Influence de la concentration, 3) Influence de T, 4) Influence de P, 5) Catalyseur.",
+        "exercisePrompt": "Génère 3 exercices : 1) Prévoir le sens, 2) Effet de T, 3) Effet de P. Solutions détaillées."
+      },
+      {
+        "name": "Produit de solubilité Ks",
+        "latex": "K_s = [A^+]^x [B^-]^y",
+        "explainPrompt": "Explique Ks : 1) Définition, 2) Solubilité s, 3) Relation, 4) Applications, 5) Précipitation.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de Ks, 2) Solubilité, 3) Précipitation. Solutions détaillées."
+      },
+      {
+        "name": "Condition de précipitation",
+        "latex": "\\text{Si } [A^+][B^-] > K_s \\Rightarrow \\text{précipitation jusqu'à l'équilibre}",
+        "explainPrompt": "Explique la précipitation : 1) Condition, 2) Équilibre, 3) Dissolution, 4) Applications, 5) Effet d'ion commun.",
+        "exercisePrompt": "Génère 3 exercices : 1) Prévoir précipitation, 2) Effet ion commun, 3) Applications. Solutions détaillées."
+      },
+      {
+        "name": "Formule générale des alcools",
         "latex": "R-OH",
-        "explainPrompt": "Explique la formule des alcools : 1) Groupe caracteristique hydroxyle -OH, 2) Classification : alcool primaire (R-CH2-OH), secondaire (R2CH-OH), tertiaire (R3C-OH), 3) Nomenclature : nom de l'alcane + ol, 4) Propietes : pont hydrogene, solubilite, 5) Reactions : oxidation, esterification.",
-        "exercisePrompt": "Genere 3 exercices sur les alcools : 1) Identifier le type (1 degre, 2 degre, 3 degre) de l'alcool CH3-CHOH-CH3, 2) Nommer le propane-1-ol et propane-2-ol, 3) Ecrire l'equation d'oxydation du propane-2-ol. Solutions detaillees."
+        "explainPrompt": "Explique les alcools : 1) Groupe caractéristique OH, 2) Classification (primaire, secondaire, tertiaire), 3) Nomenclature, 4) Propriétés, 5) Réactions.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier le type, 2) Nomenclature, 3) Réactions. Solutions détaillées."
       },
       {
         "name": "Acides carboxyliques",
         "latex": "R-COOH",
-        "explainPrompt": "Explique les acides carboxyliques : 1) Groupe caracteristique carboxyle -COOH, 2) Nomenclature : acide + nom alcane + oique, 3) Propietes acido-basiques : donation de H+, 4) Reactions : esterification avec alcools, 5) Exemples : acide formique (fourmi), acide acetique (vinaigre).",
-        "exercisePrompt": "Cree 3 exercices sur les acides carboxyliques : 1) Nommer l'acide CH3-CH2-COOH, 2) Ecrire la reaction d'esterification entre acide ethanoique et ethanol, 3) Calculer le pH d'une solution d'acide formique 0.1M (Ka = 1.8x10^-4). Solutions completes."
+        "explainPrompt": "Explique les acides carboxyliques : 1) Groupe COOH, 2) Nomenclature, 3) Propriétés acidiques, 4) Estérification, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier, 2) Nomenclature, 3) Réactions. Solutions détaillées."
       },
       {
         "name": "Esters",
         "latex": "R-COO-R'",
-        "explainPrompt": "Explique les esters : 1) Formule generale et structure, 2) Formation par reaction entre acide et alcool (esterification reversible), 3) Nomenclature : alkyle + anoate de ethyle, 4) Propietes : odeurs fruitees, hydrolyse, 5) Applications : aromas naturels, polymeres.",
-        "exercisePrompt": "Genere 3 exercices sur les esters : 1) Ecrire la formule de l'ethanoate de ethyle, 2) Ecrire l'equation de l'hydrolyse basique (saponification) de l'ethanoate de ethyle, 3) Pourquoi les esters ont-ils des odeurs agreables? Expliquer la relation structure-propiete. Solutions detaillees."
+        "explainPrompt": "Explique les esters : 1) Groupe caractéristique, 2) Nomenclature, 3) Odeur caractéristique, 4) Hydrolyse, 5) Synthèse.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier, 2) Nomenclature, 3) Réactions. Solutions détaillées."
+      },
+      {
+        "name": "Formules d'oxydation des alcools",
+        "latex": "\\text{Primaire} \\xrightarrow{[O]} \\text{Aldéhyde} \\xrightarrow{[O]} \\text{Acide} \\quad \\text{et} \\quad \\text.Secondaire} \\xrightarrow{[O]} \\text{Cétone}",
+        "explainPrompt": "Explique l'oxydation : 1) Alcool primaire → Aldéhyde → Acide, 2) Secondaire → Cétone, 3) Tertiaire inerte, 4) Agents oxydants, 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Type d'oxydation, 2) Produit, 3) Applications. Solutions détaillées."
+      },
+      {
+        "name": "Estérification",
+        "latex": "\\text{Acide} + \\text{Alcool} \\rightleftharpoons \\text{Ester} + \\text{Eau}",
+        "explainPrompt": "Explique l'estérification : 1) Réaction, 2) Catalyse acide, 3) Équilibre, 4) Rendement, 5) Hydrolyse inverse.",
+        "exercisePrompt": "Génère 3 exercices : 1) Écrire l'équation, 2) Rendement, 3) Hydrolyse. Solutions détaillées."
+      },
+      {
+        "name": "Loi de Hess",
+        "latex": "\\Delta H_{\\text{réaction}} = \\sum \\Delta H_{\\text{produits}} - \\sum \\Delta H_{\\text{réactifs}}",
+        "explainPrompt": "Explique Hess : 1) Énoncé, 2) Enthalpie de réaction, 3) Cycles thermochimiques, 4) Applications, 5) Énergies de liaison.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de ΔH, 2) Cycle, 3) Énergies de liaison. Solutions détaillées."
+      },
+      {
+        "name": "Énergie interne",
+        "latex": "U = H - PV \\quad \\text{et} \\quad \\Delta U = \\Delta H - \\Delta n_g RT",
+        "explainPrompt": "Explique U et H : 1) Définitions, 2) Relation, 3) Transformations, 4) Applications, 5) Gaz parfaits.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de ΔU, 2) Relation, 3) Applications. Solutions détaillées."
+      },
+      {
+        "name": "Transmittance",
+        "latex": "T = \\frac{I}{I_0} \\quad \\Rightarrow \\quad A = -\\log T",
+        "explainPrompt": "Explique T et A : 1) Définitions, 2) Relation, 3) Spectrophotométrie, 4) Applications, 5) Limites.",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de T et A, 2) Spectrophotométrie, 3) Applications. Solutions détaillées."
       }
     ]
   }
