@@ -118,10 +118,10 @@
         },
         {
           "id": "video_logarithme",
-          "title": "Fonction Logarithme Népérien - Propriétés",
+          "title": "THE LESSON: Natural Logarithm - Final Year",
           "subtitle": "Propriétés et équations avec ln",
-          "thumbnail": "https://img.youtube.com/vi/5vZqyLS9-cA/hqdefault.jpg",
-          "url": "https://youtu.be/5vZqyLS9-cA",
+          "thumbnail": "https://img.youtube.com/vi/VJns0RfVWGg/hqdefault.jpg",
+          "url": "https://youtu.be/VJns0RfVWGg",
           "duration": "25:30",
           "chapter": "Analyse"
         },
@@ -237,8 +237,8 @@
           "id": "video_produit_vectoriel",
           "title": "Produit vectoriel - Calcul et applications",
           "subtitle": "Aire et volume avec le produit vectoriel",
-          "thumbnail": "https://img.youtube.com/vi/-HGedUpZEPI/hqdefault.jpg",
-          "url": "https://youtu.be/-HGedUpZEPI",
+          "thumbnail": "https://img.youtube.com/vi/CJihlGG8ykw/hqdefault.jpg",
+          "url": "https://youtu.be/CJihlGG8ykw",
           "duration": "17:30",
           "chapter": "Géométrie"
         },
@@ -271,10 +271,10 @@
         },
         {
           "id": "video_variable_aleatoire",
-          "title": "Variable aléatoire - Espérance et Variance",
+          "title": "THE COURSE: Random Variables - First Year",
           "subtitle": "Caractéristiques d'une variable aléatoire",
-          "thumbnail": "https://img.youtube.com/vi/o67OOavrbHQ/hqdefault.jpg",
-          "url": "https://youtu.be/o67OOavrbHQ",
+          "thumbnail": "https://img.youtube.com/vi/krbtyBDeRqQ/hqdefault.jpg",
+          "url": "https://youtu.be/krbtyBDeRqQ",
           "duration": "15:40",
           "chapter": "Probabilités"
         },
@@ -381,10 +381,10 @@
         },
         {
           "id": "video_gravitation",
-          "title": "Loi de gravitation universelle - Terminale SM",
+          "title": "La loi de la gravitation universelle - Physique chimie",
           "subtitle": "Force de gravitation et champ de pesanteur",
-          "thumbnail": "https://img.youtube.com/vi/2yswjX5VX8E/hqdefault.jpg",
-          "url": "https://youtu.be/2yswjX5VX8E",
+          "thumbnail": "https://img.youtube.com/vi/quDT_5eKl-Y/hqdefault.jpg",
+          "url": "https://youtu.be/quDT_5eKl-Y",
           "duration": "19:45",
           "chapter": "Gravitation"
         },
@@ -453,28 +453,28 @@
         },
         {
           "id": "video_condensateur_charge",
-          "title": "Condensateur - Charge et décharge RC",
+          "title": "Le Condensateur - Charge et décharge RC Terminale",
           "subtitle": "Constante de temps et régime transitoire",
-          "thumbnail": "https://img.youtube.com/vi/8_ym3pDDTrM/hqdefault.jpg",
-          "url": "https://youtu.be/8_ym3pDDTrM",
+          "thumbnail": "https://img.youtube.com/vi/avBkUaez74o/hqdefault.jpg",
+          "url": "https://youtu.be/avBkUaez74o",
           "duration": "22:30",
           "chapter": "Électricité"
         },
         {
           "id": "video_oscillateur_lc",
-          "title": "Oscillateur LC - Circuit oscillant",
+          "title": "Circuit LC et oscillateur harmonique",
           "subtitle": "Pulsation propre et échange d'énergie",
-          "thumbnail": "https://img.youtube.com/vi/_9MsqQkFbP8/hqdefault.jpg",
-          "url": "https://youtu.be/_9MsqQkFbP8",
+          "thumbnail": "https://img.youtube.com/vi/fZ6Fyg_abCQ/hqdefault.jpg",
+          "url": "https://youtu.be/fZ6Fyg_abCQ",
           "duration": "18:45",
           "chapter": "Électricité"
         },
         {
           "id": "video_lentilles_minces",
-          "title": "Lentilles minces - Relation de conjugaison",
+          "title": "Les Lentilles minces - Cours Terminale",
           "subtitle": "Optique géométrique et formation des images",
-          "thumbnail": "https://img.youtube.com/vi/KwTWOU3O77A/hqdefault.jpg",
-          "url": "https://youtu.be/KwTWOU3O77A",
+          "thumbnail": "https://img.youtube.com/vi/_Lqt3k7kmSo/hqdefault.jpg",
+          "url": "https://youtu.be/_Lqt3k7kmSo",
           "duration": "24:00",
           "chapter": "Optique"
         },
@@ -507,11 +507,11 @@
         },
         {
           "id": "video_radioactivite",
-          "title": "Loi de décroissance radioactive - Terminale",
+          "title": "TRANSFORMATION NUCLÉAIRE Radioactivité COURS COMPLET",
           "subtitle": "Demi-vie et activité radioactive",
-          "thumbnail": "https://img.youtube.com/vi/X9Y0Z1a2B3C/hqdefault.jpg",
-          "url": "https://youtu.be/X9Y0Z1a2B3C",
-          "duration": "19:55",
+          "thumbnail": "https://img.youtube.com/vi/7qw-pWW9bM8/hqdefault.jpg",
+          "url": "https://youtu.be/7qw-pWW9bM8",
+          "duration": "24:42",
           "chapter": "Physique Nucléaire"
         },
         {
@@ -581,19 +581,19 @@
         },
         {
           "id": "video_dissolution",
-          "title": "Dissolution d'un sel - Terminale Chimie",
+          "title": "Dissolution : équation et concentrations effectives",
           "subtitle": "Équation de dissolution et électrolytes",
-          "thumbnail": "https://img.youtube.com/vi/494DnmfFGmA/hqdefault.jpg",
-          "url": "https://youtu.be/494DnmfFGmA",
-          "duration": "13:20",
+          "thumbnail": "https://img.youtube.com/vi/wBvr8W1o6z4/hqdefault.jpg",
+          "url": "https://youtu.be/wBvr8W1o6z4",
+          "duration": "15:30",
           "chapter": "Solutions Aqueuses"
         },
         {
           "id": "video_ph_definitions",
-          "title": "Définition du pH - Terminale SM",
+          "title": "Déterminer le pH ou la concentration en ions oxonium",
           "subtitle": "Échelle de pH et ions oxonium",
-          "thumbnail": "https://img.youtube.com/vi/5H7VJkZkjI0/hqdefault.jpg",
-          "url": "https://youtu.be/5H7VJkZkjI0",
+          "thumbnail": "https://img.youtube.com/vi/aeTHYKeK7vg/hqdefault.jpg",
+          "url": "https://youtu.be/aeTHYKeK7vg",
           "duration": "18:30",
           "chapter": "Solutions Aqueuses"
         },
@@ -608,19 +608,19 @@
         },
         {
           "id": "video_acide_brønsted",
-          "title": "Acide de Brønsted - Terminale SM",
+          "title": "Théorie de BRÖNSTED - Couple ACIDE / BASE",
           "subtitle": "Théorie acide-base et couples",
-          "thumbnail": "https://img.youtube.com/vi/YWuE4KQ8T9Y/hqdefault.jpg",
-          "url": "https://youtu.be/YWuE4KQ8T9Y",
+          "thumbnail": "https://img.youtube.com/vi/PeLKqo6Kb-U/hqdefault.jpg",
+          "url": "https://youtu.be/PeLKqo6Kb-U",
           "duration": "19:00",
           "chapter": "Acides et Bases"
         },
         {
           "id": "video_base_brønsted",
-          "title": "Base de Brønsted - Terminale Chimie",
+          "title": "Brønsted-Lowry Theory - Acid-Base Reactions",
           "subtitle": "Couples acide/base et réaction",
-          "thumbnail": "https://img.youtube.com/vi/7RmN7KQ2pX8/hqdefault.jpg",
-          "url": "https://youtu.be/7RmN7KQ2pX8",
+          "thumbnail": "https://img.youtube.com/vi/hX7rw-BzzYE/hqdefault.jpg",
+          "url": "https://youtu.be/hX7rw-BzzYE",
           "duration": "17:30",
           "chapter": "Acides et Bases"
         },
@@ -635,37 +635,37 @@
         },
         {
           "id": "video_henderson",
-          "title": "Relation pH-pKa - Henderson-Hasselbalch",
+          "title": "Solution tampon - Henderson-Hasselbalch",
           "subtitle": "Solution tampon et diagramme",
-          "thumbnail": "https://img.youtube.com/vi/P8x3K2mN6Q0/hqdefault.jpg",
-          "url": "https://youtu.be/P8x3K2mN6Q0",
+          "thumbnail": "https://img.youtube.com/vi/9I0VHALD8Dg/hqdefault.jpg",
+          "url": "https://youtu.be/9I0VHALD8Dg",
           "duration": "18:45",
           "chapter": "Acides et Bases"
         },
         {
           "id": "video_ph_acide_fort",
-          "title": "pH d'un acide fort - Terminale SM",
+          "title": "pH d'une solution d'acide fort",
           "subtitle": "Calcul de pH pour acides forts",
-          "thumbnail": "https://img.youtube.com/vi/R2mK5L9Q8N4/hqdefault.jpg",
-          "url": "https://youtu.be/R2mK5L9Q8N4",
+          "thumbnail": "https://img.youtube.com/vi/GiIaMe1YFAE/hqdefault.jpg",
+          "url": "https://youtu.be/GiIaMe1YFAE",
           "duration": "14:30",
           "chapter": "Acides et Bases"
         },
         {
           "id": "video_ph_acide_faible",
-          "title": "pH d'un acide faible - Terminale",
+          "title": "Weak Acids & Bases | pH Calculations with Ka, Kb",
           "subtitle": "Calcul approché et Ka",
-          "thumbnail": "https://img.youtube.com/vi/M5nK7L2Q9P4/hqdefault.jpg",
-          "url": "https://youtu.be/M5nK7L2Q9P4",
+          "thumbnail": "https://img.youtube.com/vi/5IlHbc7ZX5w/hqdefault.jpg",
+          "url": "https://youtu.be/5IlHbc7ZX5w",
           "duration": "16:00",
           "chapter": "Acides et Bases"
         },
         {
           "id": "video_ph_base_faible",
-          "title": "pH d'une base faible - Terminale SM",
+          "title": "pH of a Weak Base - Khan Academy",
           "subtitle": "Constante Kb et calcul de pH",
-          "thumbnail": "https://img.youtube.com/vi/S3k7N8L2M6Q/hqdefault.jpg",
-          "url": "https://youtu.be/S3k7N8L2M6Q",
+          "thumbnail": "https://img.youtube.com/vi/gDJtOIxDu78/hqdefault.jpg",
+          "url": "https://youtu.be/gDJtOIxDu78",
           "duration": "15:45",
           "chapter": "Acides et Bases"
         },
@@ -707,11 +707,11 @@
         },
         {
           "id": "video_beer_lambert",
-          "title": "Loi de Beer-Lambert - Terminale Chimie",
+          "title": "Cours LOI de BEER-LAMBERT Terminale spé physique chimie",
           "subtitle": "Spectrophotométrie et absorbance",
-          "thumbnail": "https://img.youtube.com/vi/mJtSODJ0nj8/hqdefault.jpg",
-          "url": "https://youtu.be/mJtSODJ0nj8",
-          "duration": "16:20",
+          "thumbnail": "https://img.youtube.com/vi/zNKzyS-GKnU/hqdefault.jpg",
+          "url": "https://youtu.be/zNKzyS-GKnU",
+          "duration": "18:15",
           "chapter": "Oxydoréduction"
         },
         {
@@ -725,47 +725,47 @@
         },
         {
           "id": "video_cinetique_ordre1",
-          "title": "Cinétique d'ordre 1 - Terminale",
+          "title": "Loi de VITESSE D'ORDRE 1 | Chimie | Exercice BAC",
           "subtitle": "Loi exponentielle et demi-vie",
-          "thumbnail": "https://img.youtube.com/vi/0kD7J2S3B4C/hqdefault.jpg",
-          "url": "https://youtu.be/0kD7J2S3B4C",
-          "duration": "18:00",
+          "thumbnail": "https://img.youtube.com/vi/KaGpBpZKB6o/hqdefault.jpg",
+          "url": "https://youtu.be/KaGpBpZKB6o",
+          "duration": "12:30",
           "chapter": "Cinétique"
         },
         {
           "id": "video_cinetique_ordre2",
-          "title": "Cinétique d'ordre 2 - Terminale SM",
+          "title": "Cours CINÉTIQUE CHIMIQUE Terminale spé physique chimie",
           "subtitle": "Loi en 1/[A] et constante k",
-          "thumbnail": "https://img.youtube.com/vi/5E8F9G2H1I3/hqdefault.jpg",
-          "url": "https://youtu.be/5E8F9G2H1I3",
-          "duration": "17:30",
+          "thumbnail": "https://img.youtube.com/vi/8klqM6M16gU/hqdefault.jpg",
+          "url": "https://youtu.be/8klqM6M16gU",
+          "duration": "22:45",
           "chapter": "Cinétique"
         },
         {
           "id": "video_equilibre_chimique",
-          "title": "Équilibre chimique - Terminale",
+          "title": "Equilibre dynamique - Constante d'équilibre K - activité - CHIMIE",
           "subtitle": "Quotient de réaction et constante K",
-          "thumbnail": "https://img.youtube.com/vi/6J9K2L8M4N5/hqdefault.jpg",
-          "url": "https://youtu.be/6J9K2L8M4N5",
-          "duration": "22:45",
+          "thumbnail": "https://img.youtube.com/vi/FjgWkxljRS4/hqdefault.jpg",
+          "url": "https://youtu.be/FjgWkxljRS4",
+          "duration": "15:20",
           "chapter": "Équilibre Chimique"
         },
         {
           "id": "video_le_chatelier",
-          "title": "Principe de Le Chatelier - Terminale SM",
+          "title": "Principe de Le Chatelier : Modification de la concentration",
           "subtitle": "Perturbation et évolution de l'équilibre",
-          "thumbnail": "https://img.youtube.com/vi/7O1P3Q5R6S8/hqdefault.jpg",
-          "url": "https://youtu.be/7O1P3Q5R6S8",
-          "duration": "19:00",
+          "thumbnail": "https://img.youtube.com/vi/NyAGVdSvQeM/hqdefault.jpg",
+          "url": "https://youtu.be/NyAGVdSvQeM",
+          "duration": "8:30",
           "chapter": "Équilibre Chimique"
         },
         {
           "id": "video_solubilite",
-          "title": "Produit de solubilité Ks - Terminale",
+          "title": "Solubilité ( S ) et produit de Solubilité ( Ks ) Cours",
           "subtitle": "Dissolution et précipitation",
-          "thumbnail": "https://img.youtube.com/vi/8T2U4V6W7X9/hqdefault.jpg",
-          "url": "https://youtu.be/8T2U4V6W7X9",
-          "duration": "16:45",
+          "thumbnail": "https://img.youtube.com/vi/e96jcGi7gOY/hqdefault.jpg",
+          "url": "https://youtu.be/e96jcGi7gOY",
+          "duration": "14:25",
           "chapter": "Solubilité"
         }
       ]
