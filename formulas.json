@@ -15,7 +15,7 @@
         "exercisePrompt": "Génère 3 exercices sur la divisibilité : 1) Démontrer qu'un nombre est divisible, 2) Trouver les diviseurs d'un nombre, 3) Utiliser les propriétés de divisibilité dans des démonstrations. Solutions détaillées."
       },
       {
-        "name": "Nombres premiers",
+        "name": "Décomposition en facteurs premiers",
         "latex": "n = p_1^{\\alpha_1} \\times p_2^{\\alpha_2} \\times \\cdots \\times p_k^{\\alpha_k}",
         "explainPrompt": "Explique les nombres premiers : 1) Définition d'un nombre premier, 2) Théorème fondamental de l'arithmétique, 3) Décomposition en facteurs premiers, 4) Crible d'Ératosthène, 5) Applications en cryptographie.",
         "exercisePrompt": "Génère 3 exercices sur les nombres premiers : 1) Décomposer un nombre en facteurs premiers, 2) Calculer le PGCD par décomposition, 3) Démontrer qu'un nombre est premier ou composé. Solutions détaillées."
@@ -27,7 +27,7 @@
         "exercisePrompt": "Génère 3 exercices sur les suites arithmétiques : 1) Calcul du terme général, 2) Somme de termes consécutifs, 3) Problème appliqué à la finance. Solutions détaillées."
       },
       {
-        "name": "Suite géométrique",
+        "name": "Suite géométrique - Terme général et somme",
         "latex": "u_n = u_0 \\times q^n \\quad \\text{et} \\quad S_n = u_0 \\frac{1-q^{n+1}}{1-q} \\ (q \\neq 1)",
         "explainPrompt": "Explique les suites géométriques : 1) Définition et raison, 2) Formule explicite, 3) Sens de variation selon q, 4) Somme des n premiers termes, 5) Limite d'une suite géométrique.",
         "exercisePrompt": "Génère 3 exercices sur les suites géométriques : 1) Calcul du terme général et de la somme, 2) Étude de la convergence, 3) Application aux intérêts composés. Solutions détaillées."
@@ -129,8 +129,8 @@
         "exercisePrompt": "Génère 3 exercices sur les racines : 1) Calcul de racines n-ièmes, 2) Représentation graphique, 3) Équations avec racines. Solutions détaillées."
       },
       {
-        "name": "Identités trigonométriques",
-        "latex": "\\sin^2 x + \\cos^2 x = 1; \\quad \\sin(a+b) = \\sin a \\cos b + \\cos a \\sin b",
+        "name": "Identités trigonométriques fondamentales",
+        "latex": "\\sin^2 x + \\cos^2 x = 1; \\quad 1 + \\tan^2 x = \\frac{1}{\\cos^2 x}; \\quad \\sin(a+b) = \\sin a \\cos b + \\cos a \\sin b; \\quad \\cos(a+b) = \\cos a \\cos b - \\sin a \\sin b; \\quad \\tan(a+b) = \\frac{\\tan a + \\tan b}{1 - \\tan a \\tan b}",
         "explainPrompt": "Explique les identités trigonométriques : 1) Relation fondamentale, 2) Formules d'addition, 3) Formules de duplication, 4) Formules de linearisation, 5) Résolution d'équations trigonométriques.",
         "exercisePrompt": "Génère 3 exercices sur la trigonométrie : 1) Démontrer une identité, 2) Résoudre une équation, 3) Calculer une somme. Solutions détaillées."
       },
@@ -142,7 +142,7 @@
       },
       {
         "name": "Équation différentielle y'' + ay' + by = 0",
-        "latex": "r^2 + ar + b = 0 \\quad \\text{avec } \\Delta = a^2 - 4b",
+        "latex": "r^2 + ar + b = 0, \\quad \\Delta = a^2 - 4b : \\quad \\Delta > 0 \\Rightarrow y = Ae^{r_1x} + Be^{r_2x}; \\quad \\Delta = 0 \\Rightarrow y = (Ax+B)e^{rx}; \\quad \\Delta < 0 \\Rightarrow y = e^{\\alpha x}(C\\cos(\\beta x) + D\\sin(\\beta x)) \\text{ avec } \\alpha = -\\frac{a}{2}, \\beta = \\frac{\\sqrt{4b-a^2}}{2}",
         "explainPrompt": "Explique l'équation du second ordre : 1) Équation caractéristique, 2) Cas Δ > 0, Δ = 0, Δ < 0, 3) Solutions réelles et complexes, 4) Oscillateurs harmoniques, 5) Conditions initiales.",
         "exercisePrompt": "Génère 3 exercices sur l'équation du second ordre : 1) Résolution selon Δ, 2) Oscillateur harmonique, 3) Conditions initiales. Solutions détaillées."
       },
@@ -243,8 +243,8 @@
         "exercisePrompt": "Génère 3 exercices sur les similitudes : 1) Identifier le type, 2) Calcul de centre et rapport, 3) Composition. Solutions détaillées."
       },
       {
-        "name": "Isométries du plan",
-        "latex": "T_{\\vec{u}}; \\quad R_{(O,\\theta)}; \\quad S_{\\Delta}",
+        "name": "Isométries du plan complexe",
+        "latex": "T(z) = z + b \\quad (\\text{translation}); \\quad R(z) = e^{i\\theta}z \\quad (\\text{rotation centre O}); \\quad S(z) = \\overline{z} \\quad (\\text{symétrie axiale})",
         "explainPrompt": "Explique les isométries : 1) Définition d'une isométrie, 2) Translations, 3) Rotations, 4) Symétries (axiale, centrale), 5) Classification des isométries.",
         "exercisePrompt": "Génère 3 exercices sur les isométries : 1) Identifier une isométrie, 2) Composée d'isométries, 3) Points fixes. Solutions détaillées."
       },
@@ -256,7 +256,7 @@
       },
       {
         "name": "Formules de duplication",
-        "latex": "\\sin(2a) = 2\\sin a \\cos a; \\quad \\cos(2a) = 2\\cos^2 a - 1",
+        "latex": "\\sin(2a) = 2\\sin a \\cos a; \\quad \\cos(2a) = 2\\cos^2 a - 1 = 1 - 2\\sin^2 a = \\cos^2 a - \\sin^2 a; \\quad \\tan(2a) = \\frac{2\\tan a}{1 - \\tan^2 a}",
         "explainPrompt": "Explique les formules de duplication : 1) sin(2a) et cos(2a), 2) Formules alternatives, 3) Applications, 4) Linéarisation (formules inverse), 5) Tangente de 2a.",
         "exercisePrompt": "Génère 3 exercices sur la duplication : 1) Application directe, 2) Linéarisation, 3) Démonstration. Solutions détaillées."
       },
@@ -292,13 +292,13 @@
       {
         "name": "Vitesse instantanée",
         "latex": "\\vec{v} = \\lim_{\\Delta t \\to 0} \\frac{\\Delta \\vec{OM}}{\\Delta t} = \\frac{d\\vec{OM}}{dt}",
-        "explainPrompt": "Explique la vitesse instantanée : 1) Définition comme dérivée, 2) Lien avec la vitesse moyenne, 3) Composantescartésiennes, 4) Vecteur tangent à la trajectoire, 5) Norme de la vitesse.",
+        "explainPrompt": "Explique la vitesse instantanée : 1) Définition comme dérivée, 2) Lien avec la vitesse moyenne, 3) Composantes cartésiennes, 4) Vecteur tangent à la trajectoire, 5) Norme de la vitesse.",
         "exercisePrompt": "Génère 3 exercices sur la vitesse instantanée : 1) Dérivation du vecteur position, 2) Calcul de la norme, 3) Vecteur tangent. Solutions détaillées."
       },
       {
         "name": "Accélération",
         "latex": "\\vec{a} = \\frac{d\\vec{v}}{dt} = \\frac{d^2\\vec{OM}}{dt^2}",
-        "explainPrompt": "Explique l'accélération : 1) Définition comme dérivée seconde, 2) Composantescartésiennes, 3) Accélération tangentielle et normale, 4) Unités, 5) Interprétation du mouvement.",
+        "explainPrompt": "Explique l'accélération : 1) Définition comme dérivée seconde, 2) Composantes cartésiennes, 3) Accélération tangentielle et normale, 4) Unités, 5) Interprétation du mouvement.",
         "exercisePrompt": "Génère 3 exercices sur l'accélération : 1) Calcul d'accélération, 2) Composantes tangentielle et normale, 3) Classification du mouvement. Solutions détaillées."
       },
       {
@@ -489,8 +489,8 @@
       },
       {
         "name": "Énergie emmagasinée dans un condensateur",
-        "latex": "E_c = \\frac{1}{2}CU^2 = \\frac{Q^2}{2C} = \\frac{1}{2}QU",
-        "explainPrompt": "Explique l'énergie du condensateur : 1) Formule, 2) Démonstration, 3) Applications (flash, defibrillateur), 4) Décharge, 5) Comparaison avec bobine.",
+        "latex": "E_{cond} = \\frac{1}{2}CU^2 = \\frac{Q^2}{2C} = \\frac{1}{2}QU",
+        "explainPrompt": "Explique l'énergie du condensateur : 1) Formule, 2) Démonstration, 3) Applications (flash, défibrillateur), 4) Décharge, 5) Comparaison avec bobine.",
         "exercisePrompt": "Génère 3 exercices : 1) Calcul d'énergie, 2) Flash photographique, 3) Comparaison. Solutions détaillées."
       },
       {
@@ -554,10 +554,10 @@
         "exercisePrompt": "Génère 3 exercices : 1) Calcul de γ, 2) Taille de l'image, 3) Grossissement. Solutions détaillées."
       },
       {
-        "name": "Interférences - Condition",
-        "latex": "\\delta = S_2M - S_1M",
-        "explainPrompt": "Explique les interférences : 1) Différence de marche δ, 2) Conditions d'interférences, 3) Franges brillantes et sombres, 4) Cohérence, 5) Applications.",
-        "exercisePrompt": "Génère 3 exercices : 1) Calcul de δ, 2) Franges brillantes, 3) Franges sombres. Solutions détaillées."
+        "name": "Interférences - Différence de marche et conditions",
+        "latex": "\\delta = S_2M - S_1M \\quad \\Rightarrow \\quad \\text{Constructives : } \\delta = k\\lambda; \\quad \\text{Destructives : } \\delta = (2k+1)\\frac{\\lambda}{2}",
+        "explainPrompt": "Explique les interférences : 1) Différence de marche δ, 2) Conditions d'interférences constructives et destructives, 3) Franges brillantes et sombres, 4) Cohérence spatiale et temporelle, 5) Applications (trous d'Young, michelson).",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de δ, 2) Franges brillantes (δ = kλ), 3) Franges sombres (δ = (2k+1)λ/2). Solutions détaillées."
       },
       {
         "name": "Interfrange",
@@ -585,9 +585,9 @@
       },
       {
         "name": "Noyau atomique - Notation",
-        "latex": "^A_ZX",
+        "latex": "^A_ZX \\quad \\text{avec } N = A - Z \\text{ neutrons}",
         "explainPrompt": "Explique la notation nucléaire : 1) Nombre de masse A, 2) Numéro atomique Z, 3) Neutrons N = A-Z, 4) Isotopes, 5) Unité de masse atomique.",
-        "exercisePrompt": "Génère 3 exercices : 1) Identifier A, Z, N, 2) Isotopes, 3) Masse nucleus. Solutions détaillées."
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier A, Z, N, 2) Isotopes, 3) Masse noyau. Solutions détaillées."
       },
       {
         "name": "Défaut de masse",
@@ -626,10 +626,10 @@
         "exercisePrompt": "Génère 3 exercices : 1) Calcul d'énergie, 2) Perte de masse, 3) Fission. Solutions détaillées."
       },
       {
-        "name": "Force de Lorentz",
-        "latex": "\\vec{F} = q\\vec{v} \\wedge \\vec{B}",
-        "explainPrompt": "Explique la force de Lorentz : 1) Définition vectorielle, 2) Règle de la main droite, 3) Propriétés (perpendiculaire à v et B), 4) Travail nul, 5) Applications (cyclotron).",
-        "exercisePrompt": "Génère 3 exercices : 1) Calcul de force, 2) Trajectoire circulaire, 3) Cyclotron. Solutions détaillées."
+        "name": "Force de Lorentz complète",
+        "latex": "\\vec{F} = q(\\vec{E} + \\vec{v} \\wedge \\vec{B})",
+        "explainPrompt": "Explique la force de Lorentz : 1) Définition vectorielle complète (terme électrique + terme magnétique), 2) Règle de la main droite pour le produit vectoriel, 3) Propriétés (le terme magnétique ne travaille pas), 4) Applications (cyclotron, spectromètre de masse), 5) Cas particuliers (E=0 ou B=0).",
+        "exercisePrompt": "Génère 3 exercices : 1) Calcul de force complète, 2) Trajectoire circulaire dans un champ magnétique, 3) Cyclotron. Solutions détaillées."
       },
       {
         "name": "Rayon de la trajectoire",
@@ -793,16 +793,16 @@
         "exercisePrompt": "Génère 3 exercices : 1) Calcul de concentration, 2) Volume équivalent, 3) Indicateur. Solutions détaillées."
       },
       {
-        "name": "Oxydation",
-        "latex": "\\text{Réducteur} \\rightarrow \\text{Oxydant} + ne^-",
-        "explainPrompt": "Explique l'oxydation : 1) Définition, 2) Perte d'électrons, 3) Exemples, 4) Différence avec réduction, 5) Corrosion.",
-        "exercisePrompt": "Génère 3 exercices : 1) Identifier l'oxydation, 2) Équation, 3) Corrosion. Solutions détaillées."
+        "name": "Oxydation (perte d'électrons)",
+        "latex": "\\text{Réducteur} \\rightarrow \\text{Oxydant} + ne^- \\quad \\text{exemple : } Cu \\rightarrow Cu^{2+} + 2e^-",
+        "explainPrompt": "Explique l'oxydation : 1) Définition (perte d'électrons), 2) Espèce qui s'oxyde = réducteur, 3) Nombre d'oxydation qui augmente, 4) Exemples (corrosion, respiration), 5) Différence avec réduction.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier l'espèce qui s'oxyde, 2) Écrire l'équation d'oxydation, 3) Corrosion du fer. Solutions détaillées."
       },
       {
-        "name": "Réduction",
-        "latex": "\\text{Oxydant} + ne^- \\rightarrow \\text{Réducteur}",
-        "explainPrompt": "Explique la réduction : 1) Définition, 2) Gain d'électrons, 3) Exemples, 4) Lien avec oxydation, 5) Applications.",
-        "exercisePrompt": "Génère 3 exercices : 1) Identifier la réduction, 2) Équation, 3) Pile. Solutions détaillées."
+        "name": "Réduction (gain d'électrons)",
+        "latex": "\\text{Oxydant} + ne^- \\rightarrow \\text{Réducteur} \\quad \\text{exemple : } Cu^{2+} + 2e^- \\rightarrow Cu",
+        "explainPrompt": "Explique la réduction : 1) Définition (gain d'électrons), 2) Espèce qui se réduit = oxydant, 3) Nombre d'oxydation qui diminue, 4) Exemples (galvanisation, électroraffinage), 5) Lien indissociable avec l'oxydation (réaction redox).",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier l'espèce qui se réduit, 2) Écrire l'équation de réduction, 3) Fonctionnement d'une pile. Solutions détaillées."
       },
       {
         "name": "Couple oxydant/réducteur",
@@ -920,9 +920,9 @@
       },
       {
         "name": "Formules d'oxydation des alcools",
-        "latex": "\\text{Primaire} \\xrightarrow{[O]} \\text{Aldéhyde} \\xrightarrow{[O]} \\text{Acide} \\quad \\text{et} \\quad \\text.Secondaire} \\xrightarrow{[O]} \\text{Cétone}",
-        "explainPrompt": "Explique l'oxydation : 1) Alcool primaire → Aldéhyde → Acide, 2) Secondaire → Cétone, 3) Tertiaire inerte, 4) Agents oxydants, 5) Applications.",
-        "exercisePrompt": "Génère 3 exercices : 1) Type d'oxydation, 2) Produit, 3) Applications. Solutions détaillées."
+        "latex": "\\text{Primaire} \\xrightarrow{[O]} \\text{Aldéhyde} \\xrightarrow{[O]} \\text{Acide} \\quad \\text{et} \\quad \\text{Secondaire} \\xrightarrow{[O]} \\text{Cétone}",
+        "explainPrompt": "Explique l'oxydation : 1) Alcool primaire → Aldéhyde → Acide carboxylique, 2) Alcool secondaire → Cétone, 3) Alcool tertiaire inerte, 4) Agents oxydants (KMnO₄, K₂Cr₂O₇), 5) Applications.",
+        "exercisePrompt": "Génère 3 exercices : 1) Identifier le type d'oxydation, 2) Préciser le produit formé, 3) Applications en analyse. Solutions détaillées."
       },
       {
         "name": "Estérification",
