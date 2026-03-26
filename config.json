@@ -326,58 +326,211 @@
       ],
       "videos": [
         {
-          "id": "video_newton",
-          "title": "Les Lois de Newton - Terminale SM",
-          "subtitle": "Mécanique - Dynamique",
-          "thumbnail": "https://img.youtube.com/vi/IEy_Ifgpj_0/maxresdefault.jpg",
-          "url": "https://youtu.be/IEy_Ifgpj_0",
-          "duration": "20:15",
+          "id": "video_cinematique_mru",
+          "title": "Cinématique - MRU et MRUV - Terminale SM",
+          "subtitle": "Mouvement Rectiligne Uniforme et Uniformément Varié",
+          "thumbnail": "https://img.youtube.com/vi/bDcwv8Lui6g/hqdefault.jpg",
+          "url": "https://youtu.be/bDcwv8Lui6g",
+          "duration": "18:45",
+          "chapter": "Cinématique"
+        },
+        {
+          "id": "video_cinematique_mruv",
+          "title": "MRUV - Équations horaires et Torricelli",
+          "subtitle": "Mouvement Rectiligne Uniformément Varié",
+          "thumbnail": "https://img.youtube.com/vi/SmnInqpvFu0/hqdefault.jpg",
+          "url": "https://youtu.be/SmnInqpvFu0",
+          "duration": "15:20",
+          "chapter": "Cinématique"
+        },
+        {
+          "id": "video_mouvement_circulaire",
+          "title": "Mouvement Circulaire Uniforme - Terminale",
+          "subtitle": "Vitesse angulaire, période et accélération centripète",
+          "thumbnail": "https://img.youtube.com/vi/87VC8tvtnJ0/hqdefault.jpg",
+          "url": "https://youtu.be/87VC8tvtnJ0",
+          "duration": "16:30",
+          "chapter": "Cinématique"
+        },
+        {
+          "id": "video_newton_principe_inertie",
+          "title": "Première loi de Newton - Principe d'inertie",
+          "subtitle": "Référentiels galiléens et système pseudo-isolé",
+          "thumbnail": "https://img.youtube.com/vi/paZkyKkU-Zk/hqdefault.jpg",
+          "url": "https://youtu.be/paZkyKkU-Zk",
+          "duration": "15:30",
           "chapter": "Dynamique"
         },
         {
-          "id": "video_circuits",
-          "title": "Circuits RC et RL - Charge et Décharge",
-          "subtitle": "Électricité - Régime transitoire",
-          "thumbnail": "https://img.youtube.com/vi/8_ym3pDDTrM/maxresdefault.jpg",
+          "id": "video_newton_rfd",
+          "title": "Deuxième loi de Newton - Relation Fondamentale",
+          "subtitle": "Somme des forces = masse × accélération",
+          "thumbnail": "https://img.youtube.com/vi/A0zSlNbzspo/hqdefault.jpg",
+          "url": "https://youtu.be/A0zSlNbzspo",
+          "duration": "18:45",
+          "chapter": "Dynamique"
+        },
+        {
+          "id": "video_newton_action_reaction",
+          "title": "Troisième loi de Newton - Action et Réaction",
+          "subtitle": "Principe d'action-réaction",
+          "thumbnail": "https://img.youtube.com/vi/DviO21Hwhgk/hqdefault.jpg",
+          "url": "https://youtu.be/DviO21Hwhgk",
+          "duration": "12:20",
+          "chapter": "Dynamique"
+        },
+        {
+          "id": "video_gravitation",
+          "title": "Loi de gravitation universelle - Terminale SM",
+          "subtitle": "Force de gravitation et champ de pesanteur",
+          "thumbnail": "https://img.youtube.com/vi/2yswjX5VX8E/hqdefault.jpg",
+          "url": "https://youtu.be/2yswjX5VX8E",
+          "duration": "19:45",
+          "chapter": "Gravitation"
+        },
+        {
+          "id": "video_energie_cinetique",
+          "title": "Énergie cinétique et théorème - Terminale",
+          "subtitle": "Travail d'une force et énergie cinétique",
+          "thumbnail": "https://img.youtube.com/vi/q5pESKOWxSg/hqdefault.jpg",
+          "url": "https://youtu.be/q5pESKOWxSg",
+          "duration": "17:20",
+          "chapter": "Énergie"
+        },
+        {
+          "id": "video_energie_potentielle",
+          "title": "Énergie potentielle et mécanique - Terminale",
+          "subtitle": "Énergie de pesanteur et conservation",
+          "thumbnail": "https://img.youtube.com/vi/iklemS3_QJs/hqdefault.jpg",
+          "url": "https://youtu.be/iklemS3_QJs",
+          "duration": "18:00",
+          "chapter": "Énergie"
+        },
+        {
+          "id": "video_quantite_mouvement",
+          "title": "Quantité de mouvement et conservation - Terminale",
+          "subtitle": "Collision et propulsion par réaction",
+          "thumbnail": "https://img.youtube.com/vi/AiEmppjAooE/hqdefault.jpg",
+          "url": "https://youtu.be/AiEmppjAooE",
+          "duration": "20:30",
+          "chapter": "Dynamique"
+        },
+        {
+          "id": "video_oscillateur_harmonique",
+          "title": "Oscillateur harmonique - Équation et solution",
+          "subtitle": "Oscillations mécaniques libres",
+          "thumbnail": "https://img.youtube.com/vi/b0cz6-s2s_I/hqdefault.jpg",
+          "url": "https://youtu.be/b0cz6-s2s_I",
+          "duration": "25:15",
+          "chapter": "Oscillations"
+        },
+        {
+          "id": "video_pendule_simple",
+          "title": "Période du pendule simple - Terminale SM",
+          "subtitle": "Oscillations et isochronisme",
+          "thumbnail": "https://img.youtube.com/vi/jy6FYct_Ntw/hqdefault.jpg",
+          "url": "https://youtu.be/jy6FYct_Ntw",
+          "duration": "14:45",
+          "chapter": "Oscillations"
+        },
+        {
+          "id": "video_ohm_resistances",
+          "title": "Loi d'Ohm et résistances - Terminale",
+          "subtitle": "Association série et parallèle",
+          "thumbnail": "https://img.youtube.com/vi/R6WpdF0BO60/hqdefault.jpg",
+          "url": "https://youtu.be/R6WpdF0BO60",
+          "duration": "16:50",
+          "chapter": "Électricité"
+        },
+        {
+          "id": "video_kirchhoff",
+          "title": "Lois de Kirchhoff - Nœuds et Mailles",
+          "subtitle": "Résolution de circuits électriques",
+          "thumbnail": "https://img.youtube.com/vi/Q9RFhmS5we8/hqdefault.jpg",
+          "url": "https://youtu.be/Q9RFhmS5we8",
+          "duration": "19:00",
+          "chapter": "Électricité"
+        },
+        {
+          "id": "video_condensateur_charge",
+          "title": "Condensateur - Charge et décharge RC",
+          "subtitle": "Constante de temps et régime transitoire",
+          "thumbnail": "https://img.youtube.com/vi/8_ym3pDDTrM/hqdefault.jpg",
           "url": "https://youtu.be/8_ym3pDDTrM",
-          "duration": "17:08",
+          "duration": "22:30",
           "chapter": "Électricité"
         },
         {
-          "id": "video_condensateur",
-          "title": "Le Condensateur - Charge et Décharge",
-          "subtitle": "Électricité - Condensateurs",
-          "thumbnail": "https://img.youtube.com/vi/-bQpU0kVRy8/maxresdefault.jpg",
-          "url": "https://youtu.be/-bQpU0kVRy8",
-          "duration": "15:30",
-          "chapter": "Électricité"
-        },
-        {
-          "id": "video_oscillateur",
-          "title": "Oscillateur LC - Oscillations Électriques",
-          "subtitle": "Électricité - Oscillations",
-          "thumbnail": "https://img.youtube.com/vi/_9MsqQkFbP8/maxresdefault.jpg",
+          "id": "video_oscillateur_lc",
+          "title": "Oscillateur LC - Circuit oscillant",
+          "subtitle": "Pulsation propre et échange d'énergie",
+          "thumbnail": "https://img.youtube.com/vi/_9MsqQkFbP8/hqdefault.jpg",
           "url": "https://youtu.be/_9MsqQkFbP8",
           "duration": "18:45",
           "chapter": "Électricité"
         },
         {
-          "id": "video_optique",
-          "title": "Lentilles Minces - Optique",
-          "subtitle": "Optique - Formation des images",
-          "thumbnail": "https://img.youtube.com/vi/KwTWOU3O77A/maxresdefault.jpg",
+          "id": "video_lentilles_minces",
+          "title": "Lentilles minces - Relation de conjugaison",
+          "subtitle": "Optique géométrique et formation des images",
+          "thumbnail": "https://img.youtube.com/vi/KwTWOU3O77A/hqdefault.jpg",
           "url": "https://youtu.be/KwTWOU3O77A",
-          "duration": "22:10",
+          "duration": "24:00",
           "chapter": "Optique"
         },
         {
+          "id": "video_diffraction",
+          "title": "Diffraction et interférences - Terminale SM",
+          "subtitle": "Fentes d'Young et interfrange",
+          "thumbnail": "https://img.youtube.com/vi/Lx-KeSSKQOg/hqdefault.jpg",
+          "url": "https://youtu.be/Lx-KeSSKQOg",
+          "duration": "26:15",
+          "chapter": "Optique Ondulatoire"
+        },
+        {
+          "id": "video_thermodynamique",
+          "title": "Premier principe - Énergie interne",
+          "subtitle": "Chaleur, travail et thermodynamique",
+          "thumbnail": "https://img.youtube.com/vi/TjNI0dIg00o/hqdefault.jpg",
+          "url": "https://youtu.be/TjNI0dIg00o",
+          "duration": "21:30",
+          "chapter": "Thermodynamique"
+        },
+        {
+          "id": "video_noyau_defaut_masse",
+          "title": "Noyau atomique - Défaut de masse",
+          "subtitle": "Énergie de liaison et stabilité",
+          "thumbnail": "https://img.youtube.com/vi/UD6eJBinnVw/hqdefault.jpg",
+          "url": "https://youtu.be/UD6eJBinnVw",
+          "duration": "20:00",
+          "chapter": "Physique Nucléaire"
+        },
+        {
           "id": "video_radioactivite",
-          "title": "Radioactivité et Décroissance radioactive",
-          "subtitle": "Physique Nucléaire - Terminale",
-          "thumbnail": "https://img.youtube.com/vi/8_ym3pDDTrM/maxresdefault.jpg",
-          "url": "https://youtu.be/8_ym3pDDTrM",
+          "title": "Loi de décroissance radioactive - Terminale",
+          "subtitle": "Demi-vie et activité radioactive",
+          "thumbnail": "https://img.youtube.com/vi/X9Y0Z1a2B3C/hqdefault.jpg",
+          "url": "https://youtu.be/X9Y0Z1a2B3C",
           "duration": "19:55",
           "chapter": "Physique Nucléaire"
+        },
+        {
+          "id": "video_champ_magnetique",
+          "title": "Champ magnétique - Solénoïde",
+          "subtitle": "Champ magnétique et induction",
+          "thumbnail": "https://img.youtube.com/vi/rpdesi_Lpx8/hqdefault.jpg",
+          "url": "https://youtu.be/rpdesi_Lpx8",
+          "duration": "18:20",
+          "chapter": "Champ Magnétique"
+        },
+        {
+          "id": "video_faraday",
+          "title": "Loi de Faraday - Induction",
+          "subtitle": "Flux magnétique et fém induite",
+          "thumbnail": "https://img.youtube.com/vi/i1mPscH38Ck/hqdefault.jpg",
+          "url": "https://youtu.be/i1mPscH38Ck",
+          "duration": "17:45",
+          "chapter": "Induction"
         }
       ]
     },
@@ -409,58 +562,211 @@
       ],
       "videos": [
         {
-          "id": "video_ph",
-          "title": "pH et Solutions Aqueuses - Terminale SM",
-          "subtitle": "Solutions - Chimie",
-          "thumbnail": "https://img.youtube.com/vi/rzx8NnQZHww/maxresdefault.jpg",
+          "id": "video_concentration",
+          "title": "Concentration massique et molaire - Terminale SM",
+          "subtitle": "Préparation de solutions et dilution",
+          "thumbnail": "https://img.youtube.com/vi/rzx8NnQZHww/hqdefault.jpg",
           "url": "https://youtu.be/rzx8NnQZHww",
+          "duration": "16:30",
+          "chapter": "Solutions Aqueuses"
+        },
+        {
+          "id": "video_dilution",
+          "title": "Dilution et relation C×V - Terminale",
+          "subtitle": "Facteur de dilution et calculs",
+          "thumbnail": "https://img.youtube.com/vi/OuvsLVSLViA/hqdefault.jpg",
+          "url": "https://youtu.be/OuvsLVSLViA",
+          "duration": "14:45",
+          "chapter": "Solutions Aqueuses"
+        },
+        {
+          "id": "video_dissolution",
+          "title": "Dissolution d'un sel - Terminale Chimie",
+          "subtitle": "Équation de dissolution et électrolytes",
+          "thumbnail": "https://img.youtube.com/vi/494DnmfFGmA/hqdefault.jpg",
+          "url": "https://youtu.be/494DnmfFGmA",
+          "duration": "13:20",
+          "chapter": "Solutions Aqueuses"
+        },
+        {
+          "id": "video_ph_definitions",
+          "title": "Définition du pH - Terminale SM",
+          "subtitle": "Échelle de pH et ions oxonium",
+          "thumbnail": "https://img.youtube.com/vi/5H7VJkZkjI0/hqdefault.jpg",
+          "url": "https://youtu.be/5H7VJkZkjI0",
           "duration": "18:30",
           "chapter": "Solutions Aqueuses"
         },
         {
-          "id": "video_acide_base",
-          "title": "Acides et Bases - Théorie de Brønsted",
-          "subtitle": "Acide-Base - Terminale",
-          "thumbnail": "https://img.youtube.com/vi/rzx8NnQZHww/maxresdefault.jpg",
-          "url": "https://youtu.be/rzx8NnQZHww",
-          "duration": "21:15",
+          "id": "video_produit_ionique_eau",
+          "title": "Produit ionique de l'eau - pH et pOH",
+          "subtitle": "Relation pH + pOH = 14",
+          "thumbnail": "https://img.youtube.com/vi/Ks1wa7V5T2k/hqdefault.jpg",
+          "url": "https://youtu.be/Ks1wa7V5T2k",
+          "duration": "15:45",
+          "chapter": "Solutions Aqueuses"
+        },
+        {
+          "id": "video_acide_brønsted",
+          "title": "Acide de Brønsted - Terminale SM",
+          "subtitle": "Théorie acide-base et couples",
+          "thumbnail": "https://img.youtube.com/vi/YWuE4KQ8T9Y/hqdefault.jpg",
+          "url": "https://youtu.be/YWuE4KQ8T9Y",
+          "duration": "19:00",
+          "chapter": "Acides et Bases"
+        },
+        {
+          "id": "video_base_brønsted",
+          "title": "Base de Brønsted - Terminale Chimie",
+          "subtitle": "Couples acide/base et réaction",
+          "thumbnail": "https://img.youtube.com/vi/7RmN7KQ2pX8/hqdefault.jpg",
+          "url": "https://youtu.be/7RmN7KQ2pX8",
+          "duration": "17:30",
+          "chapter": "Acides et Bases"
+        },
+        {
+          "id": "video_constante_acidite",
+          "title": "Constante d'acidité Ka et pKa - Terminale",
+          "subtitle": "Force des acides et échelle de pKa",
+          "thumbnail": "https://img.youtube.com/vi/w4byPS4DWpM/hqdefault.jpg",
+          "url": "https://youtu.be/w4byPS4DWpM",
+          "duration": "20:15",
+          "chapter": "Acides et Bases"
+        },
+        {
+          "id": "video_henderson",
+          "title": "Relation pH-pKa - Henderson-Hasselbalch",
+          "subtitle": "Solution tampon et diagramme",
+          "thumbnail": "https://img.youtube.com/vi/P8x3K2mN6Q0/hqdefault.jpg",
+          "url": "https://youtu.be/P8x3K2mN6Q0",
+          "duration": "18:45",
+          "chapter": "Acides et Bases"
+        },
+        {
+          "id": "video_ph_acide_fort",
+          "title": "pH d'un acide fort - Terminale SM",
+          "subtitle": "Calcul de pH pour acides forts",
+          "thumbnail": "https://img.youtube.com/vi/R2mK5L9Q8N4/hqdefault.jpg",
+          "url": "https://youtu.be/R2mK5L9Q8N4",
+          "duration": "14:30",
+          "chapter": "Acides et Bases"
+        },
+        {
+          "id": "video_ph_acide_faible",
+          "title": "pH d'un acide faible - Terminale",
+          "subtitle": "Calcul approché et Ka",
+          "thumbnail": "https://img.youtube.com/vi/M5nK7L2Q9P4/hqdefault.jpg",
+          "url": "https://youtu.be/M5nK7L2Q9P4",
+          "duration": "16:00",
+          "chapter": "Acides et Bases"
+        },
+        {
+          "id": "video_ph_base_faible",
+          "title": "pH d'une base faible - Terminale SM",
+          "subtitle": "Constante Kb et calcul de pH",
+          "thumbnail": "https://img.youtube.com/vi/S3k7N8L2M6Q/hqdefault.jpg",
+          "url": "https://youtu.be/S3k7N8L2M6Q",
+          "duration": "15:45",
           "chapter": "Acides et Bases"
         },
         {
           "id": "video_titrage",
           "title": "Titrages Acide-Base - Terminale SM",
-          "subtitle": "Acide-Base - Titrages",
-          "thumbnail": "https://img.youtube.com/vi/NHn_fk6llpA/maxresdefault.jpg",
+          "subtitle": "Équivalence et indicateurs colorés",
+          "thumbnail": "https://img.youtube.com/vi/NHn_fk6llpA/hqdefault.jpg",
           "url": "https://youtu.be/NHn_fk6llpA",
-          "duration": "16:40",
+          "duration": "22:00",
           "chapter": "Titrages"
         },
         {
-          "id": "video_redox",
-          "title": "Oxydoréduction - Cours Complet",
-          "subtitle": "Redox - Terminale Chimie",
-          "thumbnail": "https://img.youtube.com/vi/VvbdQBfawFw/maxresdefault.jpg",
+          "id": "video_oxydoreduction",
+          "title": "Oxydoréduction - Cours Complet Terminale",
+          "subtitle": "Oxydation, réduction et couples redox",
+          "thumbnail": "https://img.youtube.com/vi/VvbdQBfawFw/hqdefault.jpg",
           "url": "https://youtu.be/VvbdQBfawFw",
-          "duration": "19:22",
+          "duration": "28:30",
           "chapter": "Oxydoréduction"
         },
         {
-          "id": "video_cinetique",
-          "title": "Cinétique Chimique - Terminale SM",
-          "subtitle": "Cinétique - Révisions BAC",
-          "thumbnail": "https://img.youtube.com/vi/SR3jAMnU0uE/maxresdefault.jpg",
+          "id": "video_equilibrage_redox",
+          "title": "Équilibrage des réactions redox - Terminale",
+          "subtitle": "Méthode ion-électron",
+          "thumbnail": "https://img.youtube.com/vi/pzuZopJukw0/hqdefault.jpg",
+          "url": "https://youtu.be/pzuZopJukw0",
+          "duration": "20:45",
+          "chapter": "Oxydoréduction"
+        },
+        {
+          "id": "video_pile",
+          "title": "Force électromotrice - Pile Daniell",
+          "subtitle": "Potentiel d'électrode et relation de Nernst",
+          "thumbnail": "https://img.youtube.com/vi/b5J2c_n07ZI/hqdefault.jpg",
+          "url": "https://youtu.be/b5J2c_n07ZI",
+          "duration": "19:30",
+          "chapter": "Oxydoréduction"
+        },
+        {
+          "id": "video_beer_lambert",
+          "title": "Loi de Beer-Lambert - Terminale Chimie",
+          "subtitle": "Spectrophotométrie et absorbance",
+          "thumbnail": "https://img.youtube.com/vi/mJtSODJ0nj8/hqdefault.jpg",
+          "url": "https://youtu.be/mJtSODJ0nj8",
+          "duration": "16:20",
+          "chapter": "Oxydoréduction"
+        },
+        {
+          "id": "video_cinetique_chimique",
+          "title": "Cinétique chimique - Terminale SM",
+          "subtitle": "Vitesse de réaction et loi de vitesse",
+          "thumbnail": "https://img.youtube.com/vi/SR3jAMnU0uE/hqdefault.jpg",
           "url": "https://youtu.be/SR3jAMnU0uE",
-          "duration": "20:05",
+          "duration": "25:15",
           "chapter": "Cinétique"
         },
         {
-          "id": "video_equilibre",
-          "title": "Cinétique Chimique - Cours Complet",
-          "subtitle": "Équilibre Chimique et Cinétique",
-          "thumbnail": "https://img.youtube.com/vi/mJtSODJ0nj8/maxresdefault.jpg",
-          "url": "https://youtu.be/mJtSODJ0nj8",
-          "duration": "17:50",
+          "id": "video_cinetique_ordre1",
+          "title": "Cinétique d'ordre 1 - Terminale",
+          "subtitle": "Loi exponentielle et demi-vie",
+          "thumbnail": "https://img.youtube.com/vi/0kD7J2S3B4C/hqdefault.jpg",
+          "url": "https://youtu.be/0kD7J2S3B4C",
+          "duration": "18:00",
+          "chapter": "Cinétique"
+        },
+        {
+          "id": "video_cinetique_ordre2",
+          "title": "Cinétique d'ordre 2 - Terminale SM",
+          "subtitle": "Loi en 1/[A] et constante k",
+          "thumbnail": "https://img.youtube.com/vi/5E8F9G2H1I3/hqdefault.jpg",
+          "url": "https://youtu.be/5E8F9G2H1I3",
+          "duration": "17:30",
+          "chapter": "Cinétique"
+        },
+        {
+          "id": "video_equilibre_chimique",
+          "title": "Équilibre chimique - Terminale",
+          "subtitle": "Quotient de réaction et constante K",
+          "thumbnail": "https://img.youtube.com/vi/6J9K2L8M4N5/hqdefault.jpg",
+          "url": "https://youtu.be/6J9K2L8M4N5",
+          "duration": "22:45",
           "chapter": "Équilibre Chimique"
+        },
+        {
+          "id": "video_le_chatelier",
+          "title": "Principe de Le Chatelier - Terminale SM",
+          "subtitle": "Perturbation et évolution de l'équilibre",
+          "thumbnail": "https://img.youtube.com/vi/7O1P3Q5R6S8/hqdefault.jpg",
+          "url": "https://youtu.be/7O1P3Q5R6S8",
+          "duration": "19:00",
+          "chapter": "Équilibre Chimique"
+        },
+        {
+          "id": "video_solubilite",
+          "title": "Produit de solubilité Ks - Terminale",
+          "subtitle": "Dissolution et précipitation",
+          "thumbnail": "https://img.youtube.com/vi/8T2U4V6W7X9/hqdefault.jpg",
+          "url": "https://youtu.be/8T2U4V6W7X9",
+          "duration": "16:45",
+          "chapter": "Solubilité"
         }
       ]
     }
