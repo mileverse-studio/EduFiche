@@ -771,4 +771,38 @@
       ]
     }
   ]
+  ,
+  "announcement": {
+    "id": "ann_001",
+    "title": "🎉 Nouvelle fonctionnalité !",
+    "message": "Le chat supporte maintenant les formules LaTeX. Tape $x^2$ dans le chat et vois la magie !",
+    "type": "info",
+    "date": "2026-03-28",
+    "action_label": "En savoir plus",
+    "action_url": ""
+  },
+
+  "app_version": {
+    "latest": "1.1.0",
+    "build": 2,
+    "release_notes": "Corrections de bugs, nouvelles animations du chat, ondes audio en temps réel.",
+    "android_url": "https://github.com/mileverse-studio/EduFiche/releases/latest/download/EduFiche.apk",
+    "force_update": false
+  },
+
+  "feedback": {
+    "email": "mileverse61@gmail.com",
+    "whatsapp": "+224611799793",
+    "cloud_url": "https://forms.google.com/..."
+  },
+
+  "questions": [
+    {
+      "id": "q_001",
+      "question": "Quelle fonctionnalité voudrais-tu voir dans EduFiche ?",
+      "type": "choice",
+      "choices": ["Plus de matières", "Mode hors-ligne", "Quiz en groupe", "Autre chose"],
+      "date": "2026-03-28"
+    }
+  ]
 }
