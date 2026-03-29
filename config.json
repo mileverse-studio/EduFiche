@@ -14,7 +14,7 @@
     "build": 2,
     "release_notes": "Corrections de bugs, nouvelles animations du chat, ondes audio en temps réel.",
     "android_url": "https://github.com/mileverse-studio/EduFiche/releases/latest/download/EduFiche.apk",
-    "force_update": true
+    "force_update": false
   },
 
   "feedback": {
