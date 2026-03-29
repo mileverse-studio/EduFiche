@@ -1,6 +1,6 @@
 {
   "announcement": {
-    "id": "ann_001",
+    "id": "ann_002",
     "title": "🎉 Nouvelle fonctionnalité !",
     "message": "Le chat supporte maintenant les formules LaTeX. Tape $x^2$ dans le chat et vois la magie !",
     "type": "info",
